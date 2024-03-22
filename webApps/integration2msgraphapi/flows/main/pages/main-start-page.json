@@ -1,0 +1,393 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+    "getADUserID": {
+      "type": "getResponse"
+    },
+    "getListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/get",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getResponse"
+      }
+    },
+    "getListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/get",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getResponse2"
+      }
+    },
+    "getListSDP3": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/get",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getResponse3",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "displayName"
+          ]
+        }
+      }
+    },
+    "getListSDP4": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/get",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getResponse4",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "displayName"
+          ]
+        }
+      }
+    },
+    "getMessageList": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/getMessages4Userid",
+        "responseType": "getMessages4Userid",
+        "itemsPath": "value"
+      },
+      "input": "fromCaller"
+    },
+    "getMessages4UseridListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/getMessages4Userid",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getMessages4UseridResponse",
+        "uriParameters": {
+          "userid": "{{ $variables.getADUserID.value.id }}"
+        }
+      }
+    },
+    "getMessages4UseridListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/getMessages4Userid",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getMessages4UseridResponse2"
+      }
+    },
+    "getMessages4UseridListSDP3": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/getMessages4Userid",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getMessages4UseridResponse3",
+        "uriParameters": {
+          "userid": "{{ $variables.UserId }}"
+        }
+      }
+    },
+    "myMessages": {
+      "type": "messageType"
+    },
+    "UserId": {
+      "type": "ADUserId"
+    }
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.getMessages4Userid": {
+      "endpoint": "getMessages4Userid",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getMessages4UseridResponse": {
+      "endpoint": "getMessages4Userid",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getMessages4UseridResponse2": {
+      "endpoint": "getMessages4Userid",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getMessages4UseridResponse3": {
+      "endpoint": "getMessages4Userid",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getResponse": {
+      "endpoint": "get",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getResponse2": {
+      "endpoint": "get",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getResponse3": {
+      "endpoint": "get",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getResponse4": {
+      "endpoint": "get",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.messageType": {
+      "endpoint": "getMessages4Userid",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "ADUserId": "object",
+    "getMessages4Userid": {
+      "_odata.context": "string",
+      "value": [
+        {
+          "from": {
+            "emailAddress": {
+              "address": "string",
+              "name": "string"
+            }
+          },
+          "id": "string",
+          "sender": {
+            "emailAddress": {
+              "address": "string",
+              "name": "string"
+            }
+          },
+          "subject": "string",
+          "toRecipients": [
+            {
+              "emailAddress": {
+                "address": "string",
+                "name": "string"
+              }
+            }
+          ],
+          "webLink": "string"
+        }
+      ]
+    },
+    "getMessages4UseridResponse": {
+      "value": [
+        {
+          "id": "string",
+          "sender": {
+            "emailAddress": {
+              "name": "string"
+            }
+          },
+          "subject": "string",
+          "webLink": "string"
+        }
+      ]
+    },
+    "getMessages4UseridResponse2": {
+      "value": [
+        {
+          "id": "string",
+          "sender": {
+            "emailAddress": {
+              "name": "string"
+            }
+          },
+          "subject": "string",
+          "webLink": "string"
+        }
+      ]
+    },
+    "getMessages4UseridResponse3": {
+      "value": [
+        {
+          "id": "string",
+          "receivedDateTime": "string",
+          "sender": {
+            "emailAddress": {
+              "address": "string"
+            }
+          },
+          "subject": "string",
+          "webLink": "string"
+        }
+      ]
+    },
+    "getResponse": {
+      "value": [
+        {
+          "displayName": "string",
+          "givenName": "string",
+          "id": "string",
+          "mail": "string",
+          "surname": "string",
+          "userPrincipalName": "string"
+        }
+      ]
+    },
+    "getResponse2": {
+      "value": [
+        {
+          "displayName": "string",
+          "id": "string"
+        }
+      ]
+    },
+    "getResponse3": {
+      "value": [
+        {
+          "displayName": "string",
+          "id": "string"
+        }
+      ]
+    },
+    "getResponse4": {
+      "value": [
+        {
+          "displayName": "string",
+          "id": "string"
+        }
+      ]
+    },
+    "messageType": {
+      "_odata.context": "string",
+      "_odata.nextLink": "string",
+      "value": [
+        {
+          "_odata.etag": "string",
+          "bccRecipients": "any[]",
+          "body": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "bodyPreview": "string",
+          "categories": "any[]",
+          "ccRecipients": "any[]",
+          "changeKey": "string",
+          "conversationId": "string",
+          "conversationIndex": "string",
+          "createdDateTime": "string",
+          "flag": {
+            "flagStatus": "string"
+          },
+          "from": {
+            "emailAddress": {
+              "address": "string",
+              "name": "string"
+            }
+          },
+          "hasAttachments": "boolean",
+          "id": "string",
+          "importance": "string",
+          "inferenceClassification": "string",
+          "internetMessageId": "string",
+          "isDeliveryReceiptRequested": "boolean",
+          "isDraft": "boolean",
+          "isRead": "boolean",
+          "isReadReceiptRequested": "boolean",
+          "lastModifiedDateTime": "string",
+          "parentFolderId": "string",
+          "receivedDateTime": "string",
+          "replyTo": [
+            {
+              "emailAddress": {
+                "address": "string",
+                "name": "string"
+              }
+            }
+          ],
+          "sender": {
+            "emailAddress": {
+              "address": "string",
+              "name": "string"
+            }
+          },
+          "sentDateTime": "string",
+          "subject": "string",
+          "toRecipients": [
+            {
+              "emailAddress": {
+                "address": "string",
+                "name": "string"
+              }
+            }
+          ],
+          "webLink": "string"
+        }
+      ]
+    }
+
+  },
+  "eventListeners": {
+    "aClick": {
+      "chains": [
+        {
+          "chainId": "HyperlinkClickChain"
+        }
+      ]
+    },
+    "aClick2": {
+      "chains": [
+        {
+          "chainId": "HyperlinkClickChain1"
+        }
+      ]
+    },
+    "ojButtonOjAction": {
+      "chains": [
+        {
+          "chainId": "ButtonActionChain"
+        }
+      ]
+    },
+    "ojButtonOjAction2": {
+      "chains": [
+        {
+          "chainId": "ButtonActionChain1"
+        }
+      ]
+    },
+    "ojButtonOjAction3": {
+      "chains": [
+        {
+          "chainId": "ButtonActionChain2"
+        }
+      ]
+    },
+    "ojListViewFirstSelectedItem": {
+      "chains": [
+        {
+          "chainId": "ListViewFirstSelectedItemChangeChain"
+        }
+      ]
+    },
+    "vbEnter": {
+      "chains": [
+        {
+          "chainId": "PageVbEnterChain"
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-navigation-list": {
+        "path": "ojs/ojnavigationlist"
+      }
+    }
+  },
+  "constants": {
+    "BodyText": {
+      "type": "messageType"
+    }
+  }
+}

@@ -1,0 +1,1185 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Graph Microsoft Com 2",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://graph.microsoft.com",
+            "description": "Graph Microsoft Com",
+            "x-vb": {
+                "authentication": {
+                    "authenticated": {
+                        "type": "oauth2_client_credentials",
+                        "clientIdCredentials": "vb_9cc95f70-fba6-45b0-9cd7-b2947fe448bd",
+                        "scope": "https://graph.microsoft.com/.default",
+                        "authUrl": "https://login.microsoftonline.com/{Directory (tenant) ID}/oauth2/v2.0/token"
+                    }
+                }
+            }
+        }
+    ],
+    "paths": {
+        "/beta/users/{userid}/drive/recent": {
+            "get": {
+                "operationId": "getOneDrive4Userid",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetBetaUsersUseridDriveRecent"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getOneDrive4Userid/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            },
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ]
+        },
+        "/v1.0/users/{userid}/contacts/{contactid}": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "contactid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "operationId": "getContactUsingContactidfromUserId",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0UsersUseridContactsContactid"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getContactUsingContactidfromUserId/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getOne"
+                }
+            }
+        },
+        "/v1.0/users/{userid}/contacts": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "operationId": "getListOfContacts4UserId",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0UsersUseridContacts"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getListOfContacts4UserId/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/v1.0/Users/{userid}/drives": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "operationId": "getListOfDrives4UserId",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0UsersUseridDrives"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getgetListOfDrives4UserId/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/v1.0/users/{userid}/drive": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "operationId": "getUseridOneDrive",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0UsersUseridDrive"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getUseridOneDrive/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/v1.0/users/{userid}/drive/root": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "summary": "Retrieve the metadata for a driveItem in a drive by file system path or ID. item-id is the ID of a driveItem. It may also be the unique ID of a SharePoint list item.",
+                "operationId": "GetDriveItemResource",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0UsersUseridDriveRoot"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/GetDriveItemResource/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/v1.0/Users/{userid}/drive/items/{itemid}": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "itemid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "summary": "Get drive id from Drive based on item Id and User Id",
+                "operationId": "getUseridDriveItemsItemid",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0UsersUseridDriveItemsItemid"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getUseridDriveItemsItemid/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getOne"
+                }
+            }
+        },
+        "/v1.0/users/{userid}/drive/root/children": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "summary": "Get the contents of the Drive",
+                "operationId": "DownloadFileFromDrive",
+                "parameters": [
+                    {
+                        "name": "$select",
+                        "in": "query",
+                        "schema": {
+                            "type": "string"
+                        },
+                        "x-vb": {
+                            "defaultValue": "content.downloadUrl"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0UsersUseridDriveRootChildren"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/DownloadFileFromDrive/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "GetBetaUsersUseridDriveRecent": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "@odata.type": {
+                                    "type": "string"
+                                },
+                                "createdDateTime": {
+                                    "type": "string"
+                                },
+                                "id": {
+                                    "type": "string"
+                                },
+                                "lastModifiedDateTime": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "webUrl": {
+                                    "type": "string"
+                                },
+                                "size": {
+                                    "type": "integer"
+                                },
+                                "createdBy": {
+                                    "type": "object",
+                                    "properties": {
+                                        "user": {
+                                            "type": "object",
+                                            "properties": {
+                                                "email": {
+                                                    "type": "string"
+                                                },
+                                                "displayName": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "lastModifiedBy": {
+                                    "type": "object",
+                                    "properties": {
+                                        "user": {
+                                            "type": "object",
+                                            "properties": {
+                                                "email": {
+                                                    "type": "string"
+                                                },
+                                                "displayName": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "file": {
+                                    "type": "object",
+                                    "properties": {
+                                        "mimeType": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "fileSystemInfo": {
+                                    "type": "object",
+                                    "properties": {
+                                        "createdDateTime": {
+                                            "type": "string"
+                                        },
+                                        "lastModifiedDateTime": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "remoteItem": {
+                                    "type": "object",
+                                    "properties": {
+                                        "createdDateTime": {
+                                            "type": "string"
+                                        },
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "lastModifiedDateTime": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "size": {
+                                            "type": "integer"
+                                        },
+                                        "webDavUrl": {
+                                            "type": "string"
+                                        },
+                                        "webUrl": {
+                                            "type": "string"
+                                        },
+                                        "createdBy": {
+                                            "type": "object",
+                                            "properties": {
+                                                "user": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "email": {
+                                                            "type": "string"
+                                                        },
+                                                        "displayName": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "file": {
+                                            "type": "object",
+                                            "properties": {
+                                                "mimeType": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        },
+                                        "fileSystemInfo": {
+                                            "type": "object",
+                                            "properties": {
+                                                "createdDateTime": {
+                                                    "type": "string"
+                                                },
+                                                "lastModifiedDateTime": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        },
+                                        "lastModifiedBy": {
+                                            "type": "object",
+                                            "properties": {
+                                                "user": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "email": {
+                                                            "type": "string"
+                                                        },
+                                                        "displayName": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "parentReference": {
+                                            "type": "object",
+                                            "properties": {
+                                                "driveId": {
+                                                    "type": "string"
+                                                },
+                                                "driveType": {
+                                                    "type": "string"
+                                                },
+                                                "id": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        },
+                                        "sharepointIds": {
+                                            "type": "object",
+                                            "properties": {
+                                                "listId": {
+                                                    "type": "string"
+                                                },
+                                                "listItemId": {
+                                                    "type": "string"
+                                                },
+                                                "listItemUniqueId": {
+                                                    "type": "string"
+                                                },
+                                                "siteId": {
+                                                    "type": "string"
+                                                },
+                                                "siteUrl": {
+                                                    "type": "string"
+                                                },
+                                                "webId": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetV1_0UsersUseridContactsContactid": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "@odata.etag": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "createdDateTime": {
+                        "type": "string"
+                    },
+                    "lastModifiedDateTime": {
+                        "type": "string"
+                    },
+                    "changeKey": {
+                        "type": "string"
+                    },
+                    "categories": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "parentFolderId": {
+                        "type": "string"
+                    },
+                    "birthday": {
+                        "nullable": true
+                    },
+                    "fileAs": {
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "type": "string"
+                    },
+                    "givenName": {
+                        "type": "string"
+                    },
+                    "initials": {
+                        "nullable": true
+                    },
+                    "middleName": {
+                        "nullable": true
+                    },
+                    "nickName": {
+                        "nullable": true
+                    },
+                    "surname": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "nullable": true
+                    },
+                    "yomiGivenName": {
+                        "nullable": true
+                    },
+                    "yomiSurname": {
+                        "nullable": true
+                    },
+                    "yomiCompanyName": {
+                        "nullable": true
+                    },
+                    "generation": {
+                        "nullable": true
+                    },
+                    "imAddresses": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "jobTitle": {
+                        "nullable": true
+                    },
+                    "companyName": {
+                        "type": "string"
+                    },
+                    "department": {
+                        "nullable": true
+                    },
+                    "officeLocation": {
+                        "nullable": true
+                    },
+                    "profession": {
+                        "nullable": true
+                    },
+                    "businessHomePage": {
+                        "nullable": true
+                    },
+                    "assistantName": {
+                        "nullable": true
+                    },
+                    "manager": {
+                        "nullable": true
+                    },
+                    "homePhones": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "mobilePhone": {
+                        "nullable": true
+                    },
+                    "businessPhones": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "spouseName": {
+                        "nullable": true
+                    },
+                    "personalNotes": {
+                        "type": "string"
+                    },
+                    "children": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "emailAddresses": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "address": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "homeAddress": {
+                        "type": "object"
+                    },
+                    "businessAddress": {
+                        "type": "object"
+                    },
+                    "otherAddress": {
+                        "type": "object"
+                    }
+                }
+            },
+            "GetV1_0UsersUseridContacts": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "@odata.etag": {
+                                    "type": "string"
+                                },
+                                "id": {
+                                    "type": "string"
+                                },
+                                "createdDateTime": {
+                                    "type": "string"
+                                },
+                                "lastModifiedDateTime": {
+                                    "type": "string"
+                                },
+                                "changeKey": {
+                                    "type": "string"
+                                },
+                                "categories": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "parentFolderId": {
+                                    "type": "string"
+                                },
+                                "birthday": {
+                                    "nullable": true
+                                },
+                                "fileAs": {
+                                    "type": "string"
+                                },
+                                "displayName": {
+                                    "type": "string"
+                                },
+                                "givenName": {
+                                    "type": "string"
+                                },
+                                "initials": {
+                                    "nullable": true
+                                },
+                                "middleName": {
+                                    "nullable": true
+                                },
+                                "nickName": {
+                                    "nullable": true
+                                },
+                                "surname": {
+                                    "type": "string"
+                                },
+                                "title": {
+                                    "nullable": true
+                                },
+                                "yomiGivenName": {
+                                    "nullable": true
+                                },
+                                "yomiSurname": {
+                                    "nullable": true
+                                },
+                                "yomiCompanyName": {
+                                    "nullable": true
+                                },
+                                "generation": {
+                                    "nullable": true
+                                },
+                                "imAddresses": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "jobTitle": {
+                                    "nullable": true
+                                },
+                                "companyName": {
+                                    "type": "string"
+                                },
+                                "department": {
+                                    "nullable": true
+                                },
+                                "officeLocation": {
+                                    "nullable": true
+                                },
+                                "profession": {
+                                    "nullable": true
+                                },
+                                "businessHomePage": {
+                                    "nullable": true
+                                },
+                                "assistantName": {
+                                    "nullable": true
+                                },
+                                "manager": {
+                                    "nullable": true
+                                },
+                                "homePhones": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "mobilePhone": {
+                                    "nullable": true
+                                },
+                                "businessPhones": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "spouseName": {
+                                    "nullable": true
+                                },
+                                "personalNotes": {
+                                    "type": "string"
+                                },
+                                "children": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "emailAddresses": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "name": {
+                                                "type": "string"
+                                            },
+                                            "address": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "homeAddress": {
+                                    "type": "object"
+                                },
+                                "businessAddress": {
+                                    "type": "object"
+                                },
+                                "otherAddress": {
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetV1_0UsersUseridDrives": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "createdDateTime": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "id": {
+                                    "type": "string"
+                                },
+                                "lastModifiedDateTime": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "webUrl": {
+                                    "type": "string"
+                                },
+                                "driveType": {
+                                    "type": "string"
+                                },
+                                "createdBy": {
+                                    "type": "object",
+                                    "properties": {
+                                        "user": {
+                                            "type": "object",
+                                            "properties": {
+                                                "displayName": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "lastModifiedBy": {
+                                    "type": "object",
+                                    "properties": {
+                                        "user": {
+                                            "type": "object",
+                                            "properties": {
+                                                "email": {
+                                                    "type": "string"
+                                                },
+                                                "id": {
+                                                    "type": "string"
+                                                },
+                                                "displayName": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "owner": {
+                                    "type": "object",
+                                    "properties": {
+                                        "user": {
+                                            "type": "object",
+                                            "properties": {
+                                                "email": {
+                                                    "type": "string"
+                                                },
+                                                "id": {
+                                                    "type": "string"
+                                                },
+                                                "displayName": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "quota": {
+                                    "type": "object",
+                                    "properties": {
+                                        "deleted": {
+                                            "type": "integer"
+                                        },
+                                        "remaining": {
+                                            "type": "integer"
+                                        },
+                                        "state": {
+                                            "type": "string"
+                                        },
+                                        "total": {
+                                            "type": "integer"
+                                        },
+                                        "used": {
+                                            "type": "integer"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetV1_0UsersUseridDrive": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "createdDateTime": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "lastModifiedDateTime": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "webUrl": {
+                        "type": "string"
+                    },
+                    "driveType": {
+                        "type": "string"
+                    },
+                    "createdBy": {
+                        "type": "object",
+                        "properties": {
+                            "user": {
+                                "type": "object",
+                                "properties": {
+                                    "displayName": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "lastModifiedBy": {
+                        "type": "object",
+                        "properties": {
+                            "user": {
+                                "type": "object",
+                                "properties": {
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "displayName": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "owner": {
+                        "type": "object",
+                        "properties": {
+                            "user": {
+                                "type": "object",
+                                "properties": {
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "displayName": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "quota": {
+                        "type": "object",
+                        "properties": {
+                            "deleted": {
+                                "type": "integer"
+                            },
+                            "remaining": {
+                                "type": "integer"
+                            },
+                            "state": {
+                                "type": "string"
+                            },
+                            "total": {
+                                "type": "integer"
+                            },
+                            "used": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            },
+            "GetV1_0UsersUseridDriveRoot": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "createdDateTime": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "lastModifiedDateTime": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "webUrl": {
+                        "type": "string"
+                    },
+                    "size": {
+                        "type": "integer"
+                    },
+                    "parentReference": {
+                        "type": "object",
+                        "properties": {
+                            "driveId": {
+                                "type": "string"
+                            },
+                            "driveType": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "fileSystemInfo": {
+                        "type": "object",
+                        "properties": {
+                            "createdDateTime": {
+                                "type": "string"
+                            },
+                            "lastModifiedDateTime": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "folder": {
+                        "type": "object",
+                        "properties": {
+                            "childCount": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "root": {
+                        "type": "object"
+                    }
+                }
+            },
+            "GetV1_0UsersUseridDriveItemsItemid": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "createdDateTime": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "lastModifiedDateTime": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "webUrl": {
+                        "type": "string"
+                    },
+                    "size": {
+                        "type": "integer"
+                    },
+                    "parentReference": {
+                        "type": "object",
+                        "properties": {
+                            "driveId": {
+                                "type": "string"
+                            },
+                            "driveType": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "fileSystemInfo": {
+                        "type": "object",
+                        "properties": {
+                            "createdDateTime": {
+                                "type": "string"
+                            },
+                            "lastModifiedDateTime": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "folder": {
+                        "type": "object",
+                        "properties": {
+                            "childCount": {
+                                "type": "integer"
+                            }
+                        }
+                    },
+                    "root": {
+                        "type": "object"
+                    }
+                }
+            },
+            "GetV1_0UsersUseridDriveRootChildren": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "@microsoft.graph.downloadUrl": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

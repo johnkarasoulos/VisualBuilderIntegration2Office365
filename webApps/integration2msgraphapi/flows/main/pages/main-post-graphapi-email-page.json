@@ -1,0 +1,129 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+    "DraftMessage": {
+      "type": "createDraftMessage"
+    },
+    "myEmail": {
+      "type": "GetEmail",
+      "required": true,
+      "input": "fromCaller"
+    }
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.createDraftMessage": {
+      "endpoint": "createDraftMessage",
+      "service": "graphMicrosoftCom",
+      "path": "request"
+    },
+    "@decorators.GetEmail": {
+      "endpoint": "GetEmail",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "createDraftMessage": {
+      "body": {
+        "content": "string",
+        "contentType": "string"
+      },
+      "importance": "string",
+      "subject": "string",
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "address": "string"
+          }
+        }
+      ]
+    },
+    "GetEmail": {
+      "_odata.context": "string",
+      "_odata.etag": "string",
+      "bccRecipients": "any[]",
+      "body": {
+        "content": "string",
+        "contentType": "string"
+      },
+      "bodyPreview": "string",
+      "categories": "any[]",
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "address": "string",
+            "name": "string"
+          }
+        }
+      ],
+      "changeKey": "string",
+      "conversationId": "string",
+      "conversationIndex": "string",
+      "createdDateTime": "string",
+      "flag": {
+        "flagStatus": "string"
+      },
+      "from": {
+        "emailAddress": {
+          "address": "string",
+          "name": "string"
+        }
+      },
+      "hasAttachments": "boolean",
+      "id": "string",
+      "importance": "string",
+      "inferenceClassification": "string",
+      "internetMessageId": "string",
+      "isDeliveryReceiptRequested": "any",
+      "isDraft": "boolean",
+      "isRead": "boolean",
+      "isReadReceiptRequested": "boolean",
+      "lastModifiedDateTime": "string",
+      "parentFolderId": "string",
+      "receivedDateTime": "string",
+      "replyTo": "any[]",
+      "sender": {
+        "emailAddress": {
+          "address": "string",
+          "name": "string"
+        }
+      },
+      "sentDateTime": "string",
+      "subject": "string",
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "address": "string",
+            "name": "string"
+          }
+        }
+      ],
+      "webLink": "string"
+    }
+  },
+  "eventListeners": {
+    "ojButtonOjAction": {
+      "chains": [
+        {
+          "chainId": "ButtonActionChain"
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-toolbar": {
+        "path": "ojs/ojtoolbar"
+      }
+    }
+  }
+}

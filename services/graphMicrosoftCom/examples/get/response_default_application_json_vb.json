@@ -1,0 +1,260 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+    "value": [
+        {
+            "businessPhones": [
+                "+1 425 555 0109"
+            ],
+            "displayName": "Adele Vance",
+            "givenName": "Adele",
+            "jobTitle": "Retail Manager",
+            "mail": "AdeleV@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "18/2111",
+            "preferredLanguage": "en-US",
+            "surname": "Vance",
+            "userPrincipalName": "AdeleV@ociluxembourg92.onmicrosoft.com",
+            "id": "fd70fcac-dd99-4e8d-8626-a59d482606d5"
+        },
+        {
+            "businessPhones": [
+                "+1 858 555 0110"
+            ],
+            "displayName": "Alex Wilber",
+            "givenName": "Alex",
+            "jobTitle": "Marketing Assistant",
+            "mail": "AlexW@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "131/1104",
+            "preferredLanguage": "en-US",
+            "surname": "Wilber",
+            "userPrincipalName": "AlexW@ociluxembourg92.onmicrosoft.com",
+            "id": "1c873161-7fb9-451a-a05a-6e1e8e7ea83f"
+        },
+        {
+            "businessPhones": [
+                "+1 205 555 0108"
+            ],
+            "displayName": "Diego Siciliani",
+            "givenName": "Diego",
+            "jobTitle": "HR Manager",
+            "mail": "DiegoS@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "14/1108",
+            "preferredLanguage": "en-US",
+            "surname": "Siciliani",
+            "userPrincipalName": "DiegoS@ociluxembourg92.onmicrosoft.com",
+            "id": "ec3c5054-503f-435a-8e61-a1498a1cb0e4"
+        },
+        {
+            "businessPhones": [
+                "+1 309 555 0104"
+            ],
+            "displayName": "Grady Archie",
+            "givenName": "Grady",
+            "jobTitle": "Designer",
+            "mail": "GradyA@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "19/2109",
+            "preferredLanguage": "en-US",
+            "surname": "Archie",
+            "userPrincipalName": "GradyA@ociluxembourg92.onmicrosoft.com",
+            "id": "063888ed-cff1-453a-a02d-541e2a26f910"
+        },
+        {
+            "businessPhones": [
+                "+1 954 555 0118"
+            ],
+            "displayName": "Henrietta Mueller",
+            "givenName": "Henrietta",
+            "jobTitle": "Developer",
+            "mail": "HenriettaM@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "18/1106",
+            "preferredLanguage": "en-US",
+            "surname": "Mueller",
+            "userPrincipalName": "HenriettaM@ociluxembourg92.onmicrosoft.com",
+            "id": "c324d65e-2946-4d94-972b-f70677621b18"
+        },
+        {
+            "businessPhones": [
+                "+1 918 555 0101"
+            ],
+            "displayName": "Isaiah Langer",
+            "givenName": "Isaiah",
+            "jobTitle": "Sales Rep",
+            "mail": "IsaiahL@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "20/1101",
+            "preferredLanguage": "en-US",
+            "surname": "Langer",
+            "userPrincipalName": "IsaiahL@ociluxembourg92.onmicrosoft.com",
+            "id": "b742eee7-e978-49ed-b340-bd0695c4a40f"
+        },
+        {
+            "businessPhones": [
+                "+1 502 555 0102"
+            ],
+            "displayName": "Johanna Lorenz",
+            "givenName": "Johanna",
+            "jobTitle": "Senior Engineer",
+            "mail": "JohannaL@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "23/2102",
+            "preferredLanguage": "en-US",
+            "surname": "Lorenz",
+            "userPrincipalName": "JohannaL@ociluxembourg92.onmicrosoft.com",
+            "id": "9861c866-680d-4bf7-ab82-ed4884478bc2"
+        },
+        {
+            "businessPhones": [
+                "+1 980 555 0101"
+            ],
+            "displayName": "Joni Sherman",
+            "givenName": "Joni",
+            "jobTitle": "Paralegal",
+            "mail": "JoniS@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "20/1109",
+            "preferredLanguage": "en-US",
+            "surname": "Sherman",
+            "userPrincipalName": "JoniS@ociluxembourg92.onmicrosoft.com",
+            "id": "654a08dd-1c14-4da8-859e-5312b3fe79c5"
+        },
+        {
+            "businessPhones": [
+                "+1 913 555 0101"
+            ],
+            "displayName": "Lee Gu",
+            "givenName": "Lee",
+            "jobTitle": "Director",
+            "mail": "LeeG@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "23/3101",
+            "preferredLanguage": "en-US",
+            "surname": "Gu",
+            "userPrincipalName": "LeeG@ociluxembourg92.onmicrosoft.com",
+            "id": "e9feef5b-ea41-444d-9dbb-c96596ae4ead"
+        },
+        {
+            "businessPhones": [
+                "+1 918 555 0107"
+            ],
+            "displayName": "Lidia Holloway",
+            "givenName": "Lidia",
+            "jobTitle": "Product Manager",
+            "mail": "LidiaH@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "20/2107",
+            "preferredLanguage": "en-US",
+            "surname": "Holloway",
+            "userPrincipalName": "LidiaH@ociluxembourg92.onmicrosoft.com",
+            "id": "8e2505bc-17dd-4ab0-b2f7-e2622bacf3c9"
+        },
+        {
+            "businessPhones": [
+                "+1 918 555 0104"
+            ],
+            "displayName": "Lynne Robbins",
+            "givenName": "Lynne",
+            "jobTitle": "Planner",
+            "mail": "LynneR@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "20/1104",
+            "preferredLanguage": "en-US",
+            "surname": "Robbins",
+            "userPrincipalName": "LynneR@ociluxembourg92.onmicrosoft.com",
+            "id": "52920a41-c0a2-4a2b-9987-c4afaef48368"
+        },
+        {
+            "businessPhones": [
+                "+1 412 555 0109"
+            ],
+            "displayName": "Megan Bowen",
+            "givenName": "Megan",
+            "jobTitle": "Marketing Manager",
+            "mail": "MeganB@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "12/1110",
+            "preferredLanguage": "en-US",
+            "surname": "Bowen",
+            "userPrincipalName": "MeganB@ociluxembourg92.onmicrosoft.com",
+            "id": "bad56341-c4e1-43f9-8b78-25f08fcd2f08"
+        },
+        {
+            "businessPhones": [
+                "+1 858 555 0109"
+            ],
+            "displayName": "Miriam Graham",
+            "givenName": "Miriam",
+            "jobTitle": "Director",
+            "mail": "MiriamG@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "131/2103",
+            "preferredLanguage": "en-US",
+            "surname": "Graham",
+            "userPrincipalName": "MiriamG@ociluxembourg92.onmicrosoft.com",
+            "id": "03932ef5-e914-4f72-9983-684e486f4dfc"
+        },
+        {
+            "businessPhones": [
+                "+1 206 555 0105"
+            ],
+            "displayName": "Nestor Wilke",
+            "givenName": "Nestor",
+            "jobTitle": "Director",
+            "mail": "NestorW@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "36/2121",
+            "preferredLanguage": "en-US",
+            "surname": "Wilke",
+            "userPrincipalName": "NestorW@ociluxembourg92.onmicrosoft.com",
+            "id": "1aeb3bac-dce9-4551-9d3c-608a2c4e48a3"
+        },
+        {
+            "businessPhones": [
+                "6987964675"
+            ],
+            "displayName": "Oracle Cloud Infrastructure",
+            "givenName": "Oracle",
+            "jobTitle": null,
+            "mail": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": null,
+            "preferredLanguage": null,
+            "surname": "Cloud Infrastructure",
+            "userPrincipalName": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com",
+            "id": "8402fd97-29ea-4758-8ed4-0375850cb07c"
+        },
+        {
+            "businessPhones": [
+                "+1 502 555 0144"
+            ],
+            "displayName": "Patti Fernandez",
+            "givenName": "Patti",
+            "jobTitle": "President",
+            "mail": "PattiF@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "15/1102",
+            "preferredLanguage": "en-US",
+            "surname": "Fernandez",
+            "userPrincipalName": "PattiF@ociluxembourg92.onmicrosoft.com",
+            "id": "9a51f961-c89e-48a5-a2ab-bb38327ab402"
+        },
+        {
+            "businessPhones": [
+                "+20 255501070"
+            ],
+            "displayName": "Pradeep Gupta",
+            "givenName": "Pradeep",
+            "jobTitle": "Accountant",
+            "mail": "PradeepG@ociluxembourg92.onmicrosoft.com",
+            "mobilePhone": null,
+            "officeLocation": "98/2202",
+            "preferredLanguage": "en-US",
+            "surname": "Gupta",
+            "userPrincipalName": "PradeepG@ociluxembourg92.onmicrosoft.com",
+            "id": "e17d8c57-41ac-45f7-a77f-c68baf6e9605"
+        }
+    ]
+}

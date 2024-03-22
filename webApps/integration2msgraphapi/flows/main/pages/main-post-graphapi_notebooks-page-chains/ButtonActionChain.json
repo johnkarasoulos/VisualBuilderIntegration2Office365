@@ -1,0 +1,40 @@
+{
+  "description": "",
+  "root": "callRestCreateNotebook",
+  "actions": {
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestCreateNotebook.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestCreateNotebook": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "graphMicrosoftCom3/createNotebook",
+        "uriParams": {
+          "userid": "{{ $page.variables.SearchId }}"
+        },
+        "body": "{{ $page.variables.newNotebook }}",
+        "responseType": "getNotebooksWithId"
+      },
+      "outcomes": {
+        "failure": "fireNotification",
+        "success": "assignVariablesMyNotebookFromId"
+      }
+    },
+    "assignVariablesMyNotebookFromId": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.MyNotebookFromId": {
+          "source": "{{ $chain.results.callRestCreateNotebook.body }}",
+          "auto": "always"
+        }
+      }
+    }
+  },
+  "variables": {}
+}

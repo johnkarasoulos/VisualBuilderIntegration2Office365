@@ -1,0 +1,545 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8402fd97-29ea-4758-8ed4-0375850cb07c')/messages",
+    "value": [
+        {
+            "@odata.etag": "W/\"FwAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJR+\"",
+            "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAAZxLrDMpvDEW6cnyM8XwDdAAAAglTAAAA",
+            "createdDateTime": "2021-10-29T14:43:49Z",
+            "lastModifiedDateTime": "2021-10-29T14:43:51Z",
+            "changeKey": "FwAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJR+",
+            "categories": [],
+            "receivedDateTime": "2021-10-29T14:43:49Z",
+            "sentDateTime": "2021-10-29T14:43:48Z",
+            "hasAttachments": false,
+            "internetMessageId": "<bb14cd33-5015-404e-8fcf-e8e5b717a57c@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM>",
+            "subject": "Undeliverable: Welcome to Oracle Visual Builder Cloud Service",
+            "bodyPreview": "Delivery has failed to these recipients or groups:\r\n\r\noracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com\r\nYour message wasn't delivered because the recipient's email provider rejected it.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nDiagnostic information for administrators",
+            "importance": "normal",
+            "parentFolderId": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAuAAADcJQXcQCEm0mez5SkfREBvAEAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAA",
+            "conversationId": "AAQkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAQAIokuXPBNilLjDR80H6-nCY=",
+            "conversationIndex": "AQHXzNNiiiS5c8E2KUuMNHzQfr+cJg==",
+            "isDeliveryReceiptRequested": null,
+            "isReadReceiptRequested": false,
+            "isRead": true,
+            "isDraft": false,
+            "webLink": "https://outlook.office365.com/owa/?ItemID=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAAZxLrDMpvDEW6cnyM8XwDdAAAAglTAAAA&exvsurl=1&viewmodel=ReadMessageItem",
+            "inferenceClassification": "focused",
+            "body": {
+                "contentType": "html",
+                "content": "<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><p><b><font color=\"#000066\" size=\"3\" face=\"Arial\">Delivery has failed to these recipients or groups:</font></b></p><font color=\"#000000\" size=\"2\" face=\"Tahoma\"><p><a href=\"mailto:oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com\">oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com</a><br></font><font color=\"#000000\" size=\"3\" face=\"Arial\">Your message wasn't delivered because the recipient's email provider rejected it.<br></font><font color=\"#000000\" size=\"2\" face=\"Tahoma\"><br></p></font><br><br><br><br><br><br><font color=\"#808080\" size=\"2\" face=\"Tahoma\"><p><b>Diagnostic information for administrators:</b></p><p>Generating server: DB6P194MB0038.EURP194.PROD.OUTLOOK.COM<br></p><p>oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com<br>Remote Server returned '550 5.7.708 Service unavailable. Access denied, traffic not accepted from this IP. For more information please go to http://go.microsoft.com/fwlink/?LinkId=526653 AS(7230) [DU2P194MB1727.EURP194.PROD.OUTLOOK.COM]'<br></p><p>Original message headers:</p><pre>Received: from DB6P194MB0038.EURP194.PROD.OUTLOOK.COM\r\n ([fe80::dd49:adb5:a10b:fb6]) by DB6P194MB0038.EURP194.PROD.OUTLOOK.COM\r\n ([fe80::dd49:adb5:a10b:fb6%4]) with mapi id 15.20.4628.020; Fri, 29 Oct 2021\r\n 14:43:48 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/plain\r\nDate: Fri, 29 Oct 2021 14:43:48 +0000\r\nMessage-ID:\r\n\t&lt;DB6P194MB003808012F0A00F5BE122CFCE4879@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM&gt;\r\nSubject: Welcome to Oracle Visual Builder Cloud Service\r\n</pre></font></body></html>"
+            },
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Outlook",
+                    "address": "MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft Outlook",
+                    "address": "MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "toRecipients": [
+                {
+                    "emailAddress": {
+                        "name": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com",
+                        "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                    }
+                }
+            ],
+            "ccRecipients": [],
+            "bccRecipients": [],
+            "replyTo": [],
+            "flag": {
+                "flagStatus": "notFlagged"
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJSD\"",
+            "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAAZxLrDMpvDEW6cnyM8XwDdAAAAQLMGwAAAA==",
+            "createdDateTime": "2021-10-29T13:47:08Z",
+            "lastModifiedDateTime": "2021-10-29T14:44:03Z",
+            "changeKey": "CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJSD",
+            "categories": [],
+            "receivedDateTime": "2021-10-29T14:43:48Z",
+            "sentDateTime": "2021-10-29T14:43:47Z",
+            "hasAttachments": false,
+            "internetMessageId": "<DB6P194MB003808012F0A00F5BE122CFCE4879@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM>",
+            "subject": "Welcome to Oracle Visual Builder Cloud Service",
+            "bodyPreview": "The BEST low code development tool ever!",
+            "importance": "high",
+            "parentFolderId": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAuAAADcJQXcQCEm0mez5SkfREBvAEAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAA",
+            "conversationId": "AAQkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAQACT1xRfOG0xCvTItHz1_iV8=",
+            "conversationIndex": "AQHXzMt3JPXFF84bTEK9Mi0fPX6JXw==",
+            "isDeliveryReceiptRequested": false,
+            "isReadReceiptRequested": false,
+            "isRead": true,
+            "isDraft": false,
+            "webLink": "https://outlook.office365.com/owa/?ItemID=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAAZxLrDMpvDEW6cnyM8XwDdAAAAQLMGwAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+            "inferenceClassification": "focused",
+            "body": {
+                "contentType": "html",
+                "content": "<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body>The <b>BEST</b> low code development tool ever! </body></html>"
+            },
+            "sender": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "from": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "toRecipients": [
+                {
+                    "emailAddress": {
+                        "name": "Oracle Cloud Infrastructure",
+                        "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                    }
+                }
+            ],
+            "ccRecipients": [],
+            "bccRecipients": [],
+            "replyTo": [],
+            "flag": {
+                "flagStatus": "notFlagged"
+            }
+        },
+        {
+            "@odata.etag": "W/\"FwAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJRM\"",
+            "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAAZxLrDMpvDEW6cnyM8XwDdAAAAglSAAAA",
+            "createdDateTime": "2021-10-29T14:35:40Z",
+            "lastModifiedDateTime": "2021-10-29T14:35:41Z",
+            "changeKey": "FwAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJRM",
+            "categories": [],
+            "receivedDateTime": "2021-10-29T14:35:40Z",
+            "sentDateTime": "2021-10-29T14:35:39Z",
+            "hasAttachments": false,
+            "internetMessageId": "<1e381b72-6dc9-45b6-a1ea-7c93498eb8f9@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM>",
+            "subject": "Undeliverable: Welcome to Oracle Visual Builder Cloud Service",
+            "bodyPreview": "Delivery has failed to these recipients or groups:\r\n\r\noracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com\r\nYour message wasn't delivered because the recipient's email provider rejected it.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nDiagnostic information for administrators",
+            "importance": "normal",
+            "parentFolderId": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAuAAADcJQXcQCEm0mez5SkfREBvAEAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAA",
+            "conversationId": "AAQkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAQAI5XTj1cugxNqpAsGAlDBE8=",
+            "conversationIndex": "AQHXzNI/jldOPVy6DE2qkCwYCUMETw==",
+            "isDeliveryReceiptRequested": null,
+            "isReadReceiptRequested": false,
+            "isRead": true,
+            "isDraft": false,
+            "webLink": "https://outlook.office365.com/owa/?ItemID=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAAZxLrDMpvDEW6cnyM8XwDdAAAAglSAAAA&exvsurl=1&viewmodel=ReadMessageItem",
+            "inferenceClassification": "focused",
+            "body": {
+                "contentType": "html",
+                "content": "<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><p><b><font color=\"#000066\" size=\"3\" face=\"Arial\">Delivery has failed to these recipients or groups:</font></b></p><font color=\"#000000\" size=\"2\" face=\"Tahoma\"><p><a href=\"mailto:oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com\">oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com</a><br></font><font color=\"#000000\" size=\"3\" face=\"Arial\">Your message wasn't delivered because the recipient's email provider rejected it.<br></font><font color=\"#000000\" size=\"2\" face=\"Tahoma\"><br></p></font><br><br><br><br><br><br><font color=\"#808080\" size=\"2\" face=\"Tahoma\"><p><b>Diagnostic information for administrators:</b></p><p>Generating server: DB6P194MB0038.EURP194.PROD.OUTLOOK.COM<br></p><p>oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com<br>Remote Server returned '550 5.7.708 Service unavailable. Access denied, traffic not accepted from this IP. For more information please go to http://go.microsoft.com/fwlink/?LinkId=526653 AS(7230) [DB9P194MB1228.EURP194.PROD.OUTLOOK.COM]'<br></p><p>Original message headers:</p><pre>Received: from DB6P194MB0038.EURP194.PROD.OUTLOOK.COM\r\n ([fe80::dd49:adb5:a10b:fb6]) by DB6P194MB0038.EURP194.PROD.OUTLOOK.COM\r\n ([fe80::dd49:adb5:a10b:fb6%4]) with mapi id 15.20.4628.020; Fri, 29 Oct 2021\r\n 14:35:39 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/plain\r\nDate: Fri, 29 Oct 2021 14:35:39 +0000\r\nMessage-ID:\r\n\t&lt;DB6P194MB00382B39B982B4AD24704E57E4879@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM&gt;\r\nSubject: Welcome to Oracle Visual Builder Cloud Service\r\n</pre></font></body></html>"
+            },
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Outlook",
+                    "address": "MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft Outlook",
+                    "address": "MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "toRecipients": [
+                {
+                    "emailAddress": {
+                        "name": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com",
+                        "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                    }
+                }
+            ],
+            "ccRecipients": [],
+            "bccRecipients": [],
+            "replyTo": [],
+            "flag": {
+                "flagStatus": "notFlagged"
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJRS\"",
+            "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAAZxLrDMpvDEW6cnyM8XwDdAAAAQLMGgAAAA==",
+            "createdDateTime": "2021-10-29T14:35:39Z",
+            "lastModifiedDateTime": "2021-10-29T14:35:42Z",
+            "changeKey": "CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJRS",
+            "categories": [],
+            "receivedDateTime": "2021-10-29T14:35:40Z",
+            "sentDateTime": "2021-10-29T14:35:39Z",
+            "hasAttachments": false,
+            "internetMessageId": "<DB6P194MB00382B39B982B4AD24704E57E4879@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM>",
+            "subject": "Welcome to Oracle Visual Builder Cloud Service",
+            "bodyPreview": "VisualBuilerCloudService is integrated with Azure",
+            "importance": "normal",
+            "parentFolderId": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAuAAADcJQXcQCEm0mez5SkfREBvAEAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAA",
+            "conversationId": "AAQkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAQAJifuLIcBI1ChOsvaEqev18=",
+            "conversationIndex": "AQHXzNI+mJ+4shwEjUKE6y9oSp6/Xw==",
+            "isDeliveryReceiptRequested": false,
+            "isReadReceiptRequested": false,
+            "isRead": true,
+            "isDraft": false,
+            "webLink": "https://outlook.office365.com/owa/?ItemID=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAAZxLrDMpvDEW6cnyM8XwDdAAAAQLMGgAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+            "inferenceClassification": "focused",
+            "body": {
+                "contentType": "text",
+                "content": "VisualBuilerCloudService is integrated with Azure"
+            },
+            "sender": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "from": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "toRecipients": [
+                {
+                    "emailAddress": {
+                        "name": "Oracle Cloud Infrastructure",
+                        "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                    }
+                }
+            ],
+            "ccRecipients": [],
+            "bccRecipients": [],
+            "replyTo": [
+                {
+                    "emailAddress": {
+                        "name": "Oracle Cloud Infrastructure",
+                        "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                    }
+                }
+            ],
+            "flag": {
+                "flagStatus": "notFlagged"
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJQq\"",
+            "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAAZxLrDMpvDEW6cnyM8XwDdAAAAQLMGQAAAA==",
+            "createdDateTime": "2021-10-29T14:34:56Z",
+            "lastModifiedDateTime": "2021-10-29T14:35:04Z",
+            "changeKey": "CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJQq",
+            "categories": [],
+            "receivedDateTime": "2021-10-29T14:35:02Z",
+            "sentDateTime": "2021-10-29T14:35:01Z",
+            "hasAttachments": false,
+            "internetMessageId": "<424a7d057c3244aab1f12219c4f2de82DB6P194MB0038358A98BAE5AD6162B2F7E4879@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM>",
+            "subject": "Welcome to Oracle Visual Builder Cloud Service",
+            "bodyPreview": "",
+            "importance": "normal",
+            "parentFolderId": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAuAAADcJQXcQCEm0mez5SkfREBvAEAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAA",
+            "conversationId": "AAQkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAQAKijENMao-lFq-AA9ZB3ZVA=",
+            "conversationIndex": "AQHXzNIcqKMQ0xqj+UWr8AD1kHdlUA==",
+            "isDeliveryReceiptRequested": false,
+            "isReadReceiptRequested": false,
+            "isRead": true,
+            "isDraft": false,
+            "webLink": "https://outlook.office365.com/owa/?ItemID=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAAZxLrDMpvDEW6cnyM8XwDdAAAAQLMGQAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+            "inferenceClassification": "focused",
+            "body": {
+                "contentType": "text",
+                "content": ""
+            },
+            "sender": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "from": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "toRecipients": [],
+            "ccRecipients": [],
+            "bccRecipients": [],
+            "replyTo": [],
+            "flag": {
+                "flagStatus": "notFlagged"
+            }
+        },
+        {
+            "@odata.etag": "W/\"FwAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJQK\"",
+            "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAAZxLrDMpvDEW6cnyM8XwDdAAAAglRAAAA",
+            "createdDateTime": "2021-10-29T14:34:41Z",
+            "lastModifiedDateTime": "2021-10-29T14:34:44Z",
+            "changeKey": "FwAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJQK",
+            "categories": [],
+            "receivedDateTime": "2021-10-29T14:34:42Z",
+            "sentDateTime": "2021-10-29T14:34:40Z",
+            "hasAttachments": false,
+            "internetMessageId": "<f3292774-3f4a-4805-b58e-f821fd7e758b@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM>",
+            "subject": "Undeliverable: Welcome to Oracle Visual Builder Cloud Service",
+            "bodyPreview": "Delivery has failed to these recipients or groups:\r\n\r\njohn.karasoulos@oracle.com\r\nYour message wasn't delivered because the recipient's email provider rejected it.\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nDiagnostic information for administrators:\r\n\r\nGenerating server: DB6P194MB",
+            "importance": "normal",
+            "parentFolderId": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAuAAADcJQXcQCEm0mez5SkfREBvAEAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAA",
+            "conversationId": "AAQkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAQAAAOU3TPG2NKixV_-V4TvfM=",
+            "conversationIndex": "AQHXzNIcAA5TdM8bY0qLFX79XhO98w==",
+            "isDeliveryReceiptRequested": null,
+            "isReadReceiptRequested": false,
+            "isRead": true,
+            "isDraft": false,
+            "webLink": "https://outlook.office365.com/owa/?ItemID=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAAZxLrDMpvDEW6cnyM8XwDdAAAAglRAAAA&exvsurl=1&viewmodel=ReadMessageItem",
+            "inferenceClassification": "focused",
+            "body": {
+                "contentType": "html",
+                "content": "<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><p><b><font color=\"#000066\" size=\"3\" face=\"Arial\">Delivery has failed to these recipients or groups:</font></b></p><font color=\"#000000\" size=\"2\" face=\"Tahoma\"><p><a href=\"mailto:john.karasoulos@oracle.com\">john.karasoulos@oracle.com</a><br></font><font color=\"#000000\" size=\"3\" face=\"Arial\">Your message wasn't delivered because the recipient's email provider rejected it.<br></font><font color=\"#000000\" size=\"2\" face=\"Tahoma\"><br></p></font><br><br><br><br><br><br><font color=\"#808080\" size=\"2\" face=\"Tahoma\"><p><b>Diagnostic information for administrators:</b></p><p>Generating server: DB6P194MB0038.EURP194.PROD.OUTLOOK.COM<br></p><p>john.karasoulos@oracle.com<br>Remote Server returned '550 5.7.708 Service unavailable. Access denied, traffic not accepted from this IP. For more information please go to http://go.microsoft.com/fwlink/?LinkId=526653 AS(7230) [DB6P194MB0103.EURP194.PROD.OUTLOOK.COM]'<br></p><p>Original message headers:</p><pre>Received: from DB6P194MB0038.EURP194.PROD.OUTLOOK.COM\r\n ([fe80::dd49:adb5:a10b:fb6]) by DB6P194MB0038.EURP194.PROD.OUTLOOK.COM\r\n ([fe80::dd49:adb5:a10b:fb6%4]) with mapi id 15.20.4628.020; Fri, 29 Oct 2021\r\n 14:34:40 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/plain\r\nDate: Fri, 29 Oct 2021 14:34:40 +0000\r\nMessage-ID:\r\n\t&lt;DB6P194MB0038358A98BAE5AD6162B2F7E4879@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM&gt;\r\nSubject: Welcome to Oracle Visual Builder Cloud Service\r\n</pre></font></body></html>"
+            },
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Outlook",
+                    "address": "MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft Outlook",
+                    "address": "MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "toRecipients": [
+                {
+                    "emailAddress": {
+                        "name": "john.karasoulos@oracle.com",
+                        "address": "john.karasoulos@oracle.com"
+                    }
+                }
+            ],
+            "ccRecipients": [],
+            "bccRecipients": [],
+            "replyTo": [],
+            "flag": {
+                "flagStatus": "notFlagged"
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJQP\"",
+            "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAAZxLrDMpvDEW6cnyM8XwDdAAAAQLMGAAAAA==",
+            "createdDateTime": "2021-10-29T14:34:40Z",
+            "lastModifiedDateTime": "2021-10-29T14:34:56Z",
+            "changeKey": "CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJQP",
+            "categories": [],
+            "receivedDateTime": "2021-10-29T14:34:40Z",
+            "sentDateTime": "2021-10-29T14:34:40Z",
+            "hasAttachments": false,
+            "internetMessageId": "<DB6P194MB0038358A98BAE5AD6162B2F7E4879@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM>",
+            "subject": "Welcome to Oracle Visual Builder Cloud Service",
+            "bodyPreview": "VisualBuilerCloudService is integrated with Azure",
+            "importance": "normal",
+            "parentFolderId": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAuAAADcJQXcQCEm0mez5SkfREBvAEAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAA",
+            "conversationId": "AAQkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAQAMaeReuaqi9Fq63Gh-rYTAQ=",
+            "conversationIndex": "AQHXzNIbxp5F65qqL0WrrcaH+thMBA==",
+            "isDeliveryReceiptRequested": false,
+            "isReadReceiptRequested": false,
+            "isRead": true,
+            "isDraft": false,
+            "webLink": "https://outlook.office365.com/owa/?ItemID=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAAZxLrDMpvDEW6cnyM8XwDdAAAAQLMGAAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+            "inferenceClassification": "focused",
+            "body": {
+                "contentType": "text",
+                "content": "VisualBuilerCloudService is integrated with Azure"
+            },
+            "sender": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "from": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "toRecipients": [
+                {
+                    "emailAddress": {
+                        "name": "john.karasoulos@oracle.com",
+                        "address": "john.karasoulos@oracle.com"
+                    }
+                }
+            ],
+            "ccRecipients": [],
+            "bccRecipients": [],
+            "replyTo": [
+                {
+                    "emailAddress": {
+                        "name": "Oracle Cloud Infrastructure",
+                        "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                    }
+                }
+            ],
+            "flag": {
+                "flagStatus": "notFlagged"
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJPE\"",
+            "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAAZxLrDMpvDEW6cnyM8XwDdAAAAglQAAAA",
+            "createdDateTime": "2021-10-29T14:27:15Z",
+            "lastModifiedDateTime": "2021-10-29T14:27:15Z",
+            "changeKey": "CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJPE",
+            "categories": [],
+            "receivedDateTime": "2021-10-29T14:27:15Z",
+            "sentDateTime": "2021-10-29T14:27:14Z",
+            "hasAttachments": false,
+            "internetMessageId": "<53b7d21e3426419e9ee8b02de1f090eeDB6P194MB0038829C0ADC99E247458DA7E4879@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM>",
+            "subject": "Meet for lunch?",
+            "bodyPreview": "",
+            "importance": "normal",
+            "parentFolderId": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAuAAADcJQXcQCEm0mez5SkfREBvAEAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAA",
+            "conversationId": "AAQkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAQAG0K4I1q-PxGmw7cJi1KfAI=",
+            "conversationIndex": "AQHXzNEJbQrgjWr8/EabDtwmLUp8Ag==",
+            "isDeliveryReceiptRequested": false,
+            "isReadReceiptRequested": false,
+            "isRead": true,
+            "isDraft": false,
+            "webLink": "https://outlook.office365.com/owa/?ItemID=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAAZxLrDMpvDEW6cnyM8XwDdAAAAglQAAAA&exvsurl=1&viewmodel=ReadMessageItem",
+            "inferenceClassification": "focused",
+            "body": {
+                "contentType": "text",
+                "content": ""
+            },
+            "sender": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "from": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "toRecipients": [],
+            "ccRecipients": [],
+            "bccRecipients": [],
+            "replyTo": [],
+            "flag": {
+                "flagStatus": "notFlagged"
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJPU\"",
+            "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAAZxLrDMpvDEW6cnyM8XwDdAAAAQLMFwAAAA==",
+            "createdDateTime": "2021-10-29T14:27:05Z",
+            "lastModifiedDateTime": "2021-10-29T14:27:17Z",
+            "changeKey": "CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJPU",
+            "categories": [],
+            "receivedDateTime": "2021-10-29T14:27:15Z",
+            "sentDateTime": "2021-10-29T14:27:14Z",
+            "hasAttachments": false,
+            "internetMessageId": "<53b7d21e3426419e9ee8b02de1f090eeDB6P194MB0038829C0ADC99E247458DA7E4879@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM>",
+            "subject": "Meet for lunch?",
+            "bodyPreview": "",
+            "importance": "normal",
+            "parentFolderId": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAuAAADcJQXcQCEm0mez5SkfREBvAEAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAA",
+            "conversationId": "AAQkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAQAG0K4I1q-PxGmw7cJi1KfAI=",
+            "conversationIndex": "AQHXzNEJbQrgjWr8/EabDtwmLUp8Ag==",
+            "isDeliveryReceiptRequested": false,
+            "isReadReceiptRequested": false,
+            "isRead": true,
+            "isDraft": false,
+            "webLink": "https://outlook.office365.com/owa/?ItemID=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEJAAAAZxLrDMpvDEW6cnyM8XwDdAAAAQLMFwAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+            "inferenceClassification": "focused",
+            "body": {
+                "contentType": "text",
+                "content": ""
+            },
+            "sender": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "from": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "toRecipients": [],
+            "ccRecipients": [],
+            "bccRecipients": [],
+            "replyTo": [],
+            "flag": {
+                "flagStatus": "notFlagged"
+            }
+        },
+        {
+            "@odata.etag": "W/\"FwAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJOq\"",
+            "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAAZxLrDMpvDEW6cnyM8XwDdAAAAglPAAAA",
+            "createdDateTime": "2021-10-29T14:27:00Z",
+            "lastModifiedDateTime": "2021-10-29T14:27:01Z",
+            "changeKey": "FwAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJOq",
+            "categories": [],
+            "receivedDateTime": "2021-10-29T14:27:00Z",
+            "sentDateTime": "2021-10-29T14:26:59Z",
+            "hasAttachments": false,
+            "internetMessageId": "<170e4dbc-d3fd-479f-b2ed-1d596138d888@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM>",
+            "subject": "Undeliverable: Meet for lunch?",
+            "bodyPreview": "Delivery has failed to these recipients or groups:\r\n\r\njohn.karasoulos@oracle.com\r\nYour message wasn't delivered because the recipient's email provider rejected it.\r\n\r\n\r\noracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com\r\nYour message wasn't deliv",
+            "importance": "normal",
+            "parentFolderId": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAuAAADcJQXcQCEm0mez5SkfREBvAEAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAA",
+            "conversationId": "AAQkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAQAPX-npRAYXlLquDrBHb4O7o=",
+            "conversationIndex": "AQHXzNEJ9f+elEBheUuq4OsEdvg7ug==",
+            "isDeliveryReceiptRequested": null,
+            "isReadReceiptRequested": false,
+            "isRead": true,
+            "isDraft": false,
+            "webLink": "https://outlook.office365.com/owa/?ItemID=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAAZxLrDMpvDEW6cnyM8XwDdAAAAglPAAAA&exvsurl=1&viewmodel=ReadMessageItem",
+            "inferenceClassification": "focused",
+            "body": {
+                "contentType": "html",
+                "content": "<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body><p><b><font color=\"#000066\" size=\"3\" face=\"Arial\">Delivery has failed to these recipients or groups:</font></b></p><font color=\"#000000\" size=\"2\" face=\"Tahoma\"><p><a href=\"mailto:john.karasoulos@oracle.com\">john.karasoulos@oracle.com</a><br></font><font color=\"#000000\" size=\"3\" face=\"Arial\">Your message wasn't delivered because the recipient's email provider rejected it.<br></font><font color=\"#000000\" size=\"2\" face=\"Tahoma\"><br></p><p><a href=\"mailto:oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com\">oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com</a><br></font><font color=\"#000000\" size=\"3\" face=\"Arial\">Your message wasn't delivered because the recipient's email provider rejected it.<br></font><font color=\"#000000\" size=\"2\" face=\"Tahoma\"><br></p></font><br><br><br><br><br><br><font color=\"#808080\" size=\"2\" face=\"Tahoma\"><p><b>Diagnostic information for administrators:</b></p><p>Generating server: DB6P194MB0038.EURP194.PROD.OUTLOOK.COM<br></p><p>john.karasoulos@oracle.com<br>Remote Server returned '550 5.7.708 Service unavailable. Access denied, traffic not accepted from this IP. For more information please go to http://go.microsoft.com/fwlink/?LinkId=526653 AS(7230) [DB7P194MB0348.EURP194.PROD.OUTLOOK.COM]'<br></p><p>oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com<br>Remote Server returned '550 5.7.708 Service unavailable. Access denied, traffic not accepted from this IP. For more information please go to http://go.microsoft.com/fwlink/?LinkId=526653 AS(7230) [DB7P194MB0348.EURP194.PROD.OUTLOOK.COM]'<br></p><p>Original message headers:</p><pre>Received: from DB6P194MB0038.EURP194.PROD.OUTLOOK.COM\r\n ([fe80::dd49:adb5:a10b:fb6]) by DB6P194MB0038.EURP194.PROD.OUTLOOK.COM\r\n ([fe80::dd49:adb5:a10b:fb6%4]) with mapi id 15.20.4628.020; Fri, 29 Oct 2021\r\n 14:26:59 +0000\r\nMIME-Version: 1.0\r\nContent-Type: text/plain\r\nDate: Fri, 29 Oct 2021 14:26:59 +0000\r\nMessage-ID:\r\n\t&lt;DB6P194MB0038829C0ADC99E247458DA7E4879@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM&gt;\r\nSubject: Meet for lunch?\r\n</pre></font></body></html>"
+            },
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Outlook",
+                    "address": "MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "from": {
+                "emailAddress": {
+                    "name": "Microsoft Outlook",
+                    "address": "MicrosoftExchange329e71ec88ae4615bbc36ab6ce41109e@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "toRecipients": [
+                {
+                    "emailAddress": {
+                        "name": "john.karasoulos@oracle.com",
+                        "address": "john.karasoulos@oracle.com"
+                    }
+                },
+                {
+                    "emailAddress": {
+                        "name": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com",
+                        "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                    }
+                }
+            ],
+            "ccRecipients": [],
+            "bccRecipients": [],
+            "replyTo": [],
+            "flag": {
+                "flagStatus": "notFlagged"
+            }
+        }
+    ],
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/Users/8402fd97-29ea-4758-8ed4-0375850cb07c/messages?%24top=10&%24skip=10"
+}

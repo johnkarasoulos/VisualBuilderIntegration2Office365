@@ -1,0 +1,57 @@
+{
+    "fields": [
+        {
+            "displayLabel": "Id",
+            "key": true,
+            "name": "id",
+            "oid": "0f66c6a0-3c74-4734-ba36-af4acdd6e3bb",
+            "required": true,
+            "type": "number",
+            "unique": true
+        },
+        {
+            "displayLabel": "Created",
+            "name": "creationDate",
+            "oid": "3639ca79-d2a7-4172-9899-da7fd9d890d1",
+            "type": "datetime",
+            "historyType": "timeCreated"
+        },
+        {
+            "displayLabel": "Last Updated",
+            "name": "lastUpdateDate",
+            "oid": "42e3be42-e7ad-4608-bcd3-d49e625480a9",
+            "type": "datetime",
+            "historyType": "timeUpdated"
+        },
+        {
+            "displayLabel": "Created By",
+            "name": "createdBy",
+            "oid": "73c5eb95-3fa7-48ec-a901-249b46ed7cd7",
+            "type": "string",
+            "historyType": "createdBy"
+        },
+        {
+            "displayLabel": "Last Updated By",
+            "name": "lastUpdatedBy",
+            "oid": "f70796f9-cbec-482a-a4be-79163bd64210",
+            "type": "string",
+            "historyType": "updatedBy"
+        },
+{
+            "displayLabel": "Version Number",
+            "name": "abcsChangeNumber",
+            "oid": "158e57c5-cb40-48cd-ab87-41baca8bb1fe",
+            "type": "number",
+            "historyType": "versionNumber"
+        },
+        {
+            "type": "string",
+            "name": "aDUserID",
+            "oid": "b53a10c6-98a8-4c38-ae9e-82e9301064c9",
+            "displayLabel": "ADUserID"
+        }
+    ],
+    "name": "ADUsersId",
+    "oid": "714d69d3-212d-4d83-8bf8-fb153a91d80b",
+    "displayLabel": "ADUsersId"
+}

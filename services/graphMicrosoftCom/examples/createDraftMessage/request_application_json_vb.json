@@ -1,0 +1,15 @@
+{
+    "subject":"Did you see last night's game?",
+    "importance":"Low",
+    "body":{
+        "contentType":"HTML",
+        "content":"They were <b>awesome</b>!"
+    },
+    "toRecipients":[
+        {
+            "emailAddress":{
+                "address":"AdeleV@contoso.onmicrosoft.com"
+            }
+        }
+    ]
+}

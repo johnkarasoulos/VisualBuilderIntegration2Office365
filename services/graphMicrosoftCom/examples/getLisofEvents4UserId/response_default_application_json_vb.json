@@ -1,0 +1,212 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8402fd97-29ea-4758-8ed4-0375850cb07c')/events",
+    "value": [
+        {
+            "@odata.etag": "W/\"ZxLrDMpvDEW6cnyM8XwDdAAAAAAfiw==\"",
+            "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgENAAAAZxLrDMpvDEW6cnyM8XwDdAAAAohlAAAA",
+            "createdDateTime": "2021-10-27T16:43:23.1440063Z",
+            "lastModifiedDateTime": "2021-10-27T16:45:24.071617Z",
+            "changeKey": "ZxLrDMpvDEW6cnyM8XwDdAAAAAAfiw==",
+            "categories": [],
+            "transactionId": "796ced20-e9a0-0967-c0ce-fbe72f90e4a1",
+            "originalStartTimeZone": "W. Europe Standard Time",
+            "originalEndTimeZone": "W. Europe Standard Time",
+            "iCalUId": "040000008200E00074C5B7101A82E00800000000C7A797C151CBD701000000000000000010000000B4AA51A8D4F36C419604ADA56BD5ABA2",
+            "reminderMinutesBeforeStart": 15,
+            "isReminderOn": true,
+            "hasAttachments": false,
+            "subject": "Meeting 3",
+            "bodyPreview": "",
+            "importance": "normal",
+            "sensitivity": "normal",
+            "isAllDay": false,
+            "isCancelled": false,
+            "isOrganizer": true,
+            "responseRequested": true,
+            "seriesMasterId": null,
+            "showAs": "busy",
+            "type": "singleInstance",
+            "webLink": "https://outlook.office365.com/owa/?itemid=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgENAAAAZxLrDMpvDEW6cnyM8XwDdAAAAohlAAAA&exvsurl=1&path=/calendar/item",
+            "onlineMeetingUrl": null,
+            "isOnlineMeeting": false,
+            "onlineMeetingProvider": "unknown",
+            "allowNewTimeProposals": true,
+            "occurrenceId": null,
+            "isDraft": false,
+            "hideAttendees": false,
+            "responseStatus": {
+                "response": "organizer",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "body": {
+                "contentType": "html",
+                "content": ""
+            },
+            "start": {
+                "dateTime": "2021-10-29T06:00:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2021-10-29T06:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "location": {
+                "displayName": "",
+                "locationType": "default",
+                "uniqueIdType": "unknown",
+                "address": {},
+                "coordinates": {}
+            },
+            "locations": [],
+            "recurrence": null,
+            "attendees": [],
+            "organizer": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "onlineMeeting": null,
+            "calendar@odata.associationLink": "https://graph.microsoft.com/v1.0/users('8402fd97-29ea-4758-8ed4-0375850cb07c')/calendars('AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEGAAAAZxLrDMpvDEW6cnyM8XwDdAAAAnqyAAAA')/$ref",
+            "calendar@odata.navigationLink": "https://graph.microsoft.com/v1.0/users('8402fd97-29ea-4758-8ed4-0375850cb07c')/calendars('AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEGAAAAZxLrDMpvDEW6cnyM8XwDdAAAAnqyAAAA')"
+        },
+        {
+            "@odata.etag": "W/\"ZxLrDMpvDEW6cnyM8XwDdAAAAAAfhA==\"",
+            "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgENAAAAZxLrDMpvDEW6cnyM8XwDdAAAAohkAAAA",
+            "createdDateTime": "2021-10-27T16:43:17.1796272Z",
+            "lastModifiedDateTime": "2021-10-27T16:45:17.9673238Z",
+            "changeKey": "ZxLrDMpvDEW6cnyM8XwDdAAAAAAfhA==",
+            "categories": [],
+            "transactionId": "29a8a529-a834-3a91-15f4-0a1bb13d8085",
+            "originalStartTimeZone": "W. Europe Standard Time",
+            "originalEndTimeZone": "W. Europe Standard Time",
+            "iCalUId": "040000008200E00074C5B7101A82E008000000002EB709BE51CBD7010000000000000000100000008E275E8C88D9564C88C72D10BC3642A0",
+            "reminderMinutesBeforeStart": 15,
+            "isReminderOn": true,
+            "hasAttachments": false,
+            "subject": "Meeting 2",
+            "bodyPreview": "",
+            "importance": "normal",
+            "sensitivity": "normal",
+            "isAllDay": false,
+            "isCancelled": false,
+            "isOrganizer": true,
+            "responseRequested": true,
+            "seriesMasterId": null,
+            "showAs": "busy",
+            "type": "singleInstance",
+            "webLink": "https://outlook.office365.com/owa/?itemid=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgENAAAAZxLrDMpvDEW6cnyM8XwDdAAAAohkAAAA&exvsurl=1&path=/calendar/item",
+            "onlineMeetingUrl": null,
+            "isOnlineMeeting": false,
+            "onlineMeetingProvider": "unknown",
+            "allowNewTimeProposals": true,
+            "occurrenceId": null,
+            "isDraft": false,
+            "hideAttendees": false,
+            "responseStatus": {
+                "response": "organizer",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "body": {
+                "contentType": "html",
+                "content": ""
+            },
+            "start": {
+                "dateTime": "2021-10-28T06:00:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2021-10-28T06:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "location": {
+                "displayName": "",
+                "locationType": "default",
+                "uniqueIdType": "unknown",
+                "address": {},
+                "coordinates": {}
+            },
+            "locations": [],
+            "recurrence": null,
+            "attendees": [],
+            "organizer": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "onlineMeeting": null,
+            "calendar@odata.associationLink": "https://graph.microsoft.com/v1.0/users('8402fd97-29ea-4758-8ed4-0375850cb07c')/calendars('AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEGAAAAZxLrDMpvDEW6cnyM8XwDdAAAAnqyAAAA')/$ref",
+            "calendar@odata.navigationLink": "https://graph.microsoft.com/v1.0/users('8402fd97-29ea-4758-8ed4-0375850cb07c')/calendars('AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEGAAAAZxLrDMpvDEW6cnyM8XwDdAAAAnqyAAAA')"
+        },
+        {
+            "@odata.etag": "W/\"ZxLrDMpvDEW6cnyM8XwDdAAAAAAfew==\"",
+            "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgENAAAAZxLrDMpvDEW6cnyM8XwDdAAAAohjAAAA",
+            "createdDateTime": "2021-10-27T16:43:10.8753921Z",
+            "lastModifiedDateTime": "2021-10-27T16:45:12.6556776Z",
+            "changeKey": "ZxLrDMpvDEW6cnyM8XwDdAAAAAAfew==",
+            "categories": [],
+            "transactionId": "f88c9b37-75fe-d82d-156f-ee8889292855",
+            "originalStartTimeZone": "W. Europe Standard Time",
+            "originalEndTimeZone": "W. Europe Standard Time",
+            "iCalUId": "040000008200E00074C5B7101A82E00800000000029D47BA51CBD701000000000000000010000000156A1B09AC48BE4C96320C8B323A54D3",
+            "reminderMinutesBeforeStart": 15,
+            "isReminderOn": true,
+            "hasAttachments": false,
+            "subject": "Meeting 1",
+            "bodyPreview": "",
+            "importance": "normal",
+            "sensitivity": "normal",
+            "isAllDay": false,
+            "isCancelled": false,
+            "isOrganizer": true,
+            "responseRequested": true,
+            "seriesMasterId": null,
+            "showAs": "busy",
+            "type": "singleInstance",
+            "webLink": "https://outlook.office365.com/owa/?itemid=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgENAAAAZxLrDMpvDEW6cnyM8XwDdAAAAohjAAAA&exvsurl=1&path=/calendar/item",
+            "onlineMeetingUrl": null,
+            "isOnlineMeeting": false,
+            "onlineMeetingProvider": "unknown",
+            "allowNewTimeProposals": true,
+            "occurrenceId": null,
+            "isDraft": false,
+            "hideAttendees": false,
+            "responseStatus": {
+                "response": "organizer",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "body": {
+                "contentType": "html",
+                "content": ""
+            },
+            "start": {
+                "dateTime": "2021-10-27T17:00:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2021-10-27T17:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "location": {
+                "displayName": "",
+                "locationType": "default",
+                "uniqueIdType": "unknown",
+                "address": {},
+                "coordinates": {}
+            },
+            "locations": [],
+            "recurrence": null,
+            "attendees": [],
+            "organizer": {
+                "emailAddress": {
+                    "name": "Oracle Cloud Infrastructure",
+                    "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+                }
+            },
+            "onlineMeeting": null,
+            "calendar@odata.associationLink": "https://graph.microsoft.com/v1.0/users('8402fd97-29ea-4758-8ed4-0375850cb07c')/calendars('AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEGAAAAZxLrDMpvDEW6cnyM8XwDdAAAAnqyAAAA')/$ref",
+            "calendar@odata.navigationLink": "https://graph.microsoft.com/v1.0/users('8402fd97-29ea-4758-8ed4-0375850cb07c')/calendars('AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEGAAAAZxLrDMpvDEW6cnyM8XwDdAAAAnqyAAAA')"
+        }
+    ]
+}

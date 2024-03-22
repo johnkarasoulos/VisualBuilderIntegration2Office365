@@ -1,0 +1,42 @@
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams/$entity",
+    "id": "1718486d-ccd7-4d05-b4a4-dce030ef6667",
+    "createdDateTime": "2021-10-29T08:23:43.869Z",
+    "displayName": "OracleCloudInfrastructureLuxembourg",
+    "description": "OracleCloudInfrastructureLuxembourg",
+    "internalId": "19:zL5xpmUPHbR5HvdB1DamePAJUwmaYYzwJZk0pOdIoQE1@thread.tacv2",
+    "classification": null,
+    "specialization": "none",
+    "visibility": "public",
+    "webUrl": "https://teams.microsoft.com/l/team/19:zL5xpmUPHbR5HvdB1DamePAJUwmaYYzwJZk0pOdIoQE1%40thread.tacv2/conversations?groupId=1718486d-ccd7-4d05-b4a4-dce030ef6667&tenantId=5cc6d61a-b9df-4795-b9ea-d5f5a56f9391",
+    "isArchived": false,
+    "isMembershipLimitedToOwners": false,
+    "memberSettings": {
+        "allowCreateUpdateChannels": true,
+        "allowCreatePrivateChannels": true,
+        "allowDeleteChannels": true,
+        "allowAddRemoveApps": true,
+        "allowCreateUpdateRemoveTabs": true,
+        "allowCreateUpdateRemoveConnectors": true
+    },
+    "guestSettings": {
+        "allowCreateUpdateChannels": false,
+        "allowDeleteChannels": false
+    },
+    "messagingSettings": {
+        "allowUserEditMessages": true,
+        "allowUserDeleteMessages": true,
+        "allowOwnerDeleteMessages": true,
+        "allowTeamMentions": true,
+        "allowChannelMentions": true
+    },
+    "funSettings": {
+        "allowGiphy": true,
+        "giphyContentRating": "moderate",
+        "allowStickersAndMemes": true,
+        "allowCustomMemes": true
+    },
+    "discoverySettings": {
+        "showInTeamsSearchAndSuggestions": true
+    }
+}

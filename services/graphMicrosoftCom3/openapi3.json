@@ -1,0 +1,1130 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Graph Microsoft Com 3",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://graph.microsoft.com",
+            "description": "Graph Microsoft Com",
+            "x-vb": {
+                "authentication": {
+                    "authenticated": {
+                        "type": "oauth2_client_credentials",
+                        "clientIdCredentials": "vb_75f68af1-29f4-40a8-bced-794ca06acd96",
+                        "scope": "https://graph.microsoft.com/.default",
+                        "authUrl": "https://login.microsoftonline.com/{Directory (tenant) ID}/oauth2/v2.0/token"
+                    }
+                }
+            }
+        }
+    ],
+    "paths": {
+        "/": {
+        },
+        "/v1.0/users/{userid}/onenote/notebooks": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "summary": "Retrieve a list of notebook objects",
+                "operationId": "RetrieveListOfNotebooks",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0UsersUseridOnenoteNotebooks"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/RetrieveListOfNotebooks/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            },
+            "post": {
+                "summary": "Create a new OneNote notebook. In the request body, supply a name for the notebook.\nNotebook names must be unique. The name cannot contain more than 128 characters or contain the following characters: ?*/:<>|'\"",
+                "operationId": "createNotebook",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostV1_0UsersUseridOnenoteNotebooksRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/createNotebook/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Default response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PostV1_0UsersUseridOnenoteNotebooksResponse"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "externalValue": "./examples/createNotebook/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+               },
+                "x-vb": {
+                    "actionHint": "create"
+                }
+            }
+        },
+        "/v1.0/users/{userid}/onenote/notebooks/{notebookid}": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "notebookid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "summary": "Retrieve the properties and relationships of a notebook object.",
+                "operationId": "getNotebooksWithId",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0UsersUseridOnenoteNotebooksNotebookid"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getNotebooksWithId/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getOne"
+                }
+            }
+        },
+        "/beta/groups": {
+            "get": {
+                "summary": "get a list of all groups in the organization that have teams",
+                "operationId": "getAllGroupsWithTeams",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetBetaGroups"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getAllGroupsWithTeams/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            },
+            "post": {
+                "summary": "Create a new group as specified in the request body. ",
+                "description": "In the request body, supply a JSON representation of the group object.\n\nThe following table shows the properties that are required when you create the group. Specify other writable properties as necessary for your group.\n\nREQUEST BODY\nProperty\tType\tDescription\ndisplayName\tstring\tThe name to display in the address book for the group. Required.\nmailEnabled\tboolean\tSet to true for mail-enabled groups. Required.\nmailNickname\tstring\tThe mail alias for the group, unique in the organization. Maximum length is 64 characters. This property can contain only characters in the ASCII character set 0 - 127 except the following: @ () \\ [] \" ; : . <> , SPACE. Required.\nsecurityEnabled\tboolean\tSet to true for security-enabled groups, including Microsoft 365 groups. Required. Note: Groups created using the Microsoft Azure portal always have securityEnabled initially set to true.\n\ngroupTypes options\nUse the groupTypes property to control the type of group and its membership, as shown.\n\nGROUPTYPES OPTIONS\nType of group\tAssigned membership\tDynamic membership\nMicrosoft 365 (aka unified group)\t[\"Unified\"]\t[\"Unified\",\"DynamicMembership\"]\nDynamic\t[] (null)\t[\"DynamicMembership\"]\n\n",
+                "operationId": "postBetaGroups",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostBetaGroupsRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/postBetaGroups/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "create"
+                }
+            }
+        },
+        "/beta/groups/{groupid}": {
+            "parameters": [
+                {
+                    "name": "groupid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "summary": "Get the properties and relationships of a group object.",
+                "operationId": "getTeamGroupByGroupId",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetBetaGroupsGroupid"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getTeamGroupByGroupId/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/beta/users/{userid}/joinedTeams": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "summary": "Get the teams in Microsoft Teams that the user is a direct member of.",
+                "operationId": "getJoinedTeams",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetBetaUsersUseridJoinedTeams"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getJoinedTeams/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/beta/teams/{teamid}": {
+            "parameters": [
+                {
+                    "name": "teamid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "summary": "Retrieve the properties and relationships of the specified team.",
+                "operationId": "getBetaTeamsFromTeamId",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetBetaTeamsTeamid"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getBetaTeamsFromTeamId/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getOne"
+                }
+            }
+        },
+        "/beta/teams": {
+            "post": {
+                "summary": "createTeam",
+                "operationId": "createTeam",
+                "responses": {
+                    "default": {
+                        "description": "Default response",
+                        "content": {
+                            "application/json": {
+                                "examples": {
+                                    "vb": {
+                                        "externalValue": "./examples/createTeam/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+               },
+                "x-vb": {
+                    "actionHint": "create"
+                },
+                "requestBody": {
+                    "description": "Request for application/json",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostBetaTeamsRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "summary": "Example stored by VB User",
+                                    "externalValue": "./examples/createTeam/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "GetV1_0UsersUseridOnenoteNotebooks": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "self": {
+                                    "type": "string"
+                                },
+                                "createdDateTime": {
+                                    "type": "string"
+                                },
+                                "displayName": {
+                                    "type": "string"
+                                },
+                                "lastModifiedDateTime": {
+                                    "type": "string"
+                                },
+                                "isDefault": {
+                                    "type": "boolean"
+                                },
+                                "userRole": {
+                                    "type": "string"
+                                },
+                                "isShared": {
+                                    "type": "boolean"
+                                },
+                                "sectionsUrl": {
+                                    "type": "string"
+                                },
+                                "sectionGroupsUrl": {
+                                    "type": "string"
+                                },
+                                "createdBy": {
+                                    "type": "object",
+                                    "properties": {
+                                        "user": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "string"
+                                                },
+                                                "displayName": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "lastModifiedBy": {
+                                    "type": "object",
+                                    "properties": {
+                                        "user": {
+                                            "type": "object",
+                                            "properties": {
+                                                "id": {
+                                                    "type": "string"
+                                                },
+                                                "displayName": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "links": {
+                                    "type": "object",
+                                    "properties": {
+                                        "oneNoteClientUrl": {
+                                            "type": "object",
+                                            "properties": {
+                                                "href": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        },
+                                        "oneNoteWebUrl": {
+                                            "type": "object",
+                                            "properties": {
+                                                "href": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PostV1_0UsersUseridOnenoteNotebooksRequest": {
+                "type": "object",
+                "properties": {
+                    "displayName": {
+                        "type": "string"
+                    }
+                }
+            },
+            "GetV1_0UsersUseridOnenoteNotebooksNotebookid": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "self": {
+                        "type": "string"
+                    },
+                    "createdDateTime": {
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "type": "string"
+                    },
+                    "lastModifiedDateTime": {
+                        "type": "string"
+                    },
+                    "isDefault": {
+                        "type": "boolean"
+                    },
+                    "userRole": {
+                        "type": "string"
+                    },
+                    "isShared": {
+                        "type": "boolean"
+                    },
+                    "sectionsUrl": {
+                        "type": "string"
+                    },
+                    "sectionGroupsUrl": {
+                        "type": "string"
+                    },
+                    "createdBy": {
+                        "type": "object",
+                        "properties": {
+                            "user": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "displayName": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "lastModifiedBy": {
+                        "type": "object",
+                        "properties": {
+                            "user": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "displayName": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "links": {
+                        "type": "object",
+                        "properties": {
+                            "oneNoteClientUrl": {
+                                "type": "object",
+                                "properties": {
+                                    "href": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "oneNoteWebUrl": {
+                                "type": "object",
+                                "properties": {
+                                    "href": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetBetaGroups": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "deletedDateTime": {
+                                    "nullable": true
+                                },
+                                "classification": {
+                                    "nullable": true
+                                },
+                                "createdDateTime": {
+                                    "type": "string"
+                                },
+                                "createdByAppId": {
+                                    "type": "string"
+                                },
+                                "organizationId": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "displayName": {
+                                    "type": "string"
+                                },
+                                "expirationDateTime": {
+                                    "nullable": true
+                                },
+                                "groupTypes": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "infoCatalogs": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "isAssignableToRole": {
+                                    "nullable": true
+                                },
+                                "isManagementRestricted": {
+                                    "nullable": true
+                                },
+                                "mail": {
+                                    "type": "string"
+                                },
+                                "mailEnabled": {
+                                    "type": "boolean"
+                                },
+                                "mailNickname": {
+                                    "type": "string"
+                                },
+                                "membershipRule": {
+                                    "nullable": true
+                                },
+                                "membershipRuleProcessingState": {
+                                    "nullable": true
+                                },
+                                "onPremisesDomainName": {
+                                    "nullable": true
+                                },
+                                "onPremisesLastSyncDateTime": {
+                                    "nullable": true
+                                },
+                                "onPremisesNetBiosName": {
+                                    "nullable": true
+                                },
+                                "onPremisesSamAccountName": {
+                                    "nullable": true
+                                },
+                                "onPremisesSecurityIdentifier": {
+                                    "nullable": true
+                                },
+                                "onPremisesSyncEnabled": {
+                                    "nullable": true
+                                },
+                                "preferredDataLocation": {
+                                    "nullable": true
+                                },
+                                "preferredLanguage": {
+                                    "nullable": true
+                                },
+                                "proxyAddresses": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "renewedDateTime": {
+                                    "type": "string"
+                                },
+                                "resourceBehaviorOptions": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "resourceProvisioningOptions": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "securityEnabled": {
+                                    "type": "boolean"
+                                },
+                                "securityIdentifier": {
+                                    "type": "string"
+                                },
+                                "theme": {
+                                    "nullable": true
+                                },
+                                "visibility": {
+                                    "type": "string"
+                                },
+                                "writebackConfiguration": {
+                                    "type": "object",
+                                    "properties": {
+                                        "isEnabled": {
+                                            "nullable": true
+                                        },
+                                        "onPremisesGroupType": {
+                                            "nullable": true
+                                        }
+                                    }
+                                },
+                                "onPremisesProvisioningErrors": {
+                                    "type": "array",
+                                    "items": {}
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PostBetaGroupsRequest": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "type": "string"
+                    },
+                    "groupTypes": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "mailEnabled": {
+                        "type": "boolean"
+                    },
+                    "mailNickname": {
+                        "type": "string"
+                    },
+                    "securityEnabled": {
+                        "type": "boolean"
+                    }
+                }
+            },
+            "GetBetaGroupsGroupid": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "deletedDateTime": {
+                        "nullable": true
+                    },
+                    "classification": {
+                        "nullable": true
+                    },
+                    "createdDateTime": {
+                        "type": "string"
+                    },
+                    "createdByAppId": {
+                        "type": "string"
+                    },
+                    "organizationId": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "type": "string"
+                    },
+                    "expirationDateTime": {
+                        "nullable": true
+                    },
+                    "groupTypes": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "infoCatalogs": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "isAssignableToRole": {
+                        "nullable": true
+                    },
+                    "isManagementRestricted": {
+                        "nullable": true
+                    },
+                    "mail": {
+                        "type": "string"
+                    },
+                    "mailEnabled": {
+                        "type": "boolean"
+                    },
+                    "mailNickname": {
+                        "type": "string"
+                    },
+                    "membershipRule": {
+                        "nullable": true
+                    },
+                    "membershipRuleProcessingState": {
+                        "nullable": true
+                    },
+                    "onPremisesDomainName": {
+                        "nullable": true
+                    },
+                    "onPremisesLastSyncDateTime": {
+                        "nullable": true
+                    },
+                    "onPremisesNetBiosName": {
+                        "nullable": true
+                    },
+                    "onPremisesSamAccountName": {
+                        "nullable": true
+                    },
+                    "onPremisesSecurityIdentifier": {
+                        "nullable": true
+                    },
+                    "onPremisesSyncEnabled": {
+                        "nullable": true
+                    },
+                    "preferredDataLocation": {
+                        "nullable": true
+                    },
+                    "preferredLanguage": {
+                        "nullable": true
+                    },
+                    "proxyAddresses": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "renewedDateTime": {
+                        "type": "string"
+                    },
+                    "resourceBehaviorOptions": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "resourceProvisioningOptions": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    },
+                    "securityEnabled": {
+                        "type": "boolean"
+                    },
+                    "securityIdentifier": {
+                        "type": "string"
+                    },
+                    "theme": {
+                        "nullable": true
+                    },
+                    "visibility": {
+                        "type": "string"
+                    },
+                    "writebackConfiguration": {
+                        "type": "object",
+                        "properties": {
+                            "isEnabled": {
+                                "nullable": true
+                            },
+                            "onPremisesGroupType": {
+                                "nullable": true
+                            }
+                        }
+                    },
+                    "onPremisesProvisioningErrors": {
+                        "type": "array",
+                        "items": {}
+                    }
+                }
+            },
+            "GetBetaUsersUseridJoinedTeams": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "@odata.count": {
+                        "type": "integer"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "createdDateTime": {
+                                    "nullable": true
+                                },
+                                "displayName": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "internalId": {
+                                    "nullable": true
+                                },
+                                "classification": {
+                                    "nullable": true
+                                },
+                                "specialization": {
+                                    "nullable": true
+                                },
+                                "visibility": {
+                                    "nullable": true
+                                },
+                                "webUrl": {
+                                    "nullable": true
+                                },
+                                "isArchived": {
+                                    "type": "boolean"
+                                },
+                                "isMembershipLimitedToOwners": {
+                                    "nullable": true
+                                },
+                                "memberSettings": {
+                                    "nullable": true
+                                },
+                                "guestSettings": {
+                                    "nullable": true
+                                },
+                                "messagingSettings": {
+                                    "nullable": true
+                                },
+                                "funSettings": {
+                                    "nullable": true
+                                },
+                                "discoverySettings": {
+                                    "nullable": true
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetBetaTeamsTeamid": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "createdDateTime": {
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "internalId": {
+                        "type": "string"
+                    },
+                    "classification": {
+                        "nullable": true
+                    },
+                    "specialization": {
+                        "type": "string"
+                    },
+                    "visibility": {
+                        "type": "string"
+                    },
+                    "webUrl": {
+                        "type": "string"
+                    },
+                    "isArchived": {
+                        "type": "boolean"
+                    },
+                    "isMembershipLimitedToOwners": {
+                        "type": "boolean"
+                    },
+                    "memberSettings": {
+                        "type": "object",
+                        "properties": {
+                            "allowCreateUpdateChannels": {
+                                "type": "boolean"
+                            },
+                            "allowCreatePrivateChannels": {
+                                "type": "boolean"
+                            },
+                            "allowDeleteChannels": {
+                                "type": "boolean"
+                            },
+                            "allowAddRemoveApps": {
+                                "type": "boolean"
+                            },
+                            "allowCreateUpdateRemoveTabs": {
+                                "type": "boolean"
+                            },
+                            "allowCreateUpdateRemoveConnectors": {
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    "guestSettings": {
+                        "type": "object",
+                        "properties": {
+                            "allowCreateUpdateChannels": {
+                                "type": "boolean"
+                            },
+                            "allowDeleteChannels": {
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    "messagingSettings": {
+                        "type": "object",
+                        "properties": {
+                            "allowUserEditMessages": {
+                                "type": "boolean"
+                            },
+                            "allowUserDeleteMessages": {
+                                "type": "boolean"
+                            },
+                            "allowOwnerDeleteMessages": {
+                                "type": "boolean"
+                            },
+                            "allowTeamMentions": {
+                                "type": "boolean"
+                            },
+                            "allowChannelMentions": {
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    "funSettings": {
+                        "type": "object",
+                        "properties": {
+                            "allowGiphy": {
+                                "type": "boolean"
+                            },
+                            "giphyContentRating": {
+                                "type": "string"
+                            },
+                            "allowStickersAndMemes": {
+                                "type": "boolean"
+                            },
+                            "allowCustomMemes": {
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    "discoverySettings": {
+                        "type": "object",
+                        "properties": {
+                            "showInTeamsSearchAndSuggestions": {
+                                "type": "boolean"
+                            }
+                        }
+                    }
+                }
+            },
+            "PostBetaTeamsRequest": {
+                "type": "object",
+                "properties": {
+                    "template@odata.bind": {
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "members": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "@odata.type": {
+                                    "type": "string"
+                                },
+                                "roles": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "user@odata.bind": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "PostV1_0UsersUseridOnenoteNotebooksResponse": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "self": {
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "type": "string"
+                    },
+                    "userRole": {
+                        "type": "string"
+                    },
+                    "isShared": {
+                        "type": "boolean"
+                    },
+                    "sectionsUrl": {
+                        "type": "string"
+                    },
+                    "sectionGroupsUrl": {
+                        "type": "string"
+                    },
+                    "links": {
+                        "type": "object",
+                        "properties": {
+                            "oneNoteClientUrl": {
+                                "type": "object",
+                                "properties": {
+                                    "href": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "oneNoteWebUrl": {
+                                "type": "object",
+                                "properties": {
+                                    "href": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams",
+    "@odata.count": 2,
+    "value": [
+        {
+            "id": "1718486d-ccd7-4d05-b4a4-dce030ef6667",
+            "createdDateTime": null,
+            "displayName": "OracleCloudInfrastructureLuxembourg",
+            "description": "OracleCloudInfrastructureLuxembourg",
+            "internalId": null,
+            "classification": null,
+            "specialization": null,
+            "visibility": null,
+            "webUrl": null,
+            "isArchived": false,
+            "isMembershipLimitedToOwners": null,
+            "memberSettings": null,
+            "guestSettings": null,
+            "messagingSettings": null,
+            "funSettings": null,
+            "discoverySettings": null
+        },
+        {
+            "id": "9eeb0e1f-728d-4662-964b-be8f84c52c29",
+            "createdDateTime": null,
+            "displayName": "VisualBuilderCS Team",
+            "description": "Visual Builder Cloud ServiceTeam’s Description",
+            "internalId": null,
+            "classification": null,
+            "specialization": null,
+            "visibility": null,
+            "webUrl": null,
+            "isArchived": false,
+            "isMembershipLimitedToOwners": null,
+            "memberSettings": null,
+            "guestSettings": null,
+            "messagingSettings": null,
+            "funSettings": null,
+            "discoverySettings": null
+        }
+    ]
+}

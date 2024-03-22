@@ -1,0 +1,8 @@
+{
+  "description": "GroupCreatedFromVBCS_orasebelux",
+  "displayName": "VBCSGroup",
+  "groupTypes": ["Unified"],
+  "mailEnabled": true,
+  "mailNickname": "VisualBuilder_orasebelux",
+  "securityEnabled": false
+}

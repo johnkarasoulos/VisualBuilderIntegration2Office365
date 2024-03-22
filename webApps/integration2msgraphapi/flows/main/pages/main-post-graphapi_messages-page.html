@@ -1,0 +1,90 @@
+<div class="oj-flex">
+  <oj-navigation-list class="oj-flex-item oj-sm-12 oj-navigationlist-item-dividers oj-md-12" edge="top">
+    <ul>
+      <li id="li--1209617598-1">
+        <a href="#" on-click="[[$listeners.aClick]]">Go to main page</a>
+      </li>
+      <li id="li--1209617598-2">
+        <a href="#" on-click="[[$listeners.aClick2]]">Got to notebooks</a>
+      </li>
+      <li id="li--1209617598-3">
+        <a href="#" on-click="[[$listeners.aClick3]]">Go to teams</a>
+      </li>
+    </ul>
+  </oj-navigation-list>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-6"></div>
+  <oj-select-one label-hint="Select Active Directory User" options="[[$page.variables.getListSDP]]"
+    options-keys.value="id" options-keys.label="displayName" value="{{ $variables.SearchUserId }}"
+    class="oj-form-control-full-width"></oj-select-one>
+</div>
+<div class="oj-flex">
+  <oj-input-text label-hint="Active Directory User ID" class="oj-flex-item oj-form-control-full-width"
+    clear-icon="always" value="{{ $variables.SearchUserId }}"></oj-input-text>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-3"></div>
+  <div class="oj-divider-top oj-flex-item oj-sm-12 oj-md-6"></div>
+</div>
+<div class="oj-flex">
+  <oj-list-view class="oj-flex-item oj-sm-12 oj-md-12 oj-listview-card-layout oj-listview-item-layout"
+    data="[[$page.variables.getMessages4UseridListSDP]]" selection-mode="single" display="card"
+    on-first-selected-item-changed="[[$listeners.ojListViewFirstSelectedItem]]">
+    <template slot="itemTemplate">
+      <oj-list-item-layout>
+        <div>
+          <oj-bind-text value="[[ $current.data.subject ]]"></oj-bind-text>
+        </div>
+        <a href="#" slot="secondary" target="_blank">
+          <oj-bind-text value="[[ $current.data.from.emailAddress.address ]]"></oj-bind-text>
+        </a>
+      </oj-list-item-layout>
+    </template>
+  </oj-list-view>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-4"></div>
+  <div class="oj-divider-top oj-flex-item oj-sm-12 oj-md-6"></div>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-3"></div>
+  <div class="oj-divider-top oj-flex-item oj-sm-12 oj-md-6"></div>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-2">
+    <oj-button class="" display="icons" on-oj-action="[[$listeners.ojButtonOjAction]]">Create a draft email</oj-button>
+  </div>
+</div>
+<div class="oj-flex">
+  <div class="oj-divider-top oj-flex-item oj-sm-12 oj-md-6"></div>
+</div>
+<div class="oj-flex">
+  <oj-table scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12"
+    data="[[$page.variables.getLisofEvents4UserIdListSDP]]"
+    columns='[  {    "headerText": "Event Organizer",    "field": "organizer",    "template": "nameCellTemplate1"  },  {    "headerText": "Event Subject",    "field": "subject"  },  {    "headerText": "Event Type",    "field": "type"  },  {    "headerText": "Event End dateTime",    "field": "end",    "template": "dateTimeCellTemplate4"  },  {    "headerText": "Link to the Event",    "field": "webLink",    "sortable": "disabled",    "template": "multiFieldCellTemplate5"  }]'
+    display="grid" horizontal-grid-visible="enabled" vertical-grid-visible="enabled" selection-mode.row="single">
+    <template slot="multiFieldCellTemplate5">
+      <a href="#" target="_blank">
+        <oj-bind-text value="[[ $current.row.webLink ]]"></oj-bind-text>
+      </a>
+    </template>
+    <template slot="dateTimeCellTemplate4">
+      <oj-bind-text value="[[ $current.data.dateTime ]]"></oj-bind-text>
+    </template>
+    <template slot="nameCellTemplate1">
+      <oj-bind-text value="[[ $current.data.emailAddress.name ]]"></oj-bind-text>
+    </template>
+  </oj-table>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-3"></div>
+  <div class="oj-divider-top oj-flex-item oj-sm-12 oj-md-6"></div>
+</div>
+<div class="oj-flex">
+  <oj-table scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12"
+    data="[[$page.variables.getRegisteredApplications2ociLuxembourg92ADListSDP]]"
+    columns='[{"headerText":"Application Name","field":"displayName"},{"headerText":"Client Id","field":"appId"},{"headerText":"Publisher Domain","field":"publisherDomain"},{"headerText":"Audience","field":"signInAudience"}]'
+    horizontal-grid-visible="disabled" vertical-grid-visible="enabled" selection-mode.row="single">
+  </oj-table>
+</div>

@@ -1,0 +1,46 @@
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('8402fd97-29ea-4758-8ed4-0375850cb07c')/messages/$entity",
+    "@odata.etag": "W/\"CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJH/\"",
+    "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEPAAAAZxLrDMpvDEW6cnyM8XwDdAAAAQEa-gAAAA==",
+    "createdDateTime": "2021-10-29T13:47:08Z",
+    "lastModifiedDateTime": "2021-10-29T13:47:08Z",
+    "changeKey": "CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAJH/",
+    "categories": [],
+    "receivedDateTime": "2021-10-29T13:47:08Z",
+    "sentDateTime": "2021-10-29T13:47:08Z",
+    "hasAttachments": false,
+    "internetMessageId": "<DB6P194MB003808012F0A00F5BE122CFCE4879@DB6P194MB0038.EURP194.PROD.OUTLOOK.COM>",
+    "subject": "Welcome to Oracle Visual Builder Cloud Service",
+    "bodyPreview": "The BEST low code development tool ever!",
+    "importance": "high",
+    "parentFolderId": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAuAAADcJQXcQCEm0mez5SkfREBvAEAZxLrDMpvDEW6cnyM8XwDdAAAAgEPAAAA",
+    "conversationId": "AAQkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAQACT1xRfOG0xCvTItHz1_iV8=",
+    "conversationIndex": "AQHXzMt3JPXFF84bTEK9Mi0fPX6JXw==",
+    "isDeliveryReceiptRequested": false,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": true,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEPAAAAZxLrDMpvDEW6cnyM8XwDdAAAAQEa%2FgAAAA%3D%3D&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "unsubscribeData": [],
+    "unsubscribeEnabled": false,
+    "body": {
+        "contentType": "html",
+        "content": "<html><head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body>The <b>BEST</b> low code development tool ever! </body></html>"
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "Oracle Cloud Infrastructure",
+                "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+            }
+        }
+    ],
+    "ccRecipients": [],
+    "bccRecipients": [],
+    "replyTo": [],
+    "mentionsPreview": null,
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}

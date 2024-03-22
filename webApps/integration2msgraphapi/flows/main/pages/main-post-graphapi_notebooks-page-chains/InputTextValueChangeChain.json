@@ -1,0 +1,35 @@
+{
+  "description": "",
+  "root": "callRestGetNotebooksWithId",
+  "actions": {
+    "callRestGetNotebooksWithId": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "graphMicrosoftCom3/getNotebooksWithId",
+        "uriParams": {
+          "userid": "{{ $page.variables.SearchId }}",
+          "notebookid": "{{ $page.variables.notebookId }}"
+        }
+      },
+      "outcomes": {
+        "success": "assignVariablesMyNotebookFromId"
+      }
+    },
+    "assignVariablesMyNotebookFromId": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.MyNotebookFromId": {
+          "source": "{{ $chain.results.callRestGetNotebooksWithId.body }}",
+          "auto": "always"
+        }
+      }
+    }
+  },
+  "variables": {
+    "value": {
+      "required": true,
+      "type": "any",
+      "input": "fromCaller"
+    }
+  }
+}

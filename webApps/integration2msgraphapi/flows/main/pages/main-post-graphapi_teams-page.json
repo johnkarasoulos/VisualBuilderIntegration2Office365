@@ -1,0 +1,224 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+    "getJoinedTeamsListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom3/getJoinedTeams",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getJoinedTeamsResponse",
+        "uriParameters": {
+          "userid": "{{ $variables.SearchId }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "displayName"
+          ]
+        }
+      }
+    },
+    "getListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/get",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "displayName"
+          ]
+        }
+      }
+    },
+    "MyTeam": {
+      "type": "getBetaTeamsFromTeamId"
+    },
+    "notebookId": {
+      "type": "string"
+    },
+    "SearchId": {
+      "type": "string"
+    },
+    "teamID": {
+      "type": "string"
+    },
+    "TeamsThatIBelong": {
+      "type": "getJoinedTeams"
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.getBetaTeamsFromTeamId": {
+      "endpoint": "getBetaTeamsFromTeamId",
+      "service": "graphMicrosoftCom3",
+      "path": "response"
+    },
+    "@decorators.getJoinedTeams": {
+      "endpoint": "getJoinedTeams",
+      "service": "graphMicrosoftCom3",
+      "path": "response"
+    },
+    "@decorators.getJoinedTeamsResponse": {
+      "endpoint": "getJoinedTeams",
+      "service": "graphMicrosoftCom3",
+      "path": "response"
+    },
+    "@decorators.getResponse": {
+      "endpoint": "get",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "getBetaTeamsFromTeamId": {
+      "_odata.context": "string",
+      "classification": "any",
+      "createdDateTime": "string",
+      "description": "string",
+      "discoverySettings": {
+        "showInTeamsSearchAndSuggestions": "boolean"
+      },
+      "displayName": "string",
+      "funSettings": {
+        "allowCustomMemes": "boolean",
+        "allowGiphy": "boolean",
+        "allowStickersAndMemes": "boolean",
+        "giphyContentRating": "string"
+      },
+      "guestSettings": {
+        "allowCreateUpdateChannels": "boolean",
+        "allowDeleteChannels": "boolean"
+      },
+      "id": "string",
+      "internalId": "string",
+      "isArchived": "boolean",
+      "isMembershipLimitedToOwners": "boolean",
+      "memberSettings": {
+        "allowAddRemoveApps": "boolean",
+        "allowCreatePrivateChannels": "boolean",
+        "allowCreateUpdateChannels": "boolean",
+        "allowCreateUpdateRemoveConnectors": "boolean",
+        "allowCreateUpdateRemoveTabs": "boolean",
+        "allowDeleteChannels": "boolean"
+      },
+      "messagingSettings": {
+        "allowChannelMentions": "boolean",
+        "allowOwnerDeleteMessages": "boolean",
+        "allowTeamMentions": "boolean",
+        "allowUserDeleteMessages": "boolean",
+        "allowUserEditMessages": "boolean"
+      },
+      "specialization": "string",
+      "visibility": "string",
+      "webUrl": "string"
+    },
+    "getJoinedTeams": {
+      "_odata.context": "string",
+      "_odata.count": "number",
+      "value": [
+        {
+          "classification": "any",
+          "createdDateTime": "any",
+          "description": "string",
+          "discoverySettings": "any",
+          "displayName": "string",
+          "funSettings": "any",
+          "guestSettings": "any",
+          "id": "string",
+          "internalId": "any",
+          "isArchived": "boolean",
+          "isMembershipLimitedToOwners": "any",
+          "memberSettings": "any",
+          "messagingSettings": "any",
+          "specialization": "any",
+          "visibility": "any",
+          "webUrl": "any"
+        }
+      ]
+    },
+    "getJoinedTeamsResponse": {
+      "value": [
+        {
+          "displayName": "string",
+          "id": "string"
+        }
+      ]
+    },
+    "getResponse": {
+      "value": [
+        {
+          "displayName": "string",
+          "id": "string"
+        }
+      ]
+    }
+
+  },
+  "eventListeners": {
+    "aClick": {
+      "chains": [
+        {
+          "chainId": "HyperlinkClickChain"
+        }
+      ]
+    },
+    "aClick2": {
+      "chains": [
+        {
+          "chainId": "HyperlinkClickChain1"
+        }
+      ]
+    },
+    "aClick3": {
+      "chains": [
+        {
+          "chainId": "HyperlinkClickChain2"
+        }
+      ]
+    },
+    "ojInputTextValue": {
+      "chains": [
+        {
+          "chainId": "InputTextValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-label": {
+        "path": "ojs/ojlabel"
+      },
+      "oj-menu": {
+        "path": "ojs/ojmenu"
+      },
+      "oj-navigation-list": {
+        "path": "ojs/ojnavigationlist"
+      },
+      "oj-option": {
+        "path": "ojs/ojoption"
+      },
+      "oj-select-one": {
+        "path": "ojs/ojselectcombobox"
+      }
+
+    },
+    "modules": {
+      "ojValidationBase": {
+        "path": "ojs/ojvalidation-base"
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "description": "",
+  "root": "assignVariablesSearchUserId",
+  "actions": {
+    "assignVariablesSearchUserId": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.SearchUserId": {
+          "source": "{{ $page.variables.SearchUserId }}"
+        },
+        "$page.variables.myMessageId": {
+          "source": "{{ $variables.rowData.id }}"
+        }
+      },
+      "outcomes": {
+        "success": "callRestGetEmail"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestGetEmail.message ]]",
+        "type": "error",
+        "displayMode": "persist",
+        "message": "[[ $chain.results.callRestGetEmail.status ]]"
+      }
+    },
+    "callRestGetEmail": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "graphMicrosoftCom/GetEmail",
+        "uriParams": {
+          "msgid": "{{ $page.variables.myMessageId }}",
+          "userid": "{{ $page.variables.SearchUserId }}"
+        },
+        "responseType": "GetEmail4Userid"
+      },
+      "outcomes": {
+        "failure": "fireNotification",
+        "success": "navigateToMainPostGraphapiEmail"
+      }
+    },
+    "navigateToMainPostGraphapiEmail": {
+      "module": "vb/action/builtin/navigateAction",
+      "parameters": {
+        "page": "main-post-graphapi-email",
+        "params": {
+          "UserMsgID": "{{ $page.variables.myMessageId }}",
+          "ADUserID": "{{ $page.variables.SearchUserId }}",
+          "Message": "{{ $chain.results.callRestGetEmail.body }}",
+          "myEmail": "{{ $chain.results.callRestGetEmail.body }}"
+        }
+      },
+      "outcomes": {
+        "success": "navigateBack"
+      }
+    },
+    "navigateBack": {
+      "module": "vb/action/builtin/navigateBackAction"
+    }
+  },
+  "variables": {
+    "rowKey": {
+      "required": true,
+      "type": "any",
+      "input": "fromCaller"
+    },
+    "rowData": {
+      "required": true,
+      "type": "any",
+      "input": "fromCaller"
+    }
+  }
+}

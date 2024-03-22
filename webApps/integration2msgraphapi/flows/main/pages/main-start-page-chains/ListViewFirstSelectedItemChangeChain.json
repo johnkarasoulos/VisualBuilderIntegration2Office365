@@ -1,0 +1,31 @@
+{
+  "description": "",
+  "root": "assignVariablesUserId",
+  "actions": {
+    "assignVariablesUserId": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.UserId": {
+          "source": "{{ $variables.rowKey.value[0].id }}",
+          "auto": "always"
+        }
+      }
+    }
+  },
+  "variables": {
+    "id": {
+      "type": "getResponse"
+    },
+    "rowKey": {
+      "type": "getResponse",
+      "required": true,
+      "input": "fromCaller"
+    },
+    "rowData": {
+      "type": "getResponse",
+      "required": true,
+      "input": "fromCaller"
+    }
+  },
+  "returnType": "ADUserId"
+}

@@ -1,0 +1,57 @@
+{
+    "fields": [
+        {
+            "displayLabel": "Id",
+            "key": true,
+            "name": "id",
+            "oid": "6e513b33-f782-47d2-bc74-ec8339e92621",
+            "required": true,
+            "type": "number",
+            "unique": true
+        },
+        {
+            "displayLabel": "Created",
+            "name": "creationDate",
+            "oid": "781ee0fd-0c18-41e6-848a-f9abdb66f5cc",
+            "type": "datetime",
+            "historyType": "timeCreated"
+        },
+        {
+            "displayLabel": "Last Updated",
+            "name": "lastUpdateDate",
+            "oid": "cb8cf13f-6d0d-4d15-b265-c632c0375769",
+            "type": "datetime",
+            "historyType": "timeUpdated"
+        },
+        {
+            "displayLabel": "Created By",
+            "name": "createdBy",
+            "oid": "e99c7929-8522-4754-ae36-479291ea93e4",
+            "type": "string",
+            "historyType": "createdBy"
+        },
+        {
+            "displayLabel": "Last Updated By",
+            "name": "lastUpdatedBy",
+            "oid": "7e8ca83d-4e51-4b0e-a290-c30d5a433d9b",
+            "type": "string",
+            "historyType": "updatedBy"
+        },
+{
+            "displayLabel": "Version Number",
+            "name": "abcsChangeNumber",
+            "oid": "b7ab2892-433d-4c2a-8ec8-e41b1a097520",
+            "type": "number",
+            "historyType": "versionNumber"
+        },
+        {
+            "type": "string",
+            "name": "msgId",
+            "oid": "f42e5fc0-f83d-49cb-b412-0a71ce96cfdd",
+            "displayLabel": "msgId"
+        }
+    ],
+    "name": "ADMsgList",
+    "oid": "f9e36447-b211-4edd-92e3-ab530aa4b58b",
+    "displayLabel": "ADMsgList"
+}

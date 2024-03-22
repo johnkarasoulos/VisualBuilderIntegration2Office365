@@ -1,0 +1,617 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+    "ActiveDirectoryListOfAplications": {
+      "type": "getRegisteredApplications2ociLuxembourg92AD"
+    },
+    "getLisofEvents4UserIdListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/getLisofEvents4UserId",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getLisofEvents4UserIdResponse",
+        "uriParameters": {
+          "userid": "{{ $variables.SearchUserId }}"
+        }
+      }
+    },
+    "getListOfCalenders4UseridListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/getListOfCalenders4Userid",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getListOfCalenders4UseridResponse",
+        "uriParameters": {
+          "userid": "{{ $variables.SearchUserId }}"
+        }
+      }
+    },
+    "getListOfCalenders4UseridListSDP2": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/getListOfCalenders4Userid",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getListOfCalenders4UseridResponse2",
+        "uriParameters": {
+          "userid": "{{ $variables.SearchUserId }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "name"
+          ]
+        }
+      }
+    },
+    "getListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/get",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "displayName"
+          ]
+        }
+      }
+    },
+    "getMessages4UseridListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/getMessages4Userid",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getMessages4UseridResponse",
+        "uriParameters": {
+          "userid": "{{ $variables.SearchUserId }}"
+        }
+      }
+    },
+    "getRegisteredApplications2ociLuxembourg92ADListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/getRegisteredApplications2ociLuxembourg92AD",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getRegisteredApplications2ociLuxembourg92ADResponse"
+      }
+    },
+    "ListOfMessages": {
+      "type": "getMessages4Userid"
+    },
+    "MyCalendar": {
+      "type": "getListOfCalenders4Userid"
+    },
+    "MyListOfEvents": {
+      "type": "getLisofEvents4UserId"
+    },
+    "myMessageId": {
+      "type": "string"
+    },
+    "SearchUserId": {
+      "type": "string"
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.GetEmail4Userid": {
+      "endpoint": "GetEmail",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getLisofEvents4UserId": {
+      "endpoint": "getLisofEvents4UserId",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getLisofEvents4UserIdResponse": {
+      "endpoint": "getLisofEvents4UserId",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getListOfCalenders4Userid": {
+      "endpoint": "getListOfCalenders4Userid",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getListOfCalenders4UseridResponse": {
+      "endpoint": "getListOfCalenders4Userid",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getListOfCalenders4UseridResponse2": {
+      "endpoint": "getListOfCalenders4Userid",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getMessages4Userid": {
+      "endpoint": "getMessages4Userid",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getMessages4UseridResponse": {
+      "endpoint": "getMessages4Userid",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getRegisteredApplications2ociLuxembourg92AD": {
+      "endpoint": "getRegisteredApplications2ociLuxembourg92AD",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getRegisteredApplications2ociLuxembourg92ADResponse": {
+      "endpoint": "getRegisteredApplications2ociLuxembourg92AD",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.getResponse": {
+      "endpoint": "get",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "GetEmail4Userid": {
+      "_odata.context": "string",
+      "_odata.etag": "string",
+      "bccRecipients": "any[]",
+      "body": {
+        "content": "string",
+        "contentType": "string"
+      },
+      "bodyPreview": "string",
+      "categories": "any[]",
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "address": "string",
+            "name": "string"
+          }
+        }
+      ],
+      "changeKey": "string",
+      "conversationId": "string",
+      "conversationIndex": "string",
+      "createdDateTime": "string",
+      "flag": {
+        "flagStatus": "string"
+      },
+      "from": {
+        "emailAddress": {
+          "address": "string",
+          "name": "string"
+        }
+      },
+      "hasAttachments": "boolean",
+      "id": "string",
+      "importance": "string",
+      "inferenceClassification": "string",
+      "internetMessageId": "string",
+      "isDeliveryReceiptRequested": "any",
+      "isDraft": "boolean",
+      "isRead": "boolean",
+      "isReadReceiptRequested": "boolean",
+      "lastModifiedDateTime": "string",
+      "parentFolderId": "string",
+      "receivedDateTime": "string",
+      "replyTo": "any[]",
+      "sender": {
+        "emailAddress": {
+          "address": "string",
+          "name": "string"
+        }
+      },
+      "sentDateTime": "string",
+      "subject": "string",
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "address": "string",
+            "name": "string"
+          }
+        }
+      ],
+      "webLink": "string"
+    },
+    "getLisofEvents4UserId": {
+      "_odata.context": "string",
+      "value": [
+        {
+          "_odata.etag": "string",
+          "allowNewTimeProposals": "boolean",
+          "attendees": "any[]",
+          "body": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "bodyPreview": "string",
+          "calendar_odata.associationLink": "string",
+          "calendar_odata.navigationLink": "string",
+          "categories": "any[]",
+          "changeKey": "string",
+          "createdDateTime": "string",
+          "end": {
+            "dateTime": "string",
+            "timeZone": "string"
+          },
+          "hasAttachments": "boolean",
+          "hideAttendees": "boolean",
+          "iCalUId": "string",
+          "id": "string",
+          "importance": "string",
+          "isAllDay": "boolean",
+          "isCancelled": "boolean",
+          "isDraft": "boolean",
+          "isOnlineMeeting": "boolean",
+          "isOrganizer": "boolean",
+          "isReminderOn": "boolean",
+          "lastModifiedDateTime": "string",
+          "location": {
+            "address": "object",
+            "coordinates": "object",
+            "displayName": "string",
+            "locationType": "string",
+            "uniqueIdType": "string"
+          },
+          "locations": "any[]",
+          "occurrenceId": "any",
+          "onlineMeeting": "any",
+          "onlineMeetingProvider": "string",
+          "onlineMeetingUrl": "any",
+          "organizer": {
+            "emailAddress": {
+              "address": "string",
+              "name": "string"
+            }
+          },
+          "originalEndTimeZone": "string",
+          "originalStartTimeZone": "string",
+          "recurrence": "any",
+          "reminderMinutesBeforeStart": "number",
+          "responseRequested": "boolean",
+          "responseStatus": {
+            "response": "string",
+            "time": "string"
+          },
+          "sensitivity": "string",
+          "seriesMasterId": "any",
+          "showAs": "string",
+          "start": {
+            "dateTime": "string",
+            "timeZone": "string"
+          },
+          "subject": "string",
+          "transactionId": "string",
+          "type": "string",
+          "webLink": "string"
+        }
+      ]
+    },
+    "getLisofEvents4UserIdResponse": {
+      "value": [
+        {
+          "end": {
+            "dateTime": "string"
+          },
+          "id": "string",
+          "organizer": {
+            "emailAddress": {
+              "name": "string"
+            }
+          },
+          "subject": "string",
+          "type": "string",
+          "webLink": "string"
+        }
+      ]
+    },
+    "getListOfCalenders4Userid": {
+      "_odata.context": "string",
+      "value": [
+        {
+          "allowedOnlineMeetingProviders": "string[]",
+          "canEdit": "boolean",
+          "canShare": "boolean",
+          "canViewPrivateItems": "boolean",
+          "changeKey": "string",
+          "color": "string",
+          "defaultOnlineMeetingProvider": "string",
+          "hexColor": "string",
+          "id": "string",
+          "isDefaultCalendar": "boolean",
+          "isRemovable": "boolean",
+          "isTallyingResponses": "boolean",
+          "name": "string",
+          "owner": {
+            "address": "string",
+            "name": "string"
+          }
+        }
+      ]
+    },
+    "getListOfCalenders4UseridResponse": {
+      "value": [
+        {
+          "id": "string",
+          "name": "string",
+          "owner": {
+            "name": "string"
+          }
+        }
+      ]
+    },
+    "getListOfCalenders4UseridResponse2": {
+      "value": [
+        {
+          "id": "string",
+          "name": "string"
+        }
+      ]
+    },
+    "getMessages4Userid": {
+      "_odata.context": "string",
+      "_odata.nextLink": "string",
+      "value": [
+        {
+          "_odata.etag": "string",
+          "bccRecipients": "any[]",
+          "body": {
+            "content": "string",
+            "contentType": "string"
+          },
+          "bodyPreview": "string",
+          "categories": "any[]",
+          "ccRecipients": "any[]",
+          "changeKey": "string",
+          "conversationId": "string",
+          "conversationIndex": "string",
+          "createdDateTime": "string",
+          "flag": {
+            "flagStatus": "string"
+          },
+          "from": {
+            "emailAddress": {
+              "address": "string",
+              "name": "string"
+            }
+          },
+          "hasAttachments": "boolean",
+          "id": "string",
+          "importance": "string",
+          "inferenceClassification": "string",
+          "internetMessageId": "string",
+          "isDeliveryReceiptRequested": "boolean",
+          "isDraft": "boolean",
+          "isRead": "boolean",
+          "isReadReceiptRequested": "boolean",
+          "lastModifiedDateTime": "string",
+          "parentFolderId": "string",
+          "receivedDateTime": "string",
+          "replyTo": [
+            {
+              "emailAddress": {
+                "address": "string",
+                "name": "string"
+              }
+            }
+          ],
+          "sender": {
+            "emailAddress": {
+              "address": "string",
+              "name": "string"
+            }
+          },
+          "sentDateTime": "string",
+          "subject": "string",
+          "toRecipients": [
+            {
+              "emailAddress": {
+                "address": "string",
+                "name": "string"
+              }
+            }
+          ],
+          "webLink": "string"
+        }
+      ]
+    },
+    "getMessages4UseridResponse": {
+      "value": [
+        {
+          "from": {
+            "emailAddress": {
+              "address": "string"
+            }
+          },
+          "id": "string",
+          "subject": "string"
+        }
+      ]
+    },
+    "getRegisteredApplications2ociLuxembourg92AD": {
+      "_odata.context": "string",
+      "value": [
+        {
+          "addIns": "any[]",
+          "api": {
+            "acceptMappedClaims": "any",
+            "knownClientApplications": "any[]",
+            "oauth2PermissionScopes": "any[]",
+            "preAuthorizedApplications": "any[]",
+            "requestedAccessTokenVersion": "number"
+          },
+          "appId": "string",
+          "applicationTemplateId": "any",
+          "appRoles": "any[]",
+          "certification": "any",
+          "createdDateTime": "string",
+          "defaultRedirectUri": "any",
+          "deletedDateTime": "any",
+          "description": "any",
+          "disabledByMicrosoftStatus": "any",
+          "displayName": "string",
+          "groupMembershipClaims": "any",
+          "id": "string",
+          "identifierUris": "any[]",
+          "info": {
+            "logoUrl": "any",
+            "marketingUrl": "any",
+            "privacyStatementUrl": "any",
+            "supportUrl": "any",
+            "termsOfServiceUrl": "any"
+          },
+          "isDeviceOnlyAuthSupported": "any",
+          "isFallbackPublicClient": "any",
+          "keyCredentials": "any[]",
+          "notes": "any",
+          "optionalClaims": "any",
+          "parentalControlSettings": {
+            "countriesBlockedForMinors": "any[]",
+            "legalAgeGroupRule": "string"
+          },
+          "passwordCredentials": [
+            {
+              "customKeyIdentifier": "any",
+              "displayName": "string",
+              "endDateTime": "string",
+              "hint": "string",
+              "keyId": "string",
+              "secretText": "any",
+              "startDateTime": "string"
+            }
+          ],
+          "publicClient": {
+            "redirectUris": "any[]"
+          },
+          "publisherDomain": "string",
+          "requiredResourceAccess": [
+            {
+              "resourceAccess": [
+                {
+                  "id": "string",
+                  "type": "string"
+                }
+              ],
+              "resourceAppId": "string"
+            }
+          ],
+          "signInAudience": "string",
+          "spa": {
+            "redirectUris": "any[]"
+          },
+          "tags": "any[]",
+          "tokenEncryptionKeyId": "any",
+          "verifiedPublisher": {
+            "addedDateTime": "any",
+            "displayName": "any",
+            "verifiedPublisherId": "any"
+          },
+          "web": {
+            "homePageUrl": "any",
+            "implicitGrantSettings": {
+              "enableAccessTokenIssuance": "boolean",
+              "enableIdTokenIssuance": "boolean"
+            },
+            "logoutUrl": "any",
+            "redirectUris": "string[]"
+          }
+        }
+      ]
+    },
+    "getRegisteredApplications2ociLuxembourg92ADResponse": {
+      "value": [
+        {
+          "appId": "string",
+          "displayName": "string",
+          "id": "string",
+          "publisherDomain": "string",
+          "signInAudience": "string",
+          "web": {
+            "redirectUris": "string[]"
+          }
+        }
+      ]
+    },
+    "getResponse": {
+      "value": [
+        {
+          "displayName": "string",
+          "id": "string"
+        }
+      ]
+    }
+
+  },
+  "eventListeners": {
+    "aClick": {
+      "chains": [
+        {
+          "chainId": "HyperlinkClickChain"
+        }
+      ]
+    },
+    "aClick2": {
+      "chains": [
+        {
+          "chainId": "HyperlinkClickChain1"
+        }
+      ]
+    },
+    "aClick3": {
+      "chains": [
+        {
+          "chainId": "HyperlinkClickChain2"
+        }
+      ]
+    },
+    "ojButtonOjAction": {
+      "chains": [
+        {
+          "chainId": "ButtonActionChain"
+        }
+      ]
+    },
+    "ojListViewFirstSelectedItem": {
+      "chains": [
+        {
+          "chainId": "ListViewFirstSelectedItemChangeChain",
+          "parameters": {
+            "rowKey": "{{$event.detail.value.key}}",
+            "rowData": "{{$event.detail.value.data}}"
+          }
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-list-item-layout": {
+        "path": "ojs/ojlistitemlayout"
+      },
+      "oj-list-view": {
+        "path": "ojs/ojlistview"
+      },
+      "oj-navigation-list": {
+        "path": "ojs/ojnavigationlist"
+      },
+      "oj-select-one": {
+        "path": "ojs/ojselectcombobox"
+      },
+      "oj-table": {
+        "path": "ojs/ojtable"
+      }
+
+    }
+  }
+}

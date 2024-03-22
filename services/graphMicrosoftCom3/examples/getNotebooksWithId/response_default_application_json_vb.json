@@ -1,0 +1,33 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8402fd97-29ea-4758-8ed4-0375850cb07c')/onenote/notebooks/$entity",
+    "id": "1-31f8717b-5d36-4e1f-b2ba-0eee6d45ff25",
+    "self": "https://graph.microsoft.com/v1.0/users/8402fd97-29ea-4758-8ed4-0375850cb07c/onenote/notebooks/1-31f8717b-5d36-4e1f-b2ba-0eee6d45ff25",
+    "createdDateTime": "2021-10-27T16:46:32Z",
+    "displayName": "ociLuxembourg",
+    "lastModifiedDateTime": "2021-10-27T16:47:02Z",
+    "isDefault": false,
+    "userRole": "Owner",
+    "isShared": false,
+    "sectionsUrl": "https://graph.microsoft.com/v1.0/users/8402fd97-29ea-4758-8ed4-0375850cb07c/onenote/notebooks/1-31f8717b-5d36-4e1f-b2ba-0eee6d45ff25/sections",
+    "sectionGroupsUrl": "https://graph.microsoft.com/v1.0/users/8402fd97-29ea-4758-8ed4-0375850cb07c/onenote/notebooks/1-31f8717b-5d36-4e1f-b2ba-0eee6d45ff25/sectionGroups",
+    "createdBy": {
+        "user": {
+            "id": "8402fd97-29ea-4758-8ed4-0375850cb07c",
+            "displayName": "Oracle Cloud Infrastructure"
+        }
+    },
+    "lastModifiedBy": {
+        "user": {
+            "id": "8402fd97-29ea-4758-8ed4-0375850cb07c",
+            "displayName": "Oracle Cloud Infrastructure"
+        }
+    },
+    "links": {
+        "oneNoteClientUrl": {
+            "href": "onenote:https://ociluxembourg92-my.sharepoint.com/personal/oracle_cloud_infrastructure_ociluxembourg92_onmicrosoft_com/Documents/Notebooks/ociLuxembourg"
+        },
+        "oneNoteWebUrl": {
+            "href": "https://ociluxembourg92-my.sharepoint.com/personal/oracle_cloud_infrastructure_ociluxembourg92_onmicrosoft_com/Documents/Notebooks/ociLuxembourg"
+        }
+    }
+}

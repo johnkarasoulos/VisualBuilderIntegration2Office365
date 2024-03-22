@@ -1,0 +1,13 @@
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-12">
+    <oj-form-layout class="oj-formlayout-full-width" label-edge="start">
+      <oj-input-text label-hint="Recipient" clear-icon="always" value="{{ $variables.toRecipient }}"></oj-input-text>
+      <oj-input-text label-hint="message importance" value="{{ $variables.NewMessage.importance }}"></oj-input-text>
+      <oj-input-text label-hint="Subject" value="{{ $variables.NewMessage.subject }}"></oj-input-text>
+      <oj-input-text label-hint="Content Type" value="{{ $variables.NewMessage.body.contentType }}"></oj-input-text>
+      <oj-input-text label-hint="Content" value="{{ $variables.NewMessage.body.content }}"></oj-input-text>
+      <oj-button display="icons" chroming="solid" class="oj-button-full-width"
+        on-oj-action="[[$listeners.ojButtonOjAction]]">Create a draft message</oj-button>
+    </oj-form-layout>
+  </div>
+</div>

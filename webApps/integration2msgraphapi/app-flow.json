@@ -1,0 +1,49 @@
+{
+  "id": "integration2msgraphapi",
+  "description": "A new VB app",
+  "defaultPage": "shell",
+  "chains": {
+  },
+  "services": {},
+  "translations": {
+    "app": {
+      "path": "./resources/strings/app/nls/app-strings"
+    }
+  },
+  "events": {
+    "navigateToItem": {
+      "payloadType": {
+        "item": "string"
+      },
+      "description": "Event to configure navigation between items/tabs."
+    }
+  },
+  "types": {},
+  "variables": {},
+  "eventListeners": {
+    "vbResourceChanged": {
+      "chains": [
+        {
+          "chainId": "resourceChangedHandler",
+          "parameters": {
+            "event": "{{ $event }}"
+          }
+        }
+      ]
+    }
+  },
+  "userConfig": {
+    "type": "vb/DefaultSecurityProvider",
+    "configuration": {},
+    "embedding": "deny"
+  },
+  "security": {},
+  "imports": {
+    "css": [
+      "https://static.oracle.com/cdn/fnd/gallery/2107.2.0/images/iconfont/ojuxIconFont.min.css"
+    ]
+  },
+  "settings": {
+    "stopValidationPreLoading": true
+  }
+}

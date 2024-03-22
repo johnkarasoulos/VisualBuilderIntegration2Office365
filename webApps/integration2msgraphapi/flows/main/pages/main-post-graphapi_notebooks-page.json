@@ -1,0 +1,200 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+    "getListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom/get",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "getResponse",
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "displayName"
+          ]
+        }
+      }
+    },
+    "MyNotebookFromId": {
+      "type": "getNotebooksWithId"
+    },
+    "newNotebook": {
+      "type": "createNotebook"
+    },
+    "notebookId": {
+      "type": "string"
+    },
+    "retrieveListOfNotebooksListSDP": {
+      "type": "vb/ServiceDataProvider",
+      "defaultValue": {
+        "endpoint": "graphMicrosoftCom3/RetrieveListOfNotebooks",
+        "keyAttributes": "id",
+        "itemsPath": "value",
+        "responseType": "retrieveListOfNotebooksResponse",
+        "uriParameters": {
+          "userid": "{{ $variables.SearchId }}"
+        },
+        "transformsContext": {
+          "vb-textFilterAttributes": [
+            "displayName"
+          ]
+        }
+      }
+    },
+    "SearchId": {
+      "type": "string"
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.createNotebook": {
+      "endpoint": "createNotebook",
+      "service": "graphMicrosoftCom3",
+      "path": "request"
+    },
+    "@decorators.getNotebooksWithId": {
+      "endpoint": "getNotebooksWithId",
+      "service": "graphMicrosoftCom3",
+      "path": "response"
+    },
+    "@decorators.getResponse": {
+      "endpoint": "get",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "@decorators.retrieveListOfNotebooksResponse": {
+      "endpoint": "RetrieveListOfNotebooks",
+      "service": "graphMicrosoftCom3",
+      "path": "response"
+    },
+    "createNotebook": {
+      "displayName": "string"
+    },
+    "getNotebooksWithId": {
+      "_odata.context": "string",
+      "createdBy": {
+        "user": {
+          "displayName": "string",
+          "id": "string"
+        }
+      },
+      "createdDateTime": "string",
+      "displayName": "string",
+      "id": "string",
+      "isDefault": "boolean",
+      "isShared": "boolean",
+      "lastModifiedBy": {
+        "user": {
+          "displayName": "string",
+          "id": "string"
+        }
+      },
+      "lastModifiedDateTime": "string",
+      "links": {
+        "oneNoteClientUrl": {
+          "href": "string"
+        },
+        "oneNoteWebUrl": {
+          "href": "string"
+        }
+      },
+      "sectionGroupsUrl": "string",
+      "sectionsUrl": "string",
+      "self": "string",
+      "userRole": "string"
+    },
+    "getResponse": {
+      "value": [
+        {
+          "displayName": "string",
+          "id": "string"
+        }
+      ]
+    },
+    "retrieveListOfNotebooksResponse": {
+      "value": [
+        {
+          "displayName": "string",
+          "id": "string"
+        }
+      ]
+    }
+  },
+  "eventListeners": {
+    "aClick": {
+      "chains": [
+        {
+          "chainId": "HyperlinkClickChain"
+        }
+      ]
+    },
+    "aClick2": {
+      "chains": [
+        {
+          "chainId": "HyperlinkClickChain1"
+        }
+      ]
+    },
+    "aClick3": {
+      "chains": [
+        {
+          "chainId": "HyperlinkClickChain2"
+        }
+      ]
+    },
+    "ojButtonOjAction": {
+      "chains": [
+        {
+          "chainId": "ButtonActionChain"
+        }
+      ]
+    },
+    "ojInputTextValue": {
+      "chains": [
+        {
+          "chainId": "InputTextValueChangeChain",
+          "parameters": {
+            "value": "{{ $event.detail.value }}"
+          }
+        }
+      ]
+    }
+
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      },
+      "oj-label": {
+        "path": "ojs/ojlabel"
+      },
+      "oj-menu": {
+        "path": "ojs/ojmenu"
+      },
+      "oj-navigation-list": {
+        "path": "ojs/ojnavigationlist"
+      },
+      "oj-option": {
+        "path": "ojs/ojoption"
+      },
+      "oj-select-one": {
+        "path": "ojs/ojselectcombobox"
+      }
+
+    },
+    "modules": {
+      "ojValidationBase": {
+        "path": "ojs/ojvalidation-base"
+      }
+    }
+  }
+}

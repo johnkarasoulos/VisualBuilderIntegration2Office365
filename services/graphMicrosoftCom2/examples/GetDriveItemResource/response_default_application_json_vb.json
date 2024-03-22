@@ -1,0 +1,21 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8402fd97-29ea-4758-8ed4-0375850cb07c')/drive/root/$entity",
+    "createdDateTime": "2021-10-24T00:00:40Z",
+    "id": "01OQVBDXN6Y2GOVW7725BZO354PWSELRRZ",
+    "lastModifiedDateTime": "2021-10-29T08:11:56Z",
+    "name": "root",
+    "webUrl": "https://ociluxembourg92-my.sharepoint.com/personal/oracle_cloud_infrastructure_ociluxembourg92_onmicrosoft_com/Documents",
+    "size": 67896,
+    "parentReference": {
+        "driveId": "b!uyUTepf80EqtkhWdrF5Xc3L6JzLAQ0RNjTC8tLU6Tr86TBYmaXBSTqaA4MsMBM2v",
+        "driveType": "business"
+    },
+    "fileSystemInfo": {
+        "createdDateTime": "2021-10-24T00:00:40Z",
+        "lastModifiedDateTime": "2021-10-29T08:11:56Z"
+    },
+    "folder": {
+        "childCount": 2
+    },
+    "root": {}
+}

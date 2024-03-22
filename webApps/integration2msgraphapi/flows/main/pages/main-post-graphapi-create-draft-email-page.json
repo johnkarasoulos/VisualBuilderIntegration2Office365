@@ -1,0 +1,122 @@
+{
+  "title": "",
+  "description": "",
+  "variables": {
+    "ADUserID": {
+      "type": "string",
+      "required": true,
+      "input": "fromUrl"
+    },
+    "Message": {
+      "type": "GetEmail",
+      "required": false,
+      "input": "none"
+    },
+    "NewMessage": {
+      "type": "createDraftMessage",
+      "required": false,
+      "input": "none"
+    },
+    "toRecipient": {
+      "type": "string"
+    },
+    "UserMsgID": {
+      "type": "string",
+      "required": false,
+      "input": "none"
+    }
+
+  },
+  "metadata": {},
+  "types": {
+    "@decorators.createDraftMessage": {
+      "endpoint": "createDraftMessage",
+      "service": "graphMicrosoftCom",
+      "path": "request"
+    },
+    "@decorators.GetEmail": {
+      "endpoint": "GetEmail",
+      "service": "graphMicrosoftCom",
+      "path": "response"
+    },
+    "createDraftMessage": {
+      "body": {
+        "content": "string",
+        "contentType": "string"
+      },
+      "importance": "string",
+      "subject": "string",
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "address": "string"
+          }
+        }
+      ]
+    },
+    "GetEmail": {
+      "_odata.context": "string",
+      "_odata.etag": "string",
+      "body": {
+        "content": "string",
+        "contentType": "string"
+      },
+      "ccRecipients": [
+        {
+          "emailAddress": {
+            "address": "string",
+            "name": "string"
+          }
+        }
+      ],
+      "from": {
+        "emailAddress": {
+          "address": "string",
+          "name": "string"
+        }
+      },
+      "id": "string",
+      "receivedDateTime": "string",
+      "sender": {
+        "emailAddress": {
+          "address": "string",
+          "name": "string"
+        }
+      },
+      "sentDateTime": "string",
+      "subject": "string",
+      "toRecipients": [
+        {
+          "emailAddress": {
+            "address": "string",
+            "name": "string"
+          }
+        }
+      ],
+      "webLink": "string"
+    }
+
+  },
+  "eventListeners": {
+    "ojButtonOjAction": {
+      "chains": [
+        {
+          "chainId": "ButtonActionChain"
+        }
+      ]
+    }
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-form-layout": {
+        "path": "ojs/ojformlayout"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      }
+    }
+  }
+}

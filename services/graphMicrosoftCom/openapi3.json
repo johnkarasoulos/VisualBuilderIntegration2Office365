@@ -1,0 +1,1821 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "GraphMicrosoftCom",
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "https://graph.microsoft.com",
+            "description": "Graph Microsoft Com",
+            "x-vb": {
+                "authentication": {
+                    "authenticated": {
+                        "type": "oauth2_client_credentials",
+                        "clientIdCredentials": "vb_ea2df745-f844-402a-949b-07a7fe007217",
+                        "scope": "https://graph.microsoft.com/.default",
+                        "authUrl": "https://login.microsoftonline.com/{Directory (tenant) ID}/oauth2/v2.0/token"
+                    }
+                },
+                "forceProxy": "cors"
+            }
+        }
+    ],
+    "paths": {
+        "/v1.0/Users": {
+            "get": {
+                "operationId": "get",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0Users"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/get/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            },
+            "parameters": []
+        },
+        "/v1.0/Users/{userid}/messages": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "operationId": "getMessages4Userid",
+                "parameters": [],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0UsersUseridMessages"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getMessages4Userid/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/v1.0/applications": {
+            "get": {
+                "operationId": "getRegisteredApplications2ociLuxembourg92AD",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0Applications"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getRegisteredApplications2ociLuxembourg92AD/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/v1.0/applications/{ApplicationId}": {
+            "parameters": [
+                {
+                    "name": "ApplicationId",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "operationId": "getRegisteredApplication2ociLuxembourg92ADfromAppId",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0ApplicationsApplicationId"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getRegisteredApplication2ociLuxembourg92ADfromAppId/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getOne"
+                }
+            }
+        },
+        "/v1.0/applications/{ApplicationId}/owners": {
+            "parameters": [
+                {
+                    "name": "ApplicationId",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "operationId": "getRegisteredApplicationsOwner2ociLuxembourg92AD4AppId",
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/v1.0/Users/{userid}/calendars": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "operationId": "getListOfCalenders4Userid",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0UsersUseridCalendars"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getListOfCalenders4Userid/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+               },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/v1.0/users/{userid}/events": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "operationId": "getLisofEvents4UserId",
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0UsersUseridEvents"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/getLisofEvents4UserId/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        },
+        "/v1.0/users/{userid}/messages/{msgid}": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "msgid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "get": {
+                "operationId": "GetEmail",
+                "parameters": [
+                ],
+                "responses": {
+                    "default": {
+                        "description": "Response for default",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/GetV1_0UsersUseridMessagesMsgid"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "summary": "Example stored by VB User",
+                                        "externalValue": "./examples/GetEmail/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "getOne"
+                }
+            }
+        },
+        "/beta/users/{userid}/messages": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "post": {
+                "summary": "createDraftMessage",
+                "description": "Create a draft of a new message in either JSON or MIME format.",
+                "operationId": "createDraftMessage",
+                "responses": {
+                    "default": {
+                        "description": "Default response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/PostResponse"
+                                },
+                                "examples": {
+                                    "vb": {
+                                        "externalValue": "./examples/createDraftMessage/response_default_application_json_vb.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "x-vb": {
+                    "actionHint": "create"
+                },
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostBetaUsersUseridMessagesRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/createDraftMessage/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/beta/users/{userid}/messages/{messageid}/send": {
+            "parameters": [
+                {
+                    "name": "userid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                },
+                {
+                    "name": "messageid",
+                    "in": "path",
+                    "required": true,
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            ],
+            "post": {
+                "summary": "Send an existing draft message.",
+                "description": "The draft message can be a new message draft, reply draft, reply-all draft, or a forward draft.\nThis method saves the message in the Sent Items folder.\nAlternatively, send a new message in a single operation",
+                "operationId": "sendEmail",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/PostBetaUsersUseridMessagesMessageidSendRequest"
+                            },
+                            "examples": {
+                                "vb": {
+                                    "externalValue": "./examples/sendEmail/request_application_json_vb.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {},
+                "x-vb": {
+                    "actionHint": "getMany"
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "GetV1_0Users": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "businessPhones": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "displayName": {
+                                    "type": "string"
+                                },
+                                "givenName": {
+                                    "type": "string"
+                                },
+                                "jobTitle": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "mail": {
+                                    "type": "string"
+                                },
+                                "mobilePhone": {
+                                    "nullable": true
+                                },
+                                "officeLocation": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "preferredLanguage": {
+                                    "type": "string",
+                                    "nullable": true
+                                },
+                                "surname": {
+                                    "type": "string"
+                                },
+                                "userPrincipalName": {
+                                    "type": "string"
+                                },
+                                "id": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetV1_0UsersUseridMessages": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "@odata.etag": {
+                                    "type": "string"
+                                },
+                                "id": {
+                                    "type": "string"
+                                },
+                                "createdDateTime": {
+                                    "type": "string"
+                                },
+                                "lastModifiedDateTime": {
+                                    "type": "string"
+                                },
+                                "changeKey": {
+                                    "type": "string"
+                                },
+                                "categories": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "receivedDateTime": {
+                                    "type": "string"
+                                },
+                                "sentDateTime": {
+                                    "type": "string"
+                                },
+                                "hasAttachments": {
+                                    "type": "boolean"
+                                },
+                                "internetMessageId": {
+                                    "type": "string"
+                                },
+                                "subject": {
+                                    "type": "string"
+                                },
+                                "bodyPreview": {
+                                    "type": "string"
+                                },
+                                "importance": {
+                                    "type": "string"
+                                },
+                                "parentFolderId": {
+                                    "type": "string"
+                                },
+                                "conversationId": {
+                                    "type": "string"
+                                },
+                                "conversationIndex": {
+                                    "type": "string"
+                                },
+                                "isDeliveryReceiptRequested": {
+                                    "type": "boolean"
+                                },
+                                "isReadReceiptRequested": {
+                                    "type": "boolean"
+                                },
+                                "isRead": {
+                                    "type": "boolean"
+                                },
+                                "isDraft": {
+                                    "type": "boolean"
+                                },
+                                "webLink": {
+                                    "type": "string"
+                                },
+                                "inferenceClassification": {
+                                    "type": "string"
+                                },
+                                "body": {
+                                    "type": "object",
+                                    "properties": {
+                                        "contentType": {
+                                            "type": "string"
+                                        },
+                                        "content": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "sender": {
+                                    "type": "object",
+                                    "properties": {
+                                        "emailAddress": {
+                                            "type": "object",
+                                            "properties": {
+                                                "name": {
+                                                    "type": "string"
+                                                },
+                                                "address": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "from": {
+                                    "type": "object",
+                                    "properties": {
+                                        "emailAddress": {
+                                            "type": "object",
+                                            "properties": {
+                                                "name": {
+                                                    "type": "string"
+                                                },
+                                                "address": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "toRecipients": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "emailAddress": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "address": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "ccRecipients": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "bccRecipients": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "replyTo": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "emailAddress": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "name": {
+                                                        "type": "string"
+                                                    },
+                                                    "address": {
+                                                        "type": "string"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "flag": {
+                                    "type": "object",
+                                    "properties": {
+                                        "flagStatus": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "@odata.nextLink": {
+                        "type": "string"
+                    }
+                }
+            },
+            "GetV1_0Applications": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "deletedDateTime": {
+                                    "nullable": true
+                                },
+                                "appId": {
+                                    "type": "string"
+                                },
+                                "applicationTemplateId": {
+                                    "nullable": true
+                                },
+                                "disabledByMicrosoftStatus": {
+                                    "nullable": true
+                                },
+                                "createdDateTime": {
+                                    "type": "string"
+                                },
+                                "displayName": {
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "nullable": true
+                                },
+                                "groupMembershipClaims": {
+                                    "nullable": true
+                                },
+                                "identifierUris": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "isDeviceOnlyAuthSupported": {
+                                    "nullable": true
+                                },
+                                "isFallbackPublicClient": {
+                                    "nullable": true
+                                },
+                                "notes": {
+                                    "nullable": true
+                                },
+                                "publisherDomain": {
+                                    "type": "string"
+                                },
+                                "signInAudience": {
+                                    "type": "string"
+                                },
+                                "tags": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "tokenEncryptionKeyId": {
+                                    "nullable": true
+                                },
+                                "defaultRedirectUri": {
+                                    "nullable": true
+                                },
+                                "certification": {
+                                    "nullable": true
+                                },
+                                "optionalClaims": {
+                                    "nullable": true
+                                },
+                                "addIns": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "api": {
+                                    "type": "object",
+                                    "properties": {
+                                        "acceptMappedClaims": {
+                                            "nullable": true
+                                        },
+                                        "knownClientApplications": {
+                                            "type": "array",
+                                            "items": {}
+                                        },
+                                        "requestedAccessTokenVersion": {
+                                            "type": "integer"
+                                        },
+                                        "oauth2PermissionScopes": {
+                                            "type": "array",
+                                            "items": {}
+                                        },
+                                        "preAuthorizedApplications": {
+                                            "type": "array",
+                                            "items": {}
+                                        }
+                                    }
+                                },
+                                "appRoles": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "info": {
+                                    "type": "object",
+                                    "properties": {
+                                        "logoUrl": {
+                                            "nullable": true
+                                        },
+                                        "marketingUrl": {
+                                            "nullable": true
+                                        },
+                                        "privacyStatementUrl": {
+                                            "nullable": true
+                                        },
+                                        "supportUrl": {
+                                            "nullable": true
+                                        },
+                                        "termsOfServiceUrl": {
+                                            "nullable": true
+                                        }
+                                    }
+                                },
+                                "keyCredentials": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "parentalControlSettings": {
+                                    "type": "object",
+                                    "properties": {
+                                        "countriesBlockedForMinors": {
+                                            "type": "array",
+                                            "items": {}
+                                        },
+                                        "legalAgeGroupRule": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "passwordCredentials": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "customKeyIdentifier": {
+                                                "nullable": true
+                                            },
+                                            "displayName": {
+                                                "type": "string"
+                                            },
+                                            "endDateTime": {
+                                                "type": "string"
+                                            },
+                                            "hint": {
+                                                "type": "string"
+                                            },
+                                            "keyId": {
+                                                "type": "string"
+                                            },
+                                            "secretText": {
+                                                "nullable": true
+                                            },
+                                            "startDateTime": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                },
+                                "publicClient": {
+                                    "type": "object",
+                                    "properties": {
+                                        "redirectUris": {
+                                            "type": "array",
+                                            "items": {}
+                                        }
+                                    }
+                                },
+                                "requiredResourceAccess": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "resourceAppId": {
+                                                "type": "string"
+                                            },
+                                            "resourceAccess": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "id": {
+                                                            "type": "string"
+                                                        },
+                                                        "type": {
+                                                            "type": "string"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "verifiedPublisher": {
+                                    "type": "object",
+                                    "properties": {
+                                        "displayName": {
+                                            "nullable": true
+                                        },
+                                        "verifiedPublisherId": {
+                                            "nullable": true
+                                        },
+                                        "addedDateTime": {
+                                            "nullable": true
+                                        }
+                                    }
+                                },
+                                "web": {
+                                    "type": "object",
+                                    "properties": {
+                                        "homePageUrl": {
+                                            "nullable": true
+                                        },
+                                        "logoutUrl": {
+                                            "nullable": true
+                                        },
+                                        "redirectUris": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "implicitGrantSettings": {
+                                            "type": "object",
+                                            "properties": {
+                                                "enableAccessTokenIssuance": {
+                                                    "type": "boolean"
+                                                },
+                                                "enableIdTokenIssuance": {
+                                                    "type": "boolean"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "spa": {
+                                    "type": "object",
+                                    "properties": {
+                                        "redirectUris": {
+                                            "type": "array",
+                                            "items": {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetV1_0ApplicationsApplicationId": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "deletedDateTime": {
+                        "nullable": true
+                    },
+                    "appId": {
+                        "type": "string"
+                    },
+                    "applicationTemplateId": {
+                        "nullable": true
+                    },
+                    "disabledByMicrosoftStatus": {
+                        "nullable": true
+                    },
+                    "createdDateTime": {
+                        "type": "string"
+                    },
+                    "displayName": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "nullable": true
+                    },
+                    "groupMembershipClaims": {
+                        "nullable": true
+                    },
+                    "identifierUris": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "isDeviceOnlyAuthSupported": {
+                        "nullable": true
+                    },
+                    "isFallbackPublicClient": {
+                        "nullable": true
+                    },
+                    "notes": {
+                        "nullable": true
+                    },
+                    "publisherDomain": {
+                        "type": "string"
+                    },
+                    "signInAudience": {
+                        "type": "string"
+                    },
+                    "tags": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "tokenEncryptionKeyId": {
+                        "nullable": true
+                    },
+                    "defaultRedirectUri": {
+                        "nullable": true
+                    },
+                    "certification": {
+                        "nullable": true
+                    },
+                    "optionalClaims": {
+                        "nullable": true
+                    },
+                    "addIns": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "api": {
+                        "type": "object",
+                        "properties": {
+                            "acceptMappedClaims": {
+                                "nullable": true
+                            },
+                            "knownClientApplications": {
+                                "type": "array",
+                                "items": {}
+                            },
+                            "requestedAccessTokenVersion": {
+                                "type": "integer"
+                            },
+                            "oauth2PermissionScopes": {
+                                "type": "array",
+                                "items": {}
+                            },
+                            "preAuthorizedApplications": {
+                                "type": "array",
+                                "items": {}
+                            }
+                        }
+                    },
+                    "appRoles": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "info": {
+                        "type": "object",
+                        "properties": {
+                            "logoUrl": {
+                                "nullable": true
+                            },
+                            "marketingUrl": {
+                                "nullable": true
+                            },
+                            "privacyStatementUrl": {
+                                "nullable": true
+                            },
+                            "supportUrl": {
+                                "nullable": true
+                            },
+                            "termsOfServiceUrl": {
+                                "nullable": true
+                            }
+                        }
+                    },
+                    "keyCredentials": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "parentalControlSettings": {
+                        "type": "object",
+                        "properties": {
+                            "countriesBlockedForMinors": {
+                                "type": "array",
+                                "items": {}
+                            },
+                            "legalAgeGroupRule": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "passwordCredentials": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "customKeyIdentifier": {
+                                    "nullable": true
+                                },
+                                "displayName": {
+                                    "type": "string"
+                                },
+                                "endDateTime": {
+                                    "type": "string"
+                                },
+                                "hint": {
+                                    "type": "string"
+                                },
+                                "keyId": {
+                                    "type": "string"
+                                },
+                                "secretText": {
+                                    "nullable": true
+                                },
+                                "startDateTime": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "publicClient": {
+                        "type": "object",
+                        "properties": {
+                            "redirectUris": {
+                                "type": "array",
+                                "items": {}
+                            }
+                        }
+                    },
+                    "requiredResourceAccess": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "resourceAppId": {
+                                    "type": "string"
+                                },
+                                "resourceAccess": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {
+                                                "type": "string"
+                                            },
+                                            "type": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "verifiedPublisher": {
+                        "type": "object",
+                        "properties": {
+                            "displayName": {
+                                "nullable": true
+                            },
+                            "verifiedPublisherId": {
+                                "nullable": true
+                            },
+                            "addedDateTime": {
+                                "nullable": true
+                            }
+                        }
+                    },
+                    "web": {
+                        "type": "object",
+                        "properties": {
+                            "homePageUrl": {
+                                "nullable": true
+                            },
+                            "logoutUrl": {
+                                "nullable": true
+                            },
+                            "redirectUris": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "implicitGrantSettings": {
+                                "type": "object",
+                                "properties": {
+                                    "enableAccessTokenIssuance": {
+                                        "type": "boolean"
+                                    },
+                                    "enableIdTokenIssuance": {
+                                        "type": "boolean"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "spa": {
+                        "type": "object",
+                        "properties": {
+                            "redirectUris": {
+                                "type": "array",
+                                "items": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "GetV1_0UsersUseridCalendars": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "color": {
+                                    "type": "string"
+                                },
+                                "hexColor": {
+                                    "type": "string"
+                                },
+                                "isDefaultCalendar": {
+                                    "type": "boolean"
+                                },
+                                "changeKey": {
+                                    "type": "string"
+                                },
+                                "canShare": {
+                                    "type": "boolean"
+                                },
+                                "canViewPrivateItems": {
+                                    "type": "boolean"
+                                },
+                                "canEdit": {
+                                    "type": "boolean"
+                                },
+                                "allowedOnlineMeetingProviders": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "defaultOnlineMeetingProvider": {
+                                    "type": "string"
+                                },
+                                "isTallyingResponses": {
+                                    "type": "boolean"
+                                },
+                                "isRemovable": {
+                                    "type": "boolean"
+                                },
+                                "owner": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "address": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetV1_0UsersUseridEvents": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "value": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "@odata.etag": {
+                                    "type": "string"
+                                },
+                                "id": {
+                                    "type": "string"
+                                },
+                                "createdDateTime": {
+                                    "type": "string"
+                                },
+                                "lastModifiedDateTime": {
+                                    "type": "string"
+                                },
+                                "changeKey": {
+                                    "type": "string"
+                                },
+                                "categories": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "transactionId": {
+                                    "type": "string"
+                                },
+                                "originalStartTimeZone": {
+                                    "type": "string"
+                                },
+                                "originalEndTimeZone": {
+                                    "type": "string"
+                                },
+                                "iCalUId": {
+                                    "type": "string"
+                                },
+                                "reminderMinutesBeforeStart": {
+                                    "type": "integer"
+                                },
+                                "isReminderOn": {
+                                    "type": "boolean"
+                                },
+                                "hasAttachments": {
+                                    "type": "boolean"
+                                },
+                                "subject": {
+                                    "type": "string"
+                                },
+                                "bodyPreview": {
+                                    "type": "string"
+                                },
+                                "importance": {
+                                    "type": "string"
+                                },
+                                "sensitivity": {
+                                    "type": "string"
+                                },
+                                "isAllDay": {
+                                    "type": "boolean"
+                                },
+                                "isCancelled": {
+                                    "type": "boolean"
+                                },
+                                "isOrganizer": {
+                                    "type": "boolean"
+                                },
+                                "responseRequested": {
+                                    "type": "boolean"
+                                },
+                                "seriesMasterId": {
+                                    "nullable": true
+                                },
+                                "showAs": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "string"
+                                },
+                                "webLink": {
+                                    "type": "string"
+                                },
+                                "onlineMeetingUrl": {
+                                    "nullable": true
+                                },
+                                "isOnlineMeeting": {
+                                    "type": "boolean"
+                                },
+                                "onlineMeetingProvider": {
+                                    "type": "string"
+                                },
+                                "allowNewTimeProposals": {
+                                    "type": "boolean"
+                                },
+                                "occurrenceId": {
+                                    "nullable": true
+                                },
+                                "isDraft": {
+                                    "type": "boolean"
+                                },
+                                "hideAttendees": {
+                                    "type": "boolean"
+                                },
+                                "responseStatus": {
+                                    "type": "object",
+                                    "properties": {
+                                        "response": {
+                                            "type": "string"
+                                        },
+                                        "time": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "body": {
+                                    "type": "object",
+                                    "properties": {
+                                        "contentType": {
+                                            "type": "string"
+                                        },
+                                        "content": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "start": {
+                                    "type": "object",
+                                    "properties": {
+                                        "dateTime": {
+                                            "type": "string"
+                                        },
+                                        "timeZone": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "end": {
+                                    "type": "object",
+                                    "properties": {
+                                        "dateTime": {
+                                            "type": "string"
+                                        },
+                                        "timeZone": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "location": {
+                                    "type": "object",
+                                    "properties": {
+                                        "displayName": {
+                                            "type": "string"
+                                        },
+                                        "locationType": {
+                                            "type": "string"
+                                        },
+                                        "uniqueIdType": {
+                                            "type": "string"
+                                        },
+                                        "address": {
+                                            "type": "object"
+                                        },
+                                        "coordinates": {
+                                            "type": "object"
+                                        }
+                                    }
+                                },
+                                "locations": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "recurrence": {
+                                    "nullable": true
+                                },
+                                "attendees": {
+                                    "type": "array",
+                                    "items": {}
+                                },
+                                "organizer": {
+                                    "type": "object",
+                                    "properties": {
+                                        "emailAddress": {
+                                            "type": "object",
+                                            "properties": {
+                                                "name": {
+                                                    "type": "string"
+                                                },
+                                                "address": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "onlineMeeting": {
+                                    "nullable": true
+                                },
+                                "calendar@odata.associationLink": {
+                                    "type": "string"
+                                },
+                                "calendar@odata.navigationLink": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "GetV1_0UsersUseridMessagesMsgid": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "@odata.etag": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "createdDateTime": {
+                        "type": "string"
+                    },
+                    "lastModifiedDateTime": {
+                        "type": "string"
+                    },
+                    "changeKey": {
+                        "type": "string"
+                    },
+                    "categories": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "receivedDateTime": {
+                        "type": "string"
+                    },
+                    "sentDateTime": {
+                        "type": "string"
+                    },
+                    "hasAttachments": {
+                        "type": "boolean"
+                    },
+                    "internetMessageId": {
+                        "type": "string"
+                    },
+                    "subject": {
+                        "type": "string"
+                    },
+                    "bodyPreview": {
+                        "type": "string"
+                    },
+                    "importance": {
+                        "type": "string"
+                    },
+                    "parentFolderId": {
+                        "type": "string"
+                    },
+                    "conversationId": {
+                        "type": "string"
+                    },
+                    "conversationIndex": {
+                        "type": "string"
+                    },
+                    "isDeliveryReceiptRequested": {
+                        "nullable": true
+                    },
+                    "isReadReceiptRequested": {
+                        "type": "boolean"
+                    },
+                    "isRead": {
+                        "type": "boolean"
+                    },
+                    "isDraft": {
+                        "type": "boolean"
+                    },
+                    "webLink": {
+                        "type": "string"
+                    },
+                    "inferenceClassification": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "object",
+                        "properties": {
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "content": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "sender": {
+                        "type": "object",
+                        "properties": {
+                            "emailAddress": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "address": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "from": {
+                        "type": "object",
+                        "properties": {
+                            "emailAddress": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "address": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "toRecipients": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "emailAddress": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "address": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "ccRecipients": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "emailAddress": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "address": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "bccRecipients": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "replyTo": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "flag": {
+                        "type": "object",
+                        "properties": {
+                            "flagStatus": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "PostResponse": {
+                "type": "object",
+                "properties": {
+                    "@odata.context": {
+                        "type": "string"
+                    },
+                    "@odata.etag": {
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "createdDateTime": {
+                        "type": "string"
+                    },
+                    "lastModifiedDateTime": {
+                        "type": "string"
+                    },
+                    "changeKey": {
+                        "type": "string"
+                    },
+                    "categories": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "receivedDateTime": {
+                        "type": "string"
+                    },
+                    "sentDateTime": {
+                        "type": "string"
+                    },
+                    "hasAttachments": {
+                        "type": "boolean"
+                    },
+                    "internetMessageId": {
+                        "type": "string"
+                    },
+                    "subject": {
+                        "type": "string"
+                    },
+                    "bodyPreview": {
+                        "type": "string"
+                    },
+                    "importance": {
+                        "type": "string"
+                    },
+                    "parentFolderId": {
+                        "type": "string"
+                    },
+                    "conversationId": {
+                        "type": "string"
+                    },
+                    "conversationIndex": {
+                        "type": "string"
+                    },
+                    "isDeliveryReceiptRequested": {
+                        "type": "boolean"
+                    },
+                    "isReadReceiptRequested": {
+                        "type": "boolean"
+                    },
+                    "isRead": {
+                        "type": "boolean"
+                    },
+                    "isDraft": {
+                        "type": "boolean"
+                    },
+                    "webLink": {
+                        "type": "string"
+                    },
+                    "inferenceClassification": {
+                        "type": "string"
+                    },
+                    "unsubscribeData": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "unsubscribeEnabled": {
+                        "type": "boolean"
+                    },
+                    "body": {
+                        "type": "object",
+                        "properties": {
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "content": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "toRecipients": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "emailAddress": {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "address": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "ccRecipients": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "bccRecipients": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "replyTo": {
+                        "type": "array",
+                        "items": {}
+                    },
+                    "mentionsPreview": {
+                        "nullable": true
+                    },
+                    "flag": {
+                        "type": "object",
+                        "properties": {
+                            "flagStatus": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "PostBetaUsersUseridMessagesMessageidSendRequest": {
+                "type": "object",
+                "properties": {
+                    "message": {
+                        "type": "object",
+                        "properties": {
+                            "subject": {
+                                "type": "string"
+                            },
+                            "body": {
+                                "type": "object",
+                                "properties": {
+                                    "contentType": {
+                                        "type": "string"
+                                    },
+                                    "content": {
+                                        "type": "string"
+                                    }
+                                }
+                            },
+                            "toRecipients": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "emailAddress": {
+                                            "type": "object",
+                                            "properties": {
+                                                "address": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "ccRecipients": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "emailAddress": {
+                                            "type": "object",
+                                            "properties": {
+                                                "address": {
+                                                    "type": "string"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "saveToSentItems": {
+                        "type": "string"
+                    }
+                }
+            },
+            "PostBetaUsersUseridMessagesRequest": {
+                "type": "object",
+                "properties": {
+                    "subject": {
+                        "type": "string"
+                    },
+                    "importance": {
+                        "type": "string"
+                    },
+                    "body": {
+                        "type": "object",
+                        "properties": {
+                            "contentType": {
+                                "type": "string"
+                            },
+                            "content": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "toRecipients": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "emailAddress": {
+                                    "type": "object",
+                                    "properties": {
+                                        "address": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

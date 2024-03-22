@@ -1,0 +1,53 @@
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
+    "id": "1718486d-ccd7-4d05-b4a4-dce030ef6667",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2021-10-29T08:23:43Z",
+    "createdByAppId": "cc15fd57-2c6c-4117-a88c-83b1d56b4bbe",
+    "organizationId": "5cc6d61a-b9df-4795-b9ea-d5f5a56f9391",
+    "description": "OracleCloudInfrastructureLuxembourg",
+    "displayName": "OracleCloudInfrastructureLuxembourg",
+    "expirationDateTime": null,
+    "groupTypes": [
+        "Unified"
+    ],
+    "infoCatalogs": [],
+    "isAssignableToRole": null,
+    "isManagementRestricted": null,
+    "mail": "OracleCloudInfrastructureLuxembourg@ociluxembourg92.onmicrosoft.com",
+    "mailEnabled": true,
+    "mailNickname": "OracleCloudInfrastructureLuxembourg",
+    "membershipRule": null,
+    "membershipRuleProcessingState": null,
+    "onPremisesDomainName": null,
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesNetBiosName": null,
+    "onPremisesSamAccountName": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": null,
+    "preferredLanguage": null,
+    "proxyAddresses": [
+        "SPO:SPO_82d5e0b2-07d5-4e57-9ca7-1d81ebc1e10a@SPO_5cc6d61a-b9df-4795-b9ea-d5f5a56f9391",
+        "SMTP:OracleCloudInfrastructureLuxembourg@ociluxembourg92.onmicrosoft.com"
+    ],
+    "renewedDateTime": "2021-10-29T08:23:43Z",
+    "resourceBehaviorOptions": [
+        "HideGroupInOutlook",
+        "SubscribeMembersToCalendarEventsDisabled",
+        "WelcomeEmailDisabled"
+    ],
+    "resourceProvisioningOptions": [
+        "Team"
+    ],
+    "securityEnabled": false,
+    "securityIdentifier": "S-1-12-1-387467373-1292225751-3772556468-1734799152",
+    "theme": null,
+    "visibility": "Public",
+    "writebackConfiguration": {
+        "isEnabled": null,
+        "onPremisesGroupType": null
+    },
+    "onPremisesProvisioningErrors": []
+}

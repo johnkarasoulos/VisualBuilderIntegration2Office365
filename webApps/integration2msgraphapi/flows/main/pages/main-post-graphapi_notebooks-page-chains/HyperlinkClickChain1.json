@@ -1,0 +1,13 @@
+{
+  "description": "",
+  "root": "navigateToMainPostGraphapiMessages",
+  "actions": {
+    "navigateToMainPostGraphapiMessages": {
+      "module": "vb/action/builtin/navigateAction",
+      "parameters": {
+        "page": "main-post-graphapi_messages"
+      }
+    }
+  },
+  "variables": {}
+}

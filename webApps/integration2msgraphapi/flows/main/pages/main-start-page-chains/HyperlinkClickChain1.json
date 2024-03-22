@@ -1,0 +1,13 @@
+{
+  "description": "",
+  "root": "navigateToMainPostGraphapiNotebooks",
+  "actions": {
+    "navigateToMainPostGraphapiNotebooks": {
+      "module": "vb/action/builtin/navigateAction",
+      "parameters": {
+        "page": "main-post-graphapi_notebooks"
+      }
+    }
+  },
+  "variables": {}
+}

@@ -1,0 +1,51 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8402fd97-29ea-4758-8ed4-0375850cb07c')/contacts",
+    "value": [
+        {
+            "@odata.etag": "W/\"EQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAB9q\"",
+            "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEOAAAAZxLrDMpvDEW6cnyM8XwDdAAAAQEW-AAAAA==",
+            "createdDateTime": "2021-10-27T16:44:11Z",
+            "lastModifiedDateTime": "2021-10-27T16:44:11Z",
+            "changeKey": "EQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAAB9q",
+            "categories": [],
+            "parentFolderId": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAuAAADcJQXcQCEm0mez5SkfREBvAEAZxLrDMpvDEW6cnyM8XwDdAAAAgEOAAAA",
+            "birthday": null,
+            "fileAs": "Contact Last Name, Contact First Name",
+            "displayName": "Contact First Name Contact Last Name",
+            "givenName": "Contact First Name",
+            "initials": null,
+            "middleName": null,
+            "nickName": null,
+            "surname": "Contact Last Name",
+            "title": null,
+            "yomiGivenName": null,
+            "yomiSurname": null,
+            "yomiCompanyName": null,
+            "generation": null,
+            "imAddresses": [],
+            "jobTitle": null,
+            "companyName": "Oracle",
+            "department": null,
+            "officeLocation": null,
+            "profession": null,
+            "businessHomePage": null,
+            "assistantName": null,
+            "manager": null,
+            "homePhones": [],
+            "mobilePhone": null,
+            "businessPhones": [],
+            "spouseName": null,
+            "personalNotes": "",
+            "children": [],
+            "emailAddresses": [
+                {
+                    "name": "john.karasoulos@oracle.com",
+                    "address": "john.karasoulos@oracle.com"
+                }
+            ],
+            "homeAddress": {},
+            "businessAddress": {},
+            "otherAddress": {}
+        }
+    ]
+}

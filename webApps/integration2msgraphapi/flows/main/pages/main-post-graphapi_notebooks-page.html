@@ -1,0 +1,75 @@
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+  <oj-navigation-list class="oj-flex-item oj-sm-12 oj-navigationlist-item-dividers oj-md-11" edge="top">
+    <ul>
+      <li id="li-64193116-1">
+        <a href="#" on-click="[[$listeners.aClick]]">Got to main page</a>
+      </li>
+      <li id="li-64193116-2">
+        <a href="#" on-click="[[$listeners.aClick2]]">Go to messages</a>
+      </li>
+      <li id="li-64193116-3">
+        <a href="#" on-click="[[$listeners.aClick3]]">Go to teams</a>
+      </li>
+    </ul>
+  </oj-navigation-list>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+  <oj-label class="oj-flex-item oj-sm-12 oj-md-3">List of Active Directory Users</oj-label>
+  <oj-select-one label-hint="Select (One)" options="[[$page.variables.getListSDP]]" options-keys.value="id"
+    options-keys.label="displayName" value="{{ $variables.SearchId }}"
+    class="oj-flex-item oj-sm-12 oj-form-control-full-width oj-md-8" title="List of Active Directory Users">
+  </oj-select-one>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+  <oj-label class="oj-flex-item oj-sm-12 oj-md-3">User ID from AD</oj-label>
+  <oj-input-text label-hint="UserID" class="oj-flex-item oj-sm-12 oj-md-8" value="{{ $variables.SearchId }}"
+    on-value-changed="[[$listeners.ojInputTextValue]]" clear-icon="always" labelled-by="[[ $variables.SearchId ]]"
+    title="Active Directory User ID"></oj-input-text>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-1"></div>
+  <oj-label class="oj-flex-item oj-sm-12 oj-md-3">Retrieve a list of notebook objects</oj-label>
+  <oj-select-one label-hint="Select (One)" class="oj-flex-item oj-sm-12 oj-md-8"
+    options="[[$page.variables.retrieveListOfNotebooksListSDP]]" options-keys.value="id"
+    options-keys.label="displayName" value="{{ $variables.notebookId }}"></oj-select-one>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-4"></div>
+  <oj-input-text class="oj-flex-item oj-sm-12 oj-md-6" value="{{ $variables.notebookId }}" disabled="true"
+    readonly="true" clear-icon="always" on-value-changed="[[$listeners.ojInputTextValue]]" valid="invalidHidden"
+    hidden="true"></oj-input-text>
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-12">
+    <oj-form-layout label-edge="start" class="oj-formlayout-full-width">
+      <oj-input-text label-hint="Notebook Display Name" value="{{ $variables.MyNotebookFromId.displayName }}"
+        clear-icon="always"></oj-input-text>
+      <oj-input-text label-hint="Role of the user of the notebook" value="{{ $variables.MyNotebookFromId.userRole }}"
+        clear-icon="always"></oj-input-text>
+      <oj-input-text label-hint="Notebook created by"
+        value="{{ $variables.MyNotebookFromId.createdBy.user.displayName }}" clear-icon="always"></oj-input-text>
+      <oj-input-text label-hint="NotebookId" value="{{ $variables.MyNotebookFromId.id }}" clear-icon="always"></oj-input-text>
+      <oj-input-text label-hint="Is notebook shared" value="{{ $variables.MyNotebookFromId.isShared }}"
+        clear-icon="always"></oj-input-text>
+      <oj-input-text label-hint="Last modified by"
+        value="{{ $variables.MyNotebookFromId.lastModifiedBy.user.displayName }}" clear-icon="always"></oj-input-text>
+      <a target="_blank" :href="[[ $variables.MyNotebookFromId.links.oneNoteWebUrl.href ]]"
+        :id="[[ $variables.MyNotebookFromId.links.oneNoteWebUrl.href ]]"><oj-bind-text value="[[ $variables.MyNotebookFromId.links.oneNoteWebUrl.href ]]"></oj-bind-text></a>
+    </oj-form-layout>
+  </div>
+</div>
+<div class="oj-flex">
+  <hr class="oj-flex-item oj-sm-12 oj-md-12">
+</div>
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 oj-md-12">
+    <oj-form-layout label-edge="start" class="oj-formlayout-full-width">
+      <oj-input-text label-hint="Name of the new Notebook" class="oj-form-control-full-width"
+        value="{{ $variables.newNotebook.displayName }}"></oj-input-text>
+      <oj-button on-oj-action="[[$listeners.ojButtonOjAction]]">Create Notebook</oj-button>
+    </oj-form-layout>
+  </div>
+</div>

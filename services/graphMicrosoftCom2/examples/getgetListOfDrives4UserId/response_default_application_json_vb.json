@@ -1,0 +1,40 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#drives",
+    "value": [
+        {
+            "createdDateTime": "2021-10-24T00:00:40Z",
+            "description": "",
+            "id": "b!uyUTepf80EqtkhWdrF5Xc3L6JzLAQ0RNjTC8tLU6Tr86TBYmaXBSTqaA4MsMBM2v",
+            "lastModifiedDateTime": "2021-10-28T13:28:05Z",
+            "name": "OneDrive",
+            "webUrl": "https://ociluxembourg92-my.sharepoint.com/personal/oracle_cloud_infrastructure_ociluxembourg92_onmicrosoft_com/Documents",
+            "driveType": "business",
+            "createdBy": {
+                "user": {
+                    "displayName": "System Account"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com",
+                    "id": "8402fd97-29ea-4758-8ed4-0375850cb07c",
+                    "displayName": "Oracle Cloud Infrastructure"
+                }
+            },
+            "owner": {
+                "user": {
+                    "email": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com",
+                    "id": "8402fd97-29ea-4758-8ed4-0375850cb07c",
+                    "displayName": "Oracle Cloud Infrastructure"
+                }
+            },
+            "quota": {
+                "deleted": 0,
+                "remaining": 1099509458668,
+                "state": "normal",
+                "total": 1099511627776,
+                "used": 67896
+            }
+        }
+    ]
+}

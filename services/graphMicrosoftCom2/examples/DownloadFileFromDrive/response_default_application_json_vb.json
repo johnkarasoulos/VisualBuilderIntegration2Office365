@@ -1,0 +1,9 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8402fd97-29ea-4758-8ed4-0375850cb07c')/drive/root/children(content.downloadUrl)",
+    "value": [
+        {},
+        {
+            "@microsoft.graph.downloadUrl": "https://ociluxembourg92-my.sharepoint.com/personal/oracle_cloud_infrastructure_ociluxembourg92_onmicrosoft_com/_layouts/15/download.aspx?UniqueId=31b35548-e570-44fd-be02-d0fac16cc6fb&Translate=false&tempauth=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvb2NpbHV4ZW1ib3VyZzkyLW15LnNoYXJlcG9pbnQuY29tQDVjYzZkNjFhLWI5ZGYtNDc5NS1iOWVhLWQ1ZjVhNTZmOTM5MSIsImlzcyI6IjAwMDAwMDAzLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMCIsIm5iZiI6IjE2MzU3ODg1ODkiLCJleHAiOiIxNjM1NzkyMTg5IiwiZW5kcG9pbnR1cmwiOiIrcml0SWxlV3hOcGZYUmQvTlh2dUdVVHlnOFNUOTNIWnpiU2JSNHBYYjFNPSIsImVuZHBvaW50dXJsTGVuZ3RoIjoiMTk4IiwiaXNsb29wYmFjayI6IlRydWUiLCJjaWQiOiJaV0V4WWpBMllqQXRNR0pqTXkwME0yUTNMVGxrWm1JdFptUTJObUk1WmpnMVpHRm0iLCJ2ZXIiOiJoYXNoZWRwcm9vZnRva2VuIiwic2l0ZWlkIjoiTjJFeE16STFZbUl0Wm1NNU55MDBZV1F3TFdGa09USXRNVFU1WkdGak5XVTFOemN6IiwiYXBwX2Rpc3BsYXluYW1lIjoib2NpMmF6dXJlMiIsIm5hbWVpZCI6IjdmMjZiODViLWU2YTgtNDVjNC1hNWUxLTc1YjIxODY1ZDI0ZUA1Y2M2ZDYxYS1iOWRmLTQ3OTUtYjllYS1kNWY1YTU2ZjkzOTEiLCJyb2xlcyI6ImFsbHNpdGVzLnJlYWQgYWxsc2l0ZXMud3JpdGUgYWxsZmlsZXMud3JpdGUgYWxsZmlsZXMucmVhZCBhbGxwcm9maWxlcy53cml0ZSBhbGxwcm9maWxlcy5yZWFkIiwidHQiOiIxIiwidXNlUGVyc2lzdGVudENvb2tpZSI6bnVsbCwiaXBhZGRyIjoiNDAuMTI2LjMxLjE2NCJ9.NWNEVzgydkVPUDRwalhCRllBRzJkelBpaCtweTBxZTZUTVJTSEhwVWFHdz0&ApiVersion=2.0"
+        }
+    ]
+}

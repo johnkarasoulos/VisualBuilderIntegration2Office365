@@ -1,0 +1,86 @@
+{
+  "description": "",
+  "root": "assignVariablesNewMessage",
+  "actions": {
+    "navigateToMainPostGraphapiMessages": {
+      "module": "vb/action/builtin/navigateAction",
+      "parameters": {
+        "page": "main-post-graphapi_messages"
+      }
+    },
+    "fireNotification": {
+      "module": "vb/action/builtin/fireNotificationEventAction",
+      "parameters": {
+        "target": "leaf",
+        "summary": "[[ $chain.results.callRestCreateDraftMessage.message.summary ]]",
+        "type": "error",
+        "displayMode": "persist"
+      }
+    },
+    "callRestCreateDraftMessage": {
+      "module": "vb/action/builtin/restAction",
+      "parameters": {
+        "endpoint": "graphMicrosoftCom/createDraftMessage",
+        "uriParams": {
+          "userid": "{{ $page.variables.ADUserID }}"
+        },
+        "body": "{{ $page.variables.NewMessage }}",
+        "responseType": "GetEmail"
+      },
+      "outcomes": {
+        "failure": "fireNotification",
+        "success": "assignVariablesUserMsgID"
+      }
+    },
+    "assignVariablesUserMsgID": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.UserMsgID": {
+          "source": "{{ $chain.results.callRestCreateDraftMessage.body.id }}"
+        }
+      },
+      "outcomes": {
+        "success": "navigateToMainPostGraphapiMessages"
+      }
+    },
+    "assignVariablesNewMessage": {
+      "module": "vb/action/builtin/assignVariablesAction",
+      "parameters": {
+        "$page.variables.NewMessage": {
+          "source": {
+            "toRecipients": [
+              {
+                "emailAddress": {
+                  "address": "{{ $page.variables.toRecipient }}"
+                }
+              }
+            ],
+            "body": "{{ $page.variables.NewMessage.body }}",
+            "importance": "{{ $page.variables.NewMessage.importance }}",
+            "subject": "{{ $page.variables.NewMessage.subject }}"
+          },
+          "reset": "none",
+          "auto": "always",
+          "mapping": {
+            "$target.toRecipients": {
+              "source": "$source.toRecipients",
+              "reset": "empty",
+              "auto": "always",
+              "mapping": {
+                "$target.emailAddress": {
+                  "source": "$source.emailAddress",
+                  "reset": "none",
+                  "auto": "always"
+                }
+              }
+            }
+          }
+        }
+      },
+      "outcomes": {
+        "success": "callRestCreateDraftMessage"
+      }
+    }
+  },
+  "variables": {}
+}

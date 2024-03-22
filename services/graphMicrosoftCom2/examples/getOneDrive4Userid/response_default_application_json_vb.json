@@ -1,0 +1,74 @@
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(driveItem)",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.driveItem",
+            "createdDateTime": "2021-10-27T16:47:02Z",
+            "id": "01OQVBDXLI256ULR3I7BBZMBSPT7VVM7VC",
+            "lastModifiedDateTime": "2021-10-27T16:47:21Z",
+            "name": "1st section.one",
+            "webUrl": "https://ociluxembourg92-my.sharepoint.com/personal/oracle_cloud_infrastructure_ociluxembourg92_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B457DD768-68C7-43F8-9606-4F9FEB567EA2%7D&file=1st%20section.one&action=edit&mobileredirect=true&wdorigin=Sharepoint&DefaultItemOpen=1",
+            "size": 11255,
+            "createdBy": {
+                "user": {
+                    "email": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com",
+                    "displayName": "Oracle Cloud Infrastructure"
+                }
+            },
+            "lastModifiedBy": {
+                "user": {
+                    "email": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com",
+                    "displayName": "Oracle Cloud Infrastructure"
+                }
+            },
+            "file": {
+                "mimeType": "application/msonenote"
+            },
+            "fileSystemInfo": {
+                "createdDateTime": "2021-10-27T16:47:02Z",
+                "lastModifiedDateTime": "2021-10-27T16:47:21Z"
+            },
+            "remoteItem": {
+                "createdDateTime": "2021-10-27T16:47:02Z",
+                "id": "01OQVBDXLI256ULR3I7BBZMBSPT7VVM7VC",
+                "lastModifiedDateTime": "2021-10-27T16:47:21Z",
+                "name": "1st section.one",
+                "size": 11255,
+                "webDavUrl": "https://ociluxembourg92-my.sharepoint.com/personal/oracle_cloud_infrastructure_ociluxembourg92_onmicrosoft_com/Documents/Notebooks/ociLuxembourg/1st%20section.one",
+                "webUrl": "https://ociluxembourg92-my.sharepoint.com/personal/oracle_cloud_infrastructure_ociluxembourg92_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B457DD768-68C7-43F8-9606-4F9FEB567EA2%7D&file=1st%20section.one&action=edit&mobileredirect=true&wdorigin=Sharepoint&DefaultItemOpen=1",
+                "createdBy": {
+                    "user": {
+                        "email": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com",
+                        "displayName": "Oracle Cloud Infrastructure"
+                    }
+                },
+                "file": {
+                    "mimeType": "application/msonenote"
+                },
+                "fileSystemInfo": {
+                    "createdDateTime": "2021-10-27T16:47:02Z",
+                    "lastModifiedDateTime": "2021-10-27T16:47:21Z"
+                },
+                "lastModifiedBy": {
+                    "user": {
+                        "email": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com",
+                        "displayName": "Oracle Cloud Infrastructure"
+                    }
+                },
+                "parentReference": {
+                    "driveId": "b!uyUTepf80EqtkhWdrF5Xc3L6JzLAQ0RNjTC8tLU6Tr86TBYmaXBSTqaA4MsMBM2v",
+                    "driveType": "business",
+                    "id": "01OQVBDXL3OH4DCNS5D5HLFOQO5ZWUL7ZF"
+                },
+                "sharepointIds": {
+                    "listId": "26164c3a-7069-4e52-a680-e0cb0c04cdaf",
+                    "listItemId": "4",
+                    "listItemUniqueId": "457dd768-68c7-43f8-9606-4f9feb567ea2",
+                    "siteId": "7a1325bb-fc97-4ad0-ad92-159dac5e5773",
+                    "siteUrl": "https://ociluxembourg92-my.sharepoint.com/personal/oracle_cloud_infrastructure_ociluxembourg92_onmicrosoft_com",
+                    "webId": "3227fa72-43c0-4d44-8d30-bcb4b53a4ebf"
+                }
+            }
+        }
+    ]
+}

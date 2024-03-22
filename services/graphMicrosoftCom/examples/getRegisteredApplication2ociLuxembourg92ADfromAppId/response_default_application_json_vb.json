@@ -1,0 +1,204 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications/$entity",
+    "id": "eeeb4c99-14eb-4863-93b3-df3dc9ab57b6",
+    "deletedDateTime": null,
+    "appId": "06748561-5529-4cae-88ee-e4bc0d829768",
+    "applicationTemplateId": null,
+    "disabledByMicrosoftStatus": null,
+    "createdDateTime": "2021-10-27T15:26:11Z",
+    "displayName": "oci2azure",
+    "description": null,
+    "groupMembershipClaims": null,
+    "identifierUris": [],
+    "isDeviceOnlyAuthSupported": null,
+    "isFallbackPublicClient": null,
+    "notes": null,
+    "publisherDomain": "ociluxembourg92.onmicrosoft.com",
+    "signInAudience": "AzureADandPersonalMicrosoftAccount",
+    "tags": [],
+    "tokenEncryptionKeyId": null,
+    "defaultRedirectUri": null,
+    "certification": null,
+    "optionalClaims": null,
+    "addIns": [],
+    "api": {
+        "acceptMappedClaims": null,
+        "knownClientApplications": [],
+        "requestedAccessTokenVersion": 2,
+        "oauth2PermissionScopes": [],
+        "preAuthorizedApplications": []
+    },
+    "appRoles": [],
+    "info": {
+        "logoUrl": null,
+        "marketingUrl": null,
+        "privacyStatementUrl": null,
+        "supportUrl": null,
+        "termsOfServiceUrl": null
+    },
+    "keyCredentials": [],
+    "parentalControlSettings": {
+        "countriesBlockedForMinors": [],
+        "legalAgeGroupRule": "Allow"
+    },
+    "passwordCredentials": [
+        {
+            "customKeyIdentifier": null,
+            "displayName": "oci2azure",
+            "endDateTime": "2023-10-27T15:27:45.66Z",
+            "hint": "MX-",
+            "keyId": "d84e5f30-98d2-4c60-89c9-d92bbbff9d83",
+            "secretText": null,
+            "startDateTime": "2021-10-27T15:27:45.66Z"
+        }
+    ],
+    "publicClient": {
+        "redirectUris": []
+    },
+    "requiredResourceAccess": [
+        {
+            "resourceAppId": "00000003-0000-0000-c000-000000000000",
+            "resourceAccess": [
+                {
+                    "id": "a4b8392a-d8d1-4954-a029-8e668a39a170",
+                    "type": "Scope"
+                },
+                {
+                    "id": "570282fd-fa5c-430d-a7fd-fc8dc98a9dca",
+                    "type": "Scope"
+                },
+                {
+                    "id": "12466101-c9b8-439a-8589-dd09ee67e8e9",
+                    "type": "Scope"
+                },
+                {
+                    "id": "2b9c4092-424d-4249-948d-b43879977640",
+                    "type": "Scope"
+                },
+                {
+                    "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+                    "type": "Scope"
+                },
+                {
+                    "id": "b4e74841-8e56-480b-be8b-910348b18b4c",
+                    "type": "Scope"
+                },
+                {
+                    "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+                    "type": "Scope"
+                },
+                {
+                    "id": "a154be20-db9c-4678-8ab7-66f6cc099a59",
+                    "type": "Scope"
+                },
+                {
+                    "id": "06da0dbc-49e2-44d2-8312-53f166ab848a",
+                    "type": "Scope"
+                },
+                {
+                    "id": "c5366453-9fb0-48a5-a156-24f0c49a4b84",
+                    "type": "Scope"
+                },
+                {
+                    "id": "0e263e50-5827-48a4-b97c-d940288653c7",
+                    "type": "Scope"
+                },
+                {
+                    "id": "024d486e-b451-40bb-833d-3e66d98c5c73",
+                    "type": "Scope"
+                },
+                {
+                    "id": "e383f46e-2787-4529-855e-0e479a3ffac0",
+                    "type": "Scope"
+                },
+                {
+                    "id": "465a38f9-76ea-45b9-9f34-9e8b0d4b0b42",
+                    "type": "Scope"
+                },
+                {
+                    "id": "1ec239c2-d7c9-4623-a91a-a9775856bb36",
+                    "type": "Scope"
+                },
+                {
+                    "id": "ff74d97f-43af-4b68-9f2a-b77ee6968c5d",
+                    "type": "Scope"
+                },
+                {
+                    "id": "d56682ec-c09e-4743-aaf4-1a3aac4caa21",
+                    "type": "Scope"
+                },
+                {
+                    "id": "693c5e45-0940-467d-9b8a-1022fb9d42ef",
+                    "type": "Role"
+                },
+                {
+                    "id": "6be147d2-ea4f-4b5a-a3fa-3eab6f3c140a",
+                    "type": "Role"
+                },
+                {
+                    "id": "741f803b-c850-494e-b5df-cde7c675a1ca",
+                    "type": "Role"
+                },
+                {
+                    "id": "df021288-bdef-4463-88db-98f22de89214",
+                    "type": "Role"
+                },
+                {
+                    "id": "810c84a8-4a9e-49e6-bf7d-12d183f40d01",
+                    "type": "Role"
+                },
+                {
+                    "id": "e2a3a72e-5f79-4c64-b1b1-878b674786c9",
+                    "type": "Role"
+                },
+                {
+                    "id": "b633e1c5-b582-4048-a93e-9f11b44c7e96",
+                    "type": "Role"
+                },
+                {
+                    "id": "089fe4d0-434a-44c5-8827-41ba8a0b17f5",
+                    "type": "Role"
+                },
+                {
+                    "id": "6918b873-d17a-4dc1-b314-35f528134491",
+                    "type": "Role"
+                },
+                {
+                    "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+                    "type": "Role"
+                },
+                {
+                    "id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+                    "type": "Role"
+                },
+                {
+                    "id": "798ee544-9d2d-430c-a058-570e29e34338",
+                    "type": "Role"
+                },
+                {
+                    "id": "ef54d2bf-783f-4e0f-bca1-3210c0444d99",
+                    "type": "Role"
+                }
+            ]
+        }
+    ],
+    "verifiedPublisher": {
+        "displayName": null,
+        "verifiedPublisherId": null,
+        "addedDateTime": null
+    },
+    "web": {
+        "homePageUrl": null,
+        "logoutUrl": null,
+        "redirectUris": [
+            "https://vbcsluxsandbox-johnkarasoulos.builder.ocp.oraclecloud.com/ic/builder/"
+        ],
+        "implicitGrantSettings": {
+            "enableAccessTokenIssuance": false,
+            "enableIdTokenIssuance": false
+        }
+    },
+    "spa": {
+        "redirectUris": []
+    }
+}

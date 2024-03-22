@@ -1,0 +1,13 @@
+{
+  "description": "",
+  "root": "navigateToMainStart",
+  "actions": {
+    "navigateToMainStart": {
+      "module": "vb/action/builtin/navigateAction",
+      "parameters": {
+        "page": "main-start"
+      }
+    }
+  },
+  "variables": {}
+}

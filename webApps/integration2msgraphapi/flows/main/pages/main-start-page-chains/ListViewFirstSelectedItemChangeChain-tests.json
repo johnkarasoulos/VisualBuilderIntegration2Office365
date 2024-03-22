@@ -1,0 +1,28 @@
+{
+    "tests": {
+        "Test 1": {
+            "mocks": {
+                "callRestGetMessages4Userid": {
+                    "outcome": "success",
+                    "result": {
+                        "status": 200,
+                        "headers": {},
+                        "body": {}
+                    }
+                }
+            }
+        },
+        "Test 2": {
+            "mocks": {
+                "callRestGetMessages4Userid": {
+                    "outcome": "success",
+                    "result": {
+                        "status": 200,
+                        "headers": {},
+                        "body": {}
+                    }
+                }
+            }
+        }
+    }
+   }

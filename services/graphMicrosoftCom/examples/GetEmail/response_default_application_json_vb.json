@@ -1,0 +1,62 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8402fd97-29ea-4758-8ed4-0375850cb07c')/messages/$entity",
+    "@odata.etag": "W/\"CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAABQ1\"",
+    "id": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAAZxLrDMpvDEW6cnyM8XwDdAAAAgk4AAAA",
+    "createdDateTime": "2021-10-27T14:28:04Z",
+    "lastModifiedDateTime": "2021-10-27T14:28:07Z",
+    "changeKey": "CQAAABYAAABnEusMym8MRbpyfIzxfAN0AAAAABQ1",
+    "categories": [],
+    "receivedDateTime": "2021-10-27T14:28:05Z",
+    "sentDateTime": "2021-10-27T14:27:59Z",
+    "hasAttachments": false,
+    "internetMessageId": "<9f82f9944d8c4b5e8fe14297c966ce29-JFBVALKQOJXWILKCJQZFA7CJIFGVGU2QKJ6FGU2QKJCW2YLJNR6FG3LUOA======@microsoft.com>",
+    "subject": "Your ociluxembourg92 password has been reset",
+    "bodyPreview": "Password reset notification\r\n\r\n\r\nThe password on your account has recently been reset. If you performed this password reset, then this message is for your information only.\r\n\r\n\r\n  *   User ID: oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com",
+    "importance": "normal",
+    "parentFolderId": "AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAuAAADcJQXcQCEm0mez5SkfREBvAEAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAA",
+    "conversationId": "AAQkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NAAQAGaecBkoKIZCqAFPwlvR0kU=",
+    "conversationIndex": "AQHXyz7aZp5wGSgohkKoAU/CW9HSRQ==",
+    "isDeliveryReceiptRequested": null,
+    "isReadReceiptRequested": false,
+    "isRead": true,
+    "isDraft": false,
+    "webLink": "https://outlook.office365.com/owa/?ItemID=AQMkAGE3ODk1OGU3LTVkZTQtNDU3NC1hNGExLTY5MDhlNTI0MWQ3NABGAAADcJQXcQCEm0mez5SkfREBvAcAZxLrDMpvDEW6cnyM8XwDdAAAAgEMAAAAZxLrDMpvDEW6cnyM8XwDdAAAAgk4AAAA&exvsurl=1&viewmodel=ReadMessageItem",
+    "inferenceClassification": "focused",
+    "body": {
+        "contentType": "html",
+        "content": "<html dir=\"ltr\" lang=\"en\"><head id=\"Head1\">\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><meta name=\"ROBOTS\" content=\"NOINDEX, NOFOLLOW\"><style>\r\n<!--\r\ntable td\r\n\t{border-collapse:collapse;\r\n\tmargin:0;\r\n\tpadding:0}\r\n-->\r\n</style></head><body dir=\"ltr\" lang=\"en\"><table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" dir=\"ltr\" lang=\"en\"><tbody><tr><td valign=\"top\" width=\"50%\"></td><td valign=\"top\"><table width=\"640\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" dir=\"ltr\" lang=\"en\" style=\"border-left:1px solid #e3e3e3; border-right:1px solid #e3e3e3\"><tbody><tr style=\"background-color:#0072C6\"><td width=\"1\" style=\"background:#0072C6; border-top:1px solid #e3e3e3\"></td><td width=\"24\" style=\"border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3\">&nbsp;</td><td width=\"310\" valign=\"middle\" style=\"border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3; padding:12px 0\"><h1 style=\"line-height:20pt; font-family:Segoe UI Light; font-size:18pt; color:#ffffff; font-weight:normal\"><span id=\"HeaderPlaceholder_UserPasswordResetNotificationEmailHeader\" style=\"color:#FFFFFF\">Password reset notification</span> </h1></td><td width=\"24\" style=\"border-top:1px solid #e3e3e3; border-bottom:1px solid #e3e3e3\">&nbsp;</td></tr></tbody></table><table width=\"640\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" dir=\"ltr\" lang=\"en\"><tbody><tr><td width=\"1\" style=\"background:#e3e3e3\"></td><td width=\"24\">&nbsp;</td><td id=\"PageBody\" width=\"640\" valign=\"top\" colspan=\"2\" style=\"border-bottom:1px solid #e3e3e3; padding:10px 0 20px\"><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\"><tbody><tr><td width=\"630\" style=\"font-size:10pt; line-height:13pt; color:#000\"><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"100%\" dir=\"ltr\" lang=\"en\" style=\"\"><tbody><tr><td><div style=\"font-family:'Segoe UI',Tahoma,sans-serif; font-size:14px; color:#333\"><span id=\"BodyPlaceholder_UserPasswordResetNotificationEmailBodySentence1\">The password on your account has recently been reset. If you performed this password reset, then this message is for your information only.</span> </div><br><div style=\"font-family:'Segoe UI',Tahoma,sans-serif; font-size:14px; color:#333; font-weight:bold\"><ul><li>User ID: <span id=\"BodyPlaceholder_UserPasswordResetNotificationEmailUserNamePlaceholder\">oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com</span> </li></ul></div><br><div style=\"font-family:'Segoe UI',Tahoma,sans-serif; font-size:14px; font-weight:bold; color:#333\">If you are not sure whether you or your administrator performed this password reset, then you should contact your administrator immediately. </div><br><br><div style=\"font-family:'Segoe UI',Tahoma,sans-serif; font-size:14px; color:red\">Remember: Make sure that you update all of your devices (phones, tablets and PCs) with your new password! </div><br><br><div style=\"font-family:'Segoe UI',Tahoma,sans-serif; font-size:14px; color:#333\">Yours sincerely, </div><div style=\"font-family:'Segoe UI',Tahoma,sans-serif; font-size:14px; font-style:italic; color:#333\">ociluxembourg92 </div></td></tr></tbody></table></td></tr></tbody></table></td><td width=\"1\">&nbsp;</td><td width=\"1\"></td><td width=\"1\">&nbsp;</td><td width=\"1\" valign=\"top\"></td><td width=\"29\">&nbsp;</td><td width=\"1\" style=\"background:#e3e3e3\"></td></tr><tr><td width=\"1\" style=\"background:#e3e3e3; border-bottom:1px solid #e3e3e3\"></td><td width=\"24\" style=\"border-bottom:1px solid #e3e3e3\">&nbsp;</td><td id=\"PageFooterContainer\" width=\"585\" valign=\"top\" colspan=\"6\" style=\"border-bottom:1px solid #e3e3e3; padding:20px 0\"><table id=\"PageFooter\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"585\"><tbody><tr><td><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" dir=\"ltr\" lang=\"en\" style=\"margin-right:30px\"><tbody><tr><td><p style=\"font-family:'Segoe UI',Tahoma,sans-serif; margin:0px 0px 0px 5px; color:#666; font-size:10px\"><span id=\"ContactInfo\">Microsoft Corporation | One Microsoft Way, Redmond, WA 98052-6399, United States <br><br></span>This message was sent from an unmonitored email address. Please do not reply to this message. <span id=\"PrivacyAndLegalLinks\" style=\"color:#0072c6\"><br><br><a href=\"https://privacy.microsoft.com/en-GB/privacystatement\" id=\"PrivacyLinkAnchor\">Privacy </a>| <a href=\"https://www.microsoft.com/en-GB/servicesagreement/\" id=\"LegalLinkAnchor\">Legal </a></span></p></td></tr></tbody></table></td><td style=\"padding:0; text-align:right\"><img id=\"CompanyLogo\" src=\"https://passwordreset.microsoftonline.com/images/1_MSLogo.png\"> </td></tr></tbody></table></td><td width=\"29\" style=\"border-bottom:1px solid #e3e3e3\">&nbsp;</td><td width=\"1\" style=\"background:#e3e3e3; border-bottom:1px solid #e3e3e3\"></td></tr></tbody></table></td><td valign=\"top\" width=\"50%\"></td></tr></tbody></table><img src=\"https://mucp.api.account.microsoft.com/m/v2/v?d=AIAACXURKXBZQTJAC3ZRL3SFIR2HCLMCF655EI46UK2MR4BLG3AO2HOEQTXFAZKQKY4F7VK7XD2UU5XTMY5LGSJNWKOORHMIBD6Y6O5OCAZ75JTSR6HKYHNKNMEN4XLLVKQLG66WHXGV4QCU2DNOVEUQHQ562EI&amp;i=AIAADJRGJLNHJTHD74TTSS6RWAOM3CFRYQXZTEXWPA47OD7Q5SWVGW47LENNJNJMBOFGH6OECWWA6XPHIJTNZBV5QPRO4IXWVSNHHHAPA3LIZ2W53IWDX3MQFOVP65WXKRDG3EZQMBXNPJZB7XBHWRDVYQ5SFNRE54BW72KYIYBCCO24M77DBC6Q4DXTCL6R52XT27VSN57HIG34KHMPH5KOLZRHGGBGIK27DZU7DZMGGXVCAVSKJWLZCNYKB7DSC3IKNBV4A5I5EYGMAQYCL65Q36FY2BY\" width=\"1\" height=\"1\" tabindex=\"-1\" aria-hidden=\"true\" alt=\"\"> </body></html>"
+    },
+    "sender": {
+        "emailAddress": {
+            "name": "msonlineservicesteam@microsoftonline.com",
+            "address": "msonlineservicesteam@microsoftonline.com"
+        }
+    },
+    "from": {
+        "emailAddress": {
+            "name": "msonlineservicesteam@microsoftonline.com",
+            "address": "msonlineservicesteam@microsoftonline.com"
+        }
+    },
+    "toRecipients": [
+        {
+            "emailAddress": {
+                "name": "Oracle Cloud Infrastructure",
+                "address": "oracle.cloud.infrastructure@ociluxembourg92.onmicrosoft.com"
+            }
+        }
+    ],
+    "ccRecipients": [
+        {
+            "emailAddress": {
+                "name": "oracle.cloud.infrastructure@outlook.com",
+                "address": "oracle.cloud.infrastructure@outlook.com"
+            }
+        }
+    ],
+    "bccRecipients": [],
+    "replyTo": [],
+    "flag": {
+        "flagStatus": "notFlagged"
+    }
+}

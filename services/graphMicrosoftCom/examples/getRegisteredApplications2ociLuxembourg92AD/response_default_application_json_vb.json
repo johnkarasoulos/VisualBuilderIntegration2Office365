@@ -1,0 +1,998 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications",
+    "value": [
+        {
+            "id": "22a60000-62b6-4aaa-bec5-adaf3367425d",
+            "deletedDateTime": null,
+            "appId": "34fa400f-ab34-48bc-b83d-eeb636d0093f",
+            "applicationTemplateId": null,
+            "disabledByMicrosoftStatus": null,
+            "createdDateTime": "2021-10-28T15:49:19Z",
+            "displayName": "oci2azure3",
+            "description": null,
+            "groupMembershipClaims": null,
+            "identifierUris": [],
+            "isDeviceOnlyAuthSupported": null,
+            "isFallbackPublicClient": null,
+            "notes": null,
+            "publisherDomain": "ociluxembourg92.onmicrosoft.com",
+            "signInAudience": "AzureADandPersonalMicrosoftAccount",
+            "tags": [],
+            "tokenEncryptionKeyId": null,
+            "defaultRedirectUri": null,
+            "certification": null,
+            "optionalClaims": null,
+            "addIns": [],
+            "api": {
+                "acceptMappedClaims": null,
+                "knownClientApplications": [],
+                "requestedAccessTokenVersion": 2,
+                "oauth2PermissionScopes": [],
+                "preAuthorizedApplications": []
+            },
+            "appRoles": [],
+            "info": {
+                "logoUrl": null,
+                "marketingUrl": null,
+                "privacyStatementUrl": null,
+                "supportUrl": null,
+                "termsOfServiceUrl": null
+            },
+            "keyCredentials": [],
+            "parentalControlSettings": {
+                "countriesBlockedForMinors": [],
+                "legalAgeGroupRule": "Allow"
+            },
+            "passwordCredentials": [
+                {
+                    "customKeyIdentifier": null,
+                    "displayName": "oci2azure3",
+                    "endDateTime": "2023-10-28T15:50:06.224Z",
+                    "hint": "RSL",
+                    "keyId": "494f9be9-2eee-4755-bb71-fcf37f0cbdcd",
+                    "secretText": null,
+                    "startDateTime": "2021-10-28T15:50:06.224Z"
+                }
+            ],
+            "publicClient": {
+                "redirectUris": []
+            },
+            "requiredResourceAccess": [
+                {
+                    "resourceAppId": "00000003-0000-0000-c000-000000000000",
+                    "resourceAccess": [
+                        {
+                            "id": "f501c180-9344-439a-bca0-6cbf209fd270",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "9ff7295e-131b-4d94-90e1-69fde507ac11",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "64ac0503-b4fa-45d9-b544-71a463f05da0",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "dfabfca6-ee36-4db2-8208-7a28381419b3",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "615e26af-c38a-4150-ae3e-c3b0d4cb1d6a",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "371361e4-b9e2-4a3f-8315-2a301a3b0a3d",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "9d822255-d64d-4b7a-afdb-833b9a97ed02",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "4e46008b-f24c-477d-8fff-7bb4ec7aafe0",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "06da0dbc-49e2-44d2-8312-53f166ab848a",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "c5366453-9fb0-48a5-a156-24f0c49a4b84",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "0e263e50-5827-48a4-b97c-d940288653c7",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "bc024368-1153-4739-b217-4326f2e966d0",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "485be79e-c497-4b35-9400-0e3fa7f2a5d4",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "9547fcb5-d03f-419d-9948-5928bbf71b0f",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "3aeca27b-ee3a-4c2b-8ded-80376e2134a4",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "294ce7c9-31ba-490a-ad7d-97a7d075e4ed",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "6b7d71aa-70aa-4810-a8d9-5d9fb2830017",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "5b567255-7703-4780-807c-7be8301ae99b",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "62a82d76-70ea-41e2-9197-370581804d09",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "98830695-27a2-44f7-8c18-0c3ebc9698f6",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "0c458cef-11f3-48c2-a568-c66751c238c0",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "2280dda6-0bfd-44ee-a2f4-cb867cfc4c1e",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "bdd80a03-d9bc-451d-b7c4-ce7c63fe3c8f",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "242607bd-1d2c-432c-82eb-bdb27baa23ab",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "b2e060da-3baf-4687-9611-f4ebc0f0cbde",
+                            "type": "Role"
+                        }
+                    ]
+                }
+            ],
+            "verifiedPublisher": {
+                "displayName": null,
+                "verifiedPublisherId": null,
+                "addedDateTime": null
+            },
+            "web": {
+                "homePageUrl": null,
+                "logoutUrl": null,
+                "redirectUris": [
+                    "https://vbcsluxsandbox-johnkarasoulos.builder.ocp.oraclecloud.com/ic/builder/"
+                ],
+                "implicitGrantSettings": {
+                    "enableAccessTokenIssuance": false,
+                    "enableIdTokenIssuance": false
+                }
+            },
+            "spa": {
+                "redirectUris": []
+            }
+        },
+        {
+            "id": "4aad7120-3dd4-43a4-a2f6-fa9dc88ed888",
+            "deletedDateTime": null,
+            "appId": "606cf09a-7882-4b0d-b0f2-86563013090a",
+            "applicationTemplateId": null,
+            "disabledByMicrosoftStatus": null,
+            "createdDateTime": "2021-10-28T09:29:44Z",
+            "displayName": "postman2",
+            "description": null,
+            "groupMembershipClaims": null,
+            "identifierUris": [],
+            "isDeviceOnlyAuthSupported": null,
+            "isFallbackPublicClient": null,
+            "notes": null,
+            "publisherDomain": "ociluxembourg92.onmicrosoft.com",
+            "signInAudience": "AzureADandPersonalMicrosoftAccount",
+            "tags": [],
+            "tokenEncryptionKeyId": null,
+            "defaultRedirectUri": null,
+            "certification": null,
+            "optionalClaims": null,
+            "addIns": [],
+            "api": {
+                "acceptMappedClaims": null,
+                "knownClientApplications": [],
+                "requestedAccessTokenVersion": 2,
+                "oauth2PermissionScopes": [],
+                "preAuthorizedApplications": []
+            },
+            "appRoles": [],
+            "info": {
+                "logoUrl": null,
+                "marketingUrl": null,
+                "privacyStatementUrl": null,
+                "supportUrl": null,
+                "termsOfServiceUrl": null
+            },
+            "keyCredentials": [],
+            "parentalControlSettings": {
+                "countriesBlockedForMinors": [],
+                "legalAgeGroupRule": "Allow"
+            },
+            "passwordCredentials": [
+                {
+                    "customKeyIdentifier": null,
+                    "displayName": "postman2",
+                    "endDateTime": "2023-10-28T09:31:48.492Z",
+                    "hint": "BJQ",
+                    "keyId": "425d8eb3-a3fc-4a16-9101-ec981bb68100",
+                    "secretText": null,
+                    "startDateTime": "2021-10-28T09:31:48.492Z"
+                }
+            ],
+            "publicClient": {
+                "redirectUris": []
+            },
+            "requiredResourceAccess": [
+                {
+                    "resourceAppId": "00000003-0000-0000-c000-000000000000",
+                    "resourceAccess": [
+                        {
+                            "id": "89fe6a52-be36-487e-b7d8-d061c450a026",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "2b9c4092-424d-4249-948d-b43879977640",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "4e46008b-f24c-477d-8fff-7bb4ec7aafe0",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "06da0dbc-49e2-44d2-8312-53f166ab848a",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "c5366453-9fb0-48a5-a156-24f0c49a4b84",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "0e263e50-5827-48a4-b97c-d940288653c7",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "e383f46e-2787-4529-855e-0e479a3ffac0",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "465a38f9-76ea-45b9-9f34-9e8b0d4b0b42",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "1ec239c2-d7c9-4623-a91a-a9775856bb36",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "10465720-29dd-4523-a11a-6a75c743c9d9",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "5c28f0bf-8a70-41f1-8ab2-9032436ddb65",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "df85f4d6-205c-4ac5-a5ea-6bf408dba283",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "863451e7-0667-486c-a5d6-d135439485f0",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "205e70e5-aba6-4c52-a976-6d2d46c48043",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "bc024368-1153-4739-b217-4326f2e966d0",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "332a536c-c7ef-4017-ab91-336970924f0d",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "9492366f-7969-46a4-8d15-ed1a20078fff",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "75359482-378d-4052-8f01-80520e7db3cd",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "01d4889c-1287-42c6-ac1f-5d1e02578ef6",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "b633e1c5-b582-4048-a93e-9f11b44c7e96",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "5b567255-7703-4780-807c-7be8301ae99b",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "62a82d76-70ea-41e2-9197-370581804d09",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "798ee544-9d2d-430c-a058-570e29e34338",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "ef54d2bf-783f-4e0f-bca1-3210c0444d99",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "98830695-27a2-44f7-8c18-0c3ebc9698f6",
+                            "type": "Role"
+                        }
+                    ]
+                }
+            ],
+            "verifiedPublisher": {
+                "displayName": null,
+                "verifiedPublisherId": null,
+                "addedDateTime": null
+            },
+            "web": {
+                "homePageUrl": null,
+                "logoutUrl": null,
+                "redirectUris": [
+                    "https://oauth.pstmn.io/v1/browser-callback",
+                    "https://app.getpostman.com/oauth2/callback"
+                ],
+                "implicitGrantSettings": {
+                    "enableAccessTokenIssuance": false,
+                    "enableIdTokenIssuance": false
+                }
+            },
+            "spa": {
+                "redirectUris": []
+            }
+        },
+        {
+            "id": "803c7e8c-d80e-4778-8738-134debb5cba2",
+            "deletedDateTime": null,
+            "appId": "ecf2e180-c153-4886-a7b6-1cff90ec259d",
+            "applicationTemplateId": null,
+            "disabledByMicrosoftStatus": null,
+            "createdDateTime": "2021-10-27T16:38:35Z",
+            "displayName": "postman",
+            "description": null,
+            "groupMembershipClaims": null,
+            "identifierUris": [],
+            "isDeviceOnlyAuthSupported": null,
+            "isFallbackPublicClient": null,
+            "notes": null,
+            "publisherDomain": "ociluxembourg92.onmicrosoft.com",
+            "signInAudience": "AzureADandPersonalMicrosoftAccount",
+            "tags": [],
+            "tokenEncryptionKeyId": null,
+            "defaultRedirectUri": null,
+            "certification": null,
+            "optionalClaims": null,
+            "addIns": [],
+            "api": {
+                "acceptMappedClaims": null,
+                "knownClientApplications": [],
+                "requestedAccessTokenVersion": 2,
+                "oauth2PermissionScopes": [],
+                "preAuthorizedApplications": []
+            },
+            "appRoles": [],
+            "info": {
+                "logoUrl": null,
+                "marketingUrl": null,
+                "privacyStatementUrl": null,
+                "supportUrl": null,
+                "termsOfServiceUrl": null
+            },
+            "keyCredentials": [],
+            "parentalControlSettings": {
+                "countriesBlockedForMinors": [],
+                "legalAgeGroupRule": "Allow"
+            },
+            "passwordCredentials": [
+                {
+                    "customKeyIdentifier": null,
+                    "displayName": "postman",
+                    "endDateTime": "2023-10-27T16:39:09.464Z",
+                    "hint": "uwM",
+                    "keyId": "8b92e25b-4c7d-45d4-ac2f-822fa8711845",
+                    "secretText": null,
+                    "startDateTime": "2021-10-27T16:39:09.464Z"
+                }
+            ],
+            "publicClient": {
+                "redirectUris": []
+            },
+            "requiredResourceAccess": [
+                {
+                    "resourceAppId": "00000003-0000-0000-c000-000000000000",
+                    "resourceAccess": [
+                        {
+                            "id": "a4b8392a-d8d1-4954-a029-8e668a39a170",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "570282fd-fa5c-430d-a7fd-fc8dc98a9dca",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "afb6c84b-06be-49af-80bb-8f3f77004eab",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "242b9d9e-ed24-4d09-9a52-f43769beb9d4",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "5df07973-7d5d-46ed-9847-1271055cbd51",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "7b9103a5-4610-446b-9670-80643382c1fa",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "b4e74841-8e56-480b-be8b-910348b18b4c",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "a154be20-db9c-4678-8ab7-66f6cc099a59",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "204e0828-b5ca-4ad8-b9f3-f32a958e7cc4",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "06da0dbc-49e2-44d2-8312-53f166ab848a",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "c5366453-9fb0-48a5-a156-24f0c49a4b84",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "0e263e50-5827-48a4-b97c-d940288653c7",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "024d486e-b451-40bb-833d-3e66d98c5c73",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "ff74d97f-43af-4b68-9f2a-b77ee6968c5d",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "d56682ec-c09e-4743-aaf4-1a3aac4caa21",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "2219042f-cab5-40cc-b0d2-16b1540b4c5f",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "693c5e45-0940-467d-9b8a-1022fb9d42ef",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "6be147d2-ea4f-4b5a-a3fa-3eab6f3c140a",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "741f803b-c850-494e-b5df-cde7c675a1ca",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "df021288-bdef-4463-88db-98f22de89214",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "810c84a8-4a9e-49e6-bf7d-12d183f40d01",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "e2a3a72e-5f79-4c64-b1b1-878b674786c9",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "089fe4d0-434a-44c5-8827-41ba8a0b17f5",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "6918b873-d17a-4dc1-b314-35f528134491",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+                            "type": "Role"
+                        }
+                    ]
+                }
+            ],
+            "verifiedPublisher": {
+                "displayName": null,
+                "verifiedPublisherId": null,
+                "addedDateTime": null
+            },
+            "web": {
+                "homePageUrl": null,
+                "logoutUrl": null,
+                "redirectUris": [
+                    "https://app.getpostman.com/oauth2/callback",
+                    "https://oauth.pstmn.io/v1/browser-callback"
+                ],
+                "implicitGrantSettings": {
+                    "enableAccessTokenIssuance": false,
+                    "enableIdTokenIssuance": false
+                }
+            },
+            "spa": {
+                "redirectUris": []
+            }
+        },
+        {
+            "id": "dc08e653-9a29-496e-855f-3974b2e52d37",
+            "deletedDateTime": null,
+            "appId": "7f26b85b-e6a8-45c4-a5e1-75b21865d24e",
+            "applicationTemplateId": null,
+            "disabledByMicrosoftStatus": null,
+            "createdDateTime": "2021-10-28T10:18:47Z",
+            "displayName": "oci2azure2",
+            "description": null,
+            "groupMembershipClaims": null,
+            "identifierUris": [],
+            "isDeviceOnlyAuthSupported": null,
+            "isFallbackPublicClient": null,
+            "notes": null,
+            "publisherDomain": "ociluxembourg92.onmicrosoft.com",
+            "signInAudience": "AzureADandPersonalMicrosoftAccount",
+            "tags": [],
+            "tokenEncryptionKeyId": null,
+            "defaultRedirectUri": null,
+            "certification": null,
+            "optionalClaims": null,
+            "addIns": [],
+            "api": {
+                "acceptMappedClaims": null,
+                "knownClientApplications": [],
+                "requestedAccessTokenVersion": 2,
+                "oauth2PermissionScopes": [],
+                "preAuthorizedApplications": []
+            },
+            "appRoles": [],
+            "info": {
+                "logoUrl": null,
+                "marketingUrl": null,
+                "privacyStatementUrl": null,
+                "supportUrl": null,
+                "termsOfServiceUrl": null
+            },
+            "keyCredentials": [],
+            "parentalControlSettings": {
+                "countriesBlockedForMinors": [],
+                "legalAgeGroupRule": "Allow"
+            },
+            "passwordCredentials": [
+                {
+                    "customKeyIdentifier": null,
+                    "displayName": "oci2azure2",
+                    "endDateTime": "2023-10-28T10:20:34.823Z",
+                    "hint": "qC_",
+                    "keyId": "e22617c3-3d95-44c7-8124-26ed26ecb018",
+                    "secretText": null,
+                    "startDateTime": "2021-10-28T10:20:34.823Z"
+                }
+            ],
+            "publicClient": {
+                "redirectUris": []
+            },
+            "requiredResourceAccess": [
+                {
+                    "resourceAppId": "00000003-0000-0000-c000-000000000000",
+                    "resourceAccess": [
+                        {
+                            "id": "89fe6a52-be36-487e-b7d8-d061c450a026",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "afb6c84b-06be-49af-80bb-8f3f77004eab",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "242b9d9e-ed24-4d09-9a52-f43769beb9d4",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "b4e74841-8e56-480b-be8b-910348b18b4c",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "a154be20-db9c-4678-8ab7-66f6cc099a59",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "204e0828-b5ca-4ad8-b9f3-f32a958e7cc4",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "06da0dbc-49e2-44d2-8312-53f166ab848a",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "c5366453-9fb0-48a5-a156-24f0c49a4b84",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "0e263e50-5827-48a4-b97c-d940288653c7",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "ff74d97f-43af-4b68-9f2a-b77ee6968c5d",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "d56682ec-c09e-4743-aaf4-1a3aac4caa21",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "10465720-29dd-4523-a11a-6a75c743c9d9",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "5c28f0bf-8a70-41f1-8ab2-9032436ddb65",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "df85f4d6-205c-4ac5-a5ea-6bf408dba283",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "863451e7-0667-486c-a5d6-d135439485f0",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "205e70e5-aba6-4c52-a976-6d2d46c48043",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "332a536c-c7ef-4017-ab91-336970924f0d",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "9492366f-7969-46a4-8d15-ed1a20078fff",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "75359482-378d-4052-8f01-80520e7db3cd",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "01d4889c-1287-42c6-ac1f-5d1e02578ef6",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "741f803b-c850-494e-b5df-cde7c675a1ca",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "df021288-bdef-4463-88db-98f22de89214",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "089fe4d0-434a-44c5-8827-41ba8a0b17f5",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "6918b873-d17a-4dc1-b314-35f528134491",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+                            "type": "Role"
+                        }
+                    ]
+                }
+            ],
+            "verifiedPublisher": {
+                "displayName": null,
+                "verifiedPublisherId": null,
+                "addedDateTime": null
+            },
+            "web": {
+                "homePageUrl": null,
+                "logoutUrl": null,
+                "redirectUris": [
+                    "https://vbcsluxsandbox-johnkarasoulos.builder.ocp.oraclecloud.com/ic/builder/"
+                ],
+                "implicitGrantSettings": {
+                    "enableAccessTokenIssuance": false,
+                    "enableIdTokenIssuance": false
+                }
+            },
+            "spa": {
+                "redirectUris": []
+            }
+        },
+        {
+            "id": "eeeb4c99-14eb-4863-93b3-df3dc9ab57b6",
+            "deletedDateTime": null,
+            "appId": "06748561-5529-4cae-88ee-e4bc0d829768",
+            "applicationTemplateId": null,
+            "disabledByMicrosoftStatus": null,
+            "createdDateTime": "2021-10-27T15:26:11Z",
+            "displayName": "oci2azure",
+            "description": null,
+            "groupMembershipClaims": null,
+            "identifierUris": [],
+            "isDeviceOnlyAuthSupported": null,
+            "isFallbackPublicClient": null,
+            "notes": null,
+            "publisherDomain": "ociluxembourg92.onmicrosoft.com",
+            "signInAudience": "AzureADandPersonalMicrosoftAccount",
+            "tags": [],
+            "tokenEncryptionKeyId": null,
+            "defaultRedirectUri": null,
+            "certification": null,
+            "optionalClaims": null,
+            "addIns": [],
+            "api": {
+                "acceptMappedClaims": null,
+                "knownClientApplications": [],
+                "requestedAccessTokenVersion": 2,
+                "oauth2PermissionScopes": [],
+                "preAuthorizedApplications": []
+            },
+            "appRoles": [],
+            "info": {
+                "logoUrl": null,
+                "marketingUrl": null,
+                "privacyStatementUrl": null,
+                "supportUrl": null,
+                "termsOfServiceUrl": null
+            },
+            "keyCredentials": [],
+            "parentalControlSettings": {
+                "countriesBlockedForMinors": [],
+                "legalAgeGroupRule": "Allow"
+            },
+            "passwordCredentials": [
+                {
+                    "customKeyIdentifier": null,
+                    "displayName": "oci2azure",
+                    "endDateTime": "2023-10-27T15:27:45.66Z",
+                    "hint": "MX-",
+                    "keyId": "d84e5f30-98d2-4c60-89c9-d92bbbff9d83",
+                    "secretText": null,
+                    "startDateTime": "2021-10-27T15:27:45.66Z"
+                }
+            ],
+            "publicClient": {
+                "redirectUris": []
+            },
+            "requiredResourceAccess": [
+                {
+                    "resourceAppId": "00000003-0000-0000-c000-000000000000",
+                    "resourceAccess": [
+                        {
+                            "id": "a4b8392a-d8d1-4954-a029-8e668a39a170",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "570282fd-fa5c-430d-a7fd-fc8dc98a9dca",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "12466101-c9b8-439a-8589-dd09ee67e8e9",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "2b9c4092-424d-4249-948d-b43879977640",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "b4e74841-8e56-480b-be8b-910348b18b4c",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "b340eb25-3456-403f-be2f-af7a0d370277",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "a154be20-db9c-4678-8ab7-66f6cc099a59",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "06da0dbc-49e2-44d2-8312-53f166ab848a",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "c5366453-9fb0-48a5-a156-24f0c49a4b84",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "0e263e50-5827-48a4-b97c-d940288653c7",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "024d486e-b451-40bb-833d-3e66d98c5c73",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "e383f46e-2787-4529-855e-0e479a3ffac0",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "465a38f9-76ea-45b9-9f34-9e8b0d4b0b42",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "1ec239c2-d7c9-4623-a91a-a9775856bb36",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "ff74d97f-43af-4b68-9f2a-b77ee6968c5d",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "d56682ec-c09e-4743-aaf4-1a3aac4caa21",
+                            "type": "Scope"
+                        },
+                        {
+                            "id": "693c5e45-0940-467d-9b8a-1022fb9d42ef",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "6be147d2-ea4f-4b5a-a3fa-3eab6f3c140a",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "741f803b-c850-494e-b5df-cde7c675a1ca",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "df021288-bdef-4463-88db-98f22de89214",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "810c84a8-4a9e-49e6-bf7d-12d183f40d01",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "e2a3a72e-5f79-4c64-b1b1-878b674786c9",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "b633e1c5-b582-4048-a93e-9f11b44c7e96",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "089fe4d0-434a-44c5-8827-41ba8a0b17f5",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "6918b873-d17a-4dc1-b314-35f528134491",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "7ab1d382-f21e-4acd-a863-ba3e13f7da61",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "19dbc75e-c2e2-444c-a770-ec69d8559fc7",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "798ee544-9d2d-430c-a058-570e29e34338",
+                            "type": "Role"
+                        },
+                        {
+                            "id": "ef54d2bf-783f-4e0f-bca1-3210c0444d99",
+                            "type": "Role"
+                        }
+                    ]
+                }
+            ],
+            "verifiedPublisher": {
+                "displayName": null,
+                "verifiedPublisherId": null,
+                "addedDateTime": null
+            },
+            "web": {
+                "homePageUrl": null,
+                "logoutUrl": null,
+                "redirectUris": [
+                    "https://vbcsluxsandbox-johnkarasoulos.builder.ocp.oraclecloud.com/ic/builder/"
+                ],
+                "implicitGrantSettings": {
+                    "enableAccessTokenIssuance": false,
+                    "enableIdTokenIssuance": false
+                }
+            },
+            "spa": {
+                "redirectUris": []
+            }
+        }
+    ]
+}
