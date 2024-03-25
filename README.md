@@ -1,3 +1,12 @@
+### From github repository to Oracle VisualBuilder application. 
+1. Connect to your Oracle Visual Builder Studio Instance
+2. Into an existing Project OR Create a new project --> create a new git repository by importing the existing public GitHub repository.
+   ![Screenshot 2024-03-25 at 12 33 33](https://github.com/johnkarasoulos/aircraftBlockchain/assets/25766024/235cf9ae-c01f-449a-8764-96fdda1e543b)
+
+3. Create a new Workspace using the button "Clone From Git" where you are selecting the Repository Name, the Branch , the Development Environment and you are providing the name of the Workspace Name.
+   ![Screenshot 2024-03-25 at 12 37 06](https://github.com/johnkarasoulos/aircraftBlockchain/assets/25766024/5592e9b4-d1c1-44ba-ab37-364f87f06809)
+
+4. You redirected to the new VisualBuilder instance assigned to this workspace and you can start working.  
 
 
 ### Step by Step instructions to implment your own integration base on the provided source code. 
