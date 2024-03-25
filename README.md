@@ -1,3 +1,25 @@
+## Components and Architecture
+The Oracle VBCS is a cloud-based, low-code application development solutions for creating, extending, and customizing business applications
+<img width="401" alt="image" src="https://github.com/johnkarasoulos/VisualBuilderIntegration2Office365/assets/25766024/2b291538-1298-4c03-9ff3-739a0cb1921c">
+### Oracle Visual Builder specifications
+- Based on a component architecture, supporting the integration and extension of Oracle PaaS and SaaS Cloud Services as well as third-party REST based services (including Microsoft Graph API).
+- Ability to create, copy, edit, delete, version, stage, and publish these applications as part of application lifecycle management.
+- Unlimited number of authenticated users may access the development tools and may develop and publish any number of applications, with no any restrictions. 
+- Unlimited number of API calls may be made with no restrictions.
+- Provides up to 5 gigabytes of capacity for applications and data.
+
+## Oracle Visual Builder Platform integration with MS Graph API
+### Server definition 
+<img width="1138" alt="Screenshot 2024-03-25 at 16 59 00" src="https://github.com/johnkarasoulos/VisualBuilderIntegration2Office365/assets/25766024/86e1d97e-17cc-4032-b14c-3132e1a1d0a0">
+
+### EndPoint definition
+<img width="1100" alt="Screenshot 2024-03-25 at 17 03 35" src="https://github.com/johnkarasoulos/VisualBuilderIntegration2Office365/assets/25766024/a35d0f1d-7748-4bc5-8a6d-e6939145396d">
+
+### Types based on endpoints 
+<img width="1079" alt="Screenshot 2024-03-25 at 17 06 07" src="https://github.com/johnkarasoulos/VisualBuilderIntegration2Office365/assets/25766024/fbd3261d-2aac-440e-a389-33486980d495">
+
+
+
 ### From github repository to Oracle VisualBuilder application. 
 1. Connect to your Oracle Visual Builder Studio Instance
 2. Into an existing Project OR Create a new project --> create a new git repository by importing the existing public GitHub repository.
