@@ -1,6 +1,5 @@
-## Components and Architecture
-The Oracle VBCS is a cloud-based, low-code application development solutions for creating, extending, and customizing business applications
-<img width="401" alt="image" src="https://github.com/johnkarasoulos/VisualBuilderIntegration2Office365/assets/25766024/2b291538-1298-4c03-9ff3-739a0cb1921c">
+## Oracle Visual Builder Web Application integrated with Office 365
+The Oracle VBCS is a cloud-based, low-code application development solutions for creating, extending, and customizing business applications. 
 ### Oracle Visual Builder specifications
 - Based on a component architecture, supporting the integration and extension of Oracle PaaS and SaaS Cloud Services as well as third-party REST based services (including Microsoft Graph API).
 - Ability to create, copy, edit, delete, version, stage, and publish these applications as part of application lifecycle management.
@@ -8,14 +7,59 @@ The Oracle VBCS is a cloud-based, low-code application development solutions for
 - Unlimited number of API calls may be made with no restrictions.
 - Provides up to 5 gigabytes of capacity for applications and data.
 
-## Oracle Visual Builder Platform integration with MS Graph API
-### Server definition 
+## MS Graph API
+
+This Web Application developed with Oracle Visual Builder platform, is used to show case how to integrate with Office 365, using and leveraging MS GraphAPI. 
+Microsoft Graph is the gateway to data and intelligence in Microsoft 365, Windows, and Enterprise Mobility + Security.  
+Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services:
+-	Microsoft 365 core services: 
+Bookings, Calendar, Delve, Excel, Microsoft 365 compliance eDiscovery, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (Outlook contacts), Planner, SharePoint, Teams, To Do, Viva Insights 
+-	Enterprise Mobility + Security services: 
+Advanced Threat Analytics, Advanced Threat Protection, Microsoft Entra ID, Identity Manager, and Intune
+-	Windows services: 
+activities, devices, notifications, Universal Print
+-	Dynamics 365 Business Central services
+
+This Web Application is using Graph API and leverage the available endpoints and APIs to access:  
+-	Outlook data: 
+o	List of Active Directory users
+o	List of emails received for given user.
+o	Viewing email elements and access full email content
+o	Email Creation and Sent message.
+-	Notebooks: 
+o	List of Active Directory users
+o	List of notebooks created for a given user.
+o	Notebook creation
+-	Teams:
+o	List of Active Directory users
+o	List of Teams that the given user is assigned.
+o	Access Teams group that the given user is assigned.
+
+
+<img width="401" alt="image" src="https://github.com/johnkarasoulos/VisualBuilderIntegration2Office365/assets/25766024/2b291538-1298-4c03-9ff3-739a0cb1921c">
+
+## Configuration of Microsft Entra 
+In order to use MS Graph APi and make requests, you need to register your Application and get authentication tokens for a user (or a service). 
+- To register your application you can access and apply the following official documentation: https://learn.microsoft.com/en-us/graph/auth-register-app-v2
+- To get access on behalf of a user : https://learn.microsoft.com/en-us/graph/auth-v2-user 
+- To get access without a user : https://learn.microsoft.com/en-us/graph/auth-v2-service 
+
+### Oracle Visual Builder Platform integration with MS Graph API
+Once Oracle Visual Builder application is registered to Microsoft Entra, and the required secrets have been generated and stored, the following Service connections need to be configured within Visual Builder applicatiion as depicted in the following pictures: 
+
+#### Server definition 
+Configure a back server inside Visual Builder, using the https://graph.microsoft.com URL to define the instance, and as the authenitcation protocol use : "OAuth 2.0 Client Credentials", providing the scope, Token URL, Client, and Secret with using the data from Microsoft Entra, as depicted below. 
+
 <img width="1138" alt="Screenshot 2024-03-25 at 16 59 00" src="https://github.com/johnkarasoulos/VisualBuilderIntegration2Office365/assets/25766024/86e1d97e-17cc-4032-b14c-3132e1a1d0a0">
 
-### EndPoint definition
+#### EndPoint definition
+For each server defined, you can access the REST end points and test each API that you will use later iunside your application. 
+
 <img width="1100" alt="Screenshot 2024-03-25 at 17 03 35" src="https://github.com/johnkarasoulos/VisualBuilderIntegration2Office365/assets/25766024/a35d0f1d-7748-4bc5-8a6d-e6939145396d">
 
-### Types based on endpoints 
+#### Types based on endpoints 
+Once you have successfully tested and save the response messages for all the REST Endpoint that you will use inside your application, create accordignly Visual Builder data types, based on these Service Endpoints that you will use later inside your application. 
+
 <img width="1079" alt="Screenshot 2024-03-25 at 17 06 07" src="https://github.com/johnkarasoulos/VisualBuilderIntegration2Office365/assets/25766024/fbd3261d-2aac-440e-a389-33486980d495">
 
 
