@@ -62,9 +62,14 @@ Once you have successfully tested and save the response messages for all the RES
 
 <img width="1079" alt="Screenshot 2024-03-25 at 17 06 07" src="https://github.com/johnkarasoulos/VisualBuilderIntegration2Office365/assets/25766024/fbd3261d-2aac-440e-a389-33486980d495">
 
+#### Implement Action Chains  
+Inside the application you can create your action chains that will call the service aned points, corresponding to the Graph API requests and use the data type that you have previously define to store the retrieved information from Graph API. 
+![Screenshot 2024-03-26 at 11 02 19](https://github.com/johnkarasoulos/VisualBuilderIntegration2Office365/assets/25766024/5ce859ef-cb4a-4823-97d2-550dda4d6df0)
+
 
 
 ### From github repository to Oracle VisualBuilder application. 
+If you wish to deploy the sample source code into your own Visual Builder Platform, you can apply the following steps.
 1. Connect to your Oracle Visual Builder Studio Instance
 2. Into an existing Project OR Create a new project --> create a new git repository by importing the existing public GitHub repository.
    ![Screenshot 2024-03-25 at 12 33 33](https://github.com/johnkarasoulos/aircraftBlockchain/assets/25766024/235cf9ae-c01f-449a-8764-96fdda1e543b)
@@ -72,10 +77,11 @@ Once you have successfully tested and save the response messages for all the RES
 3. Create a new Workspace using the button "Clone From Git" where you are selecting the Repository Name, the Branch , the Development Environment and you are providing the name of the Workspace Name.
    ![Screenshot 2024-03-25 at 12 37 06](https://github.com/johnkarasoulos/aircraftBlockchain/assets/25766024/5592e9b4-d1c1-44ba-ab37-364f87f06809)
 
-4. You redirected to the new VisualBuilder instance assigned to this workspace and you can start working.  
+4. You are redirected to the new VisualBuilder instance assigned to this workspace and you can start working.  
 
 
-### Step by Step instructions to implment your own integration base on the provided source code. 
+### Example of Step by Step instructions on how to implment your own integration base on the provided source code. 
+Finaly if you want to implement a Visual Builder Application based on this sample source code, then the following step-by-step instructions will help you how to leverage the Visual Builder Endpoint that represents GraphAPI requests, and develop an application that retrieves data related to Active Directory users and for each of these users, its Outlook Email content.
 1.	Create Endpoints
     ![image](https://github.com/johnkarasoulos/VisualBuilderIntegration2Office365/assets/25766024/f96e2ec0-8a6e-4238-8c0f-1f371e4a6246)
 2.  Create a Type based on get users
